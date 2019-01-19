@@ -1,0 +1,160 @@
+\hypertarget{group__kbc}{}\section{kbc}
+\label{group__kbc}\index{kbc@{kbc}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__kbc_ga8efa408da2468eaa11a0c515dfa8d79f}{kbd\+\_\+subscribe\+\_\+int} (unsigned int $\ast$kbd\+\_\+hook\+\_\+id)
+\begin{DoxyCompactList}\small\item\em subscribes a keyboard interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga32ab97f6b806fa3a0524e62af55aeb0e}{kbd\+\_\+unsubscribe\+\_\+int} (unsigned int $\ast$kbd\+\_\+hook\+\_\+id)
+\begin{DoxyCompactList}\small\item\em unsubscribes a keyboard interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_gad9d71d9448d7e3796e22f696863b7453}{kbc\+\_\+cmd\+\_\+read} (unsigned long $\ast$data)
+\begin{DoxyCompactList}\small\item\em reads a command from kbc \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga54b191a4ae0a5ed8d23e31cd50eb4868}{kbc\+\_\+cmd\+\_\+issue} (unsigned long cmd)
+\begin{DoxyCompactList}\small\item\em issues a command to kbc \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_gaa8b3453e895793f84cfc40e9cf04dd03}{kbd\+\_\+cmd\+\_\+issue} (unsigned long cmd)
+\begin{DoxyCompactList}\small\item\em issues a command to kbd \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga9a48bf91bd53208baa5627dd2a39e24d}{kbd\+\_\+cmd\+\_\+write} (unsigned int n, unsigned long $\ast$cmds)
+\begin{DoxyCompactList}\small\item\em writes a complete command to kbd this function is different from the previous one because in this case it has to write several bits to kbd \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_gac76f743c998918d5ff65403aa35c8b05}{kbc\+\_\+c\+\_\+to\+\_\+ass} (unsigned long $\ast$scancode)
+\begin{DoxyCompactList}\small\item\em converts a variable passed buy reference to a pointer that can be interpreted in assembly \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions related to the kbc 
+
+\subsection{Function Documentation}
+\hypertarget{group__kbc_gac76f743c998918d5ff65403aa35c8b05}{}\label{group__kbc_gac76f743c998918d5ff65403aa35c8b05} 
+\index{kbc@{kbc}!kbc\+\_\+c\+\_\+to\+\_\+ass@{kbc\+\_\+c\+\_\+to\+\_\+ass}}
+\index{kbc\+\_\+c\+\_\+to\+\_\+ass@{kbc\+\_\+c\+\_\+to\+\_\+ass}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbc\+\_\+c\+\_\+to\+\_\+ass()}{kbc\_c\_to\_ass()}}
+{\footnotesize\ttfamily int kbc\+\_\+c\+\_\+to\+\_\+ass (\begin{DoxyParamCaption}\item[{unsigned long $\ast$}]{scancode }\end{DoxyParamCaption})}
+
+
+
+converts a variable passed buy reference to a pointer that can be interpreted in assembly 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scancode} & scancode passed by reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+result of kbc\+\_\+read\+\_\+ass 
+\end{DoxyReturn}
+\hypertarget{group__kbc_ga54b191a4ae0a5ed8d23e31cd50eb4868}{}\label{group__kbc_ga54b191a4ae0a5ed8d23e31cd50eb4868} 
+\index{kbc@{kbc}!kbc\+\_\+cmd\+\_\+issue@{kbc\+\_\+cmd\+\_\+issue}}
+\index{kbc\+\_\+cmd\+\_\+issue@{kbc\+\_\+cmd\+\_\+issue}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbc\+\_\+cmd\+\_\+issue()}{kbc\_cmd\_issue()}}
+{\footnotesize\ttfamily int kbc\+\_\+cmd\+\_\+issue (\begin{DoxyParamCaption}\item[{unsigned long}]{cmd }\end{DoxyParamCaption})}
+
+
+
+issues a command to kbc 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & command to be issued \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{group__kbc_gad9d71d9448d7e3796e22f696863b7453}{}\label{group__kbc_gad9d71d9448d7e3796e22f696863b7453} 
+\index{kbc@{kbc}!kbc\+\_\+cmd\+\_\+read@{kbc\+\_\+cmd\+\_\+read}}
+\index{kbc\+\_\+cmd\+\_\+read@{kbc\+\_\+cmd\+\_\+read}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbc\+\_\+cmd\+\_\+read()}{kbc\_cmd\_read()}}
+{\footnotesize\ttfamily int kbc\+\_\+cmd\+\_\+read (\begin{DoxyParamCaption}\item[{unsigned long $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+reads a command from kbc 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & variable that stores the command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{group__kbc_gaa8b3453e895793f84cfc40e9cf04dd03}{}\label{group__kbc_gaa8b3453e895793f84cfc40e9cf04dd03} 
+\index{kbc@{kbc}!kbd\+\_\+cmd\+\_\+issue@{kbd\+\_\+cmd\+\_\+issue}}
+\index{kbd\+\_\+cmd\+\_\+issue@{kbd\+\_\+cmd\+\_\+issue}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbd\+\_\+cmd\+\_\+issue()}{kbd\_cmd\_issue()}}
+{\footnotesize\ttfamily int kbd\+\_\+cmd\+\_\+issue (\begin{DoxyParamCaption}\item[{unsigned long}]{cmd }\end{DoxyParamCaption})}
+
+
+
+issues a command to kbd 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & command to be issued \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{group__kbc_ga9a48bf91bd53208baa5627dd2a39e24d}{}\label{group__kbc_ga9a48bf91bd53208baa5627dd2a39e24d} 
+\index{kbc@{kbc}!kbd\+\_\+cmd\+\_\+write@{kbd\+\_\+cmd\+\_\+write}}
+\index{kbd\+\_\+cmd\+\_\+write@{kbd\+\_\+cmd\+\_\+write}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbd\+\_\+cmd\+\_\+write()}{kbd\_cmd\_write()}}
+{\footnotesize\ttfamily int kbd\+\_\+cmd\+\_\+write (\begin{DoxyParamCaption}\item[{unsigned int}]{n,  }\item[{unsigned long $\ast$}]{cmds }\end{DoxyParamCaption})}
+
+
+
+writes a complete command to kbd this function is different from the previous one because in this case it has to write several bits to kbd 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & total number of commands to be written \\
+\hline
+{\em cmds} & commands to be issued \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{group__kbc_ga9a48bf91bd53208baa5627dd2a39e24d_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{group__kbc_ga8efa408da2468eaa11a0c515dfa8d79f}{}\label{group__kbc_ga8efa408da2468eaa11a0c515dfa8d79f} 
+\index{kbc@{kbc}!kbd\+\_\+subscribe\+\_\+int@{kbd\+\_\+subscribe\+\_\+int}}
+\index{kbd\+\_\+subscribe\+\_\+int@{kbd\+\_\+subscribe\+\_\+int}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbd\+\_\+subscribe\+\_\+int()}{kbd\_subscribe\_int()}}
+{\footnotesize\ttfamily int kbd\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{unsigned int $\ast$}]{kbd\+\_\+hook\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+subscribes a keyboard interruption 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kbd\+\_\+hook\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{group__kbc_ga32ab97f6b806fa3a0524e62af55aeb0e}{}\label{group__kbc_ga32ab97f6b806fa3a0524e62af55aeb0e} 
+\index{kbc@{kbc}!kbd\+\_\+unsubscribe\+\_\+int@{kbd\+\_\+unsubscribe\+\_\+int}}
+\index{kbd\+\_\+unsubscribe\+\_\+int@{kbd\+\_\+unsubscribe\+\_\+int}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbd\+\_\+unsubscribe\+\_\+int()}{kbd\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int kbd\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}\item[{unsigned int $\ast$}]{kbd\+\_\+hook\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+unsubscribes a keyboard interruption 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kbd\+\_\+hook\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}

@@ -1,0 +1,45 @@
+\hypertarget{video__gr_8h}{}\section{video\+\_\+gr.\+h File Reference}
+\label{video__gr_8h}\index{video\+\_\+gr.\+h@{video\+\_\+gr.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__gr_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{group__video__gr_ga80f6be1470280496d613f43fbf4f576c}{get\+Mouse\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em gets pointer to variable mouse\+\_\+buffer \end{DoxyCompactList}\item 
+unsigned \hyperlink{group__video__gr_gafa0e51016d7aa337778300ba2ec70a74}{get\+Double\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em gets pointer to variable double\+\_\+buffer \end{DoxyCompactList}\item 
+unsigned \hyperlink{group__video__gr_gae633b6fb3ed1e90fdcbc7b4c65ffe2ef}{get\+Video\+\_\+\+\_\+mem} ()
+\begin{DoxyCompactList}\small\item\em gets pointer to variable video\+\_\+mem \end{DoxyCompactList}\item 
+unsigned \hyperlink{group__video__gr_gaf597a67a797839097222fa9b4ae20b3f}{get\+H\+\_\+res} ()
+\begin{DoxyCompactList}\small\item\em gets horizontal resolution of the screen \end{DoxyCompactList}\item 
+unsigned \hyperlink{group__video__gr_ga36f1c43e43d903e085207548cf8d48a2}{get\+V\+\_\+res} ()
+\begin{DoxyCompactList}\small\item\em gets vertical resolution of the screen \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{group__video__gr_gacef21667c79365d57a084bed994c2189}{vg\+\_\+init} (unsigned short mode)
+\begin{DoxyCompactList}\small\item\em Initializes the video module in graphics mode. \end{DoxyCompactList}\item 
+int \hyperlink{group__video__gr_ga42f593e6656f1a978315aff02b1bcebf}{vg\+\_\+exit} (void)
+\begin{DoxyCompactList}\small\item\em Returns to default Minix 3 text mode (0x03\+: 25 x 80, 16 colors) \end{DoxyCompactList}\item 
+int \hyperlink{group__video__gr_ga729c07175ab64956c7fd9944d7676888}{vg\+\_\+set\+\_\+pixel} (int x, int y, unsigned int color)
+\begin{DoxyCompactList}\small\item\em sets the color of a pixel in the double buffer and in the mouse buffer \end{DoxyCompactList}\item 
+int \hyperlink{group__video__gr_ga78765c3e4634b79d0c27b464be410803}{vg\+\_\+set\+\_\+mouse\+\_\+pixel} (int x, int y, unsigned int color)
+\begin{DoxyCompactList}\small\item\em sets the color of a pixel in the mouse buffer \end{DoxyCompactList}\item 
+int \hyperlink{group__video__gr_gafcdcee0785e2e5a0d0f1f460bf436403}{vg\+\_\+draw\+\_\+square} (int xi, int yi, int size, int color)
+\begin{DoxyCompactList}\small\item\em draws a square in the double buffer and in the mouse buffer \end{DoxyCompactList}\item 
+int \hyperlink{group__video__gr_ga0410a09b926582249fb7c0a795c9d4fe}{vg\+\_\+draw\+\_\+circle} (int xi, int yi, int radius, int color)
+\begin{DoxyCompactList}\small\item\em draws a circle in the double buffer and in the mouse buffer \end{DoxyCompactList}\item 
+int \hyperlink{group__video__gr_gae50eb47e283e71498d323e815411acc3}{swap\+\_\+double\+\_\+video} ()
+\begin{DoxyCompactList}\small\item\em copies the double\+\_\+buffer into the video\+\_\+buffer \end{DoxyCompactList}\item 
+int \hyperlink{group__video__gr_ga8761e145d6f2249e0a4177ed7ff24299}{swap\+\_\+mouse\+\_\+video} ()
+\begin{DoxyCompactList}\small\item\em copies the mouse\+\_\+buffer into the video\+\_\+buffer \end{DoxyCompactList}\item 
+int \hyperlink{group__video__gr_ga56155e15f2cbeb0c0790c3b22db43a78}{swap\+\_\+mouse\+\_\+double} ()
+\begin{DoxyCompactList}\small\item\em copies the mouse\+\_\+buffer into the double\+\_\+buffer \end{DoxyCompactList}\item 
+int \hyperlink{group__video__gr_gacbc2b21e05ad693bb6ed614f87329f05}{swap\+\_\+double\+\_\+mouse} ()
+\begin{DoxyCompactList}\small\item\em copies the double\+\_\+buffer into the mouse\+\_\+buffer \end{DoxyCompactList}\item 
+int \hyperlink{group__video__gr_gaeae89e446fefdba5e72413ff38727f44}{mouse\+\_\+to\+\_\+double} (int x, int y)
+\begin{DoxyCompactList}\small\item\em sets a pixel in the mouse buffer to the color of the corresponding pixel in the double buffer \end{DoxyCompactList}\end{DoxyCompactItemize}

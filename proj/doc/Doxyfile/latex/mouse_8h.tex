@@ -1,0 +1,30 @@
+\hypertarget{mouse_8h}{}\section{mouse.\+h File Reference}
+\label{mouse_8h}\index{mouse.\+h@{mouse.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmouse__packet__t}{mouse\+\_\+packet\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__mouse_gad607aaa8fd9833789fcd2b99c86dfc34}{mouse\+\_\+subscribe\+\_\+int} (unsigned int $\ast$mouse\+\_\+hook\+\_\+id)
+\begin{DoxyCompactList}\small\item\em subscribes a mouse interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__mouse_gaa40354aab63adaf9ecddd01255efd918}{mouse\+\_\+unsubscribe\+\_\+int} (unsigned int $\ast$mouse\+\_\+hook\+\_\+id)
+\begin{DoxyCompactList}\small\item\em unsubscribes a timer interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__mouse_ga42d943d35caacd5219cf4ef665b9bc42}{mouse\+\_\+cmd\+\_\+write} (unsigned long cmd)
+\begin{DoxyCompactList}\small\item\em writes a command to kbd \end{DoxyCompactList}\item 
+int \hyperlink{group__mouse_ga3a8a668ee784e6662fb1c2fd31e811b0}{mouse\+\_\+cmd\+\_\+read} (unsigned long $\ast$data)
+\begin{DoxyCompactList}\small\item\em reads a command from mouse \end{DoxyCompactList}\item 
+int \hyperlink{group__mouse_ga936c78f40a1d0b1acfd4f0368a9b8137}{mouse\+\_\+get\+\_\+packet} (unsigned long $\ast$next\+\_\+byte, unsigned char $\ast$packet)
+\begin{DoxyCompactList}\small\item\em gets a packet from mouse \end{DoxyCompactList}\item 
+void \hyperlink{group__mouse_gaf1a4587fac965330aca5079ae1313327}{mouse\+\_\+convert\+\_\+packet} (unsigned char $\ast$array\+\_\+packet, \hyperlink{structmouse__packet__t}{mouse\+\_\+packet\+\_\+t} $\ast$packet)
+\begin{DoxyCompactList}\small\item\em convert a packet array to mouse packet that is more user friendly \end{DoxyCompactList}\end{DoxyCompactItemize}

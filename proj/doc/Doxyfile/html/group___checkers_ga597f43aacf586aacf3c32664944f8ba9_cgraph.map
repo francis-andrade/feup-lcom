@@ -1,0 +1,6 @@
+<map id="move_mouse" name="move_mouse">
+<area shape="rect" id="node2" href="$group__video__gr.html#gaeae89e446fefdba5e72413ff38727f44" title="sets a pixel in the mouse buffer to the color of the corresponding pixel in the double buffer ..." alt="" coords="157,5,281,32"/>
+<area shape="rect" id="node3" href="$group___checkers.html#ga0580c6365cfa09e2d8a30d3d47f3adb1" title="draws the the mouse circle " alt="" coords="152,56,285,83"/>
+<area shape="rect" id="node5" href="$group___checkers.html#ga0f9d87b0bea416d794ed80855026d550" title="draws a mouse " alt="" coords="171,107,266,133"/>
+<area shape="rect" id="node4" href="$group__video__gr.html#ga78765c3e4634b79d0c27b464be410803" title="sets the color of a pixel in the mouse buffer " alt="" coords="333,81,472,108"/>
+</map>

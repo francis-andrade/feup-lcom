@@ -1,0 +1,5 @@
+<map id="draw_board" name="draw_board">
+<area shape="rect" id="node2" href="$group__video__gr.html#gafcdcee0785e2e5a0d0f1f460bf436403" title="draws a square in the double buffer and in the mouse buffer " alt="" coords="141,5,256,32"/>
+<area shape="rect" id="node4" href="$group__video__gr.html#ga0410a09b926582249fb7c0a795c9d4fe" title="draws a circle in the double buffer and in the mouse buffer " alt="" coords="145,56,252,83"/>
+<area shape="rect" id="node3" href="$group__video__gr.html#ga729c07175ab64956c7fd9944d7676888" title="sets the color of a pixel in the double buffer and in the mouse buffer " alt="" coords="304,31,397,57"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="checkers_move_handler" name="checkers_move_handler">
+<area shape="rect" id="node2" href="$group___checkers.html#ga597f43aacf586aacf3c32664944f8ba9" title="moves mouse (x_delta, y_delta) " alt="" coords="237,56,335,83"/>
+<area shape="rect" id="node7" href="$group__video__gr.html#ga8761e145d6f2249e0a4177ed7ff24299" title="copies the mouse_buffer into the video_buffer " alt="" coords="219,107,353,133"/>
+<area shape="rect" id="node8" href="$group___checkers.html#gae4a0f98e772d41a53d13748a7d9d1252" title="converts screen coordinates to board coordinates " alt="" coords="217,157,355,184"/>
+<area shape="rect" id="node9" href="$group___checkers.html#gaf3fd6677c55727d50220875a0031230b" title="places an empty square " alt="" coords="429,157,516,184"/>
+<area shape="rect" id="node11" href="$group__video__gr.html#gacbc2b21e05ad693bb6ed614f87329f05" title="copies the double_buffer into the mouse_buffer " alt="" coords="215,259,357,285"/>
+<area shape="rect" id="node12" href="$group___program_logic.html#ga02801d684d1f985fcaff098e12a0bf59" title="Moves disc in the given position(xi,yi) to final position also given(xf,yf). " alt="" coords="247,309,325,336"/>
+<area shape="rect" id="node16" href="$group___checkers.html#ga1d2d36062ce4e9fcdba43dfdc59215d0" title="places a circle " alt="" coords="247,360,325,387"/>
+<area shape="rect" id="node18" href="$group___checkers.html#gac0cf60fd44a44bbb1a7c9ff7ec0d998b" title="Sends a message saying that a player did a move. " alt="" coords="223,411,349,437"/>
+<area shape="rect" id="node20" href="$group___checkers.html#ga01bdfba712e2ceab4902f5cd63f6b482" title="draws the turn message that says who should play now " alt="" coords="217,461,355,488"/>
+<area shape="rect" id="node3" href="$group__video__gr.html#gaeae89e446fefdba5e72413ff38727f44" title="sets a pixel in the mouse buffer to the color of the corresponding pixel in the double buffer ..." alt="" coords="411,5,535,32"/>
+<area shape="rect" id="node4" href="$group___checkers.html#ga0580c6365cfa09e2d8a30d3d47f3adb1" title="draws the the mouse circle " alt="" coords="406,56,539,83"/>
+<area shape="rect" id="node6" href="$group___checkers.html#ga0f9d87b0bea416d794ed80855026d550" title="draws a mouse " alt="" coords="425,107,520,133"/>
+<area shape="rect" id="node5" href="$group__video__gr.html#ga78765c3e4634b79d0c27b464be410803" title="sets the color of a pixel in the mouse buffer " alt="" coords="588,81,727,108"/>
+<area shape="rect" id="node10" href="$group__video__gr.html#ga729c07175ab64956c7fd9944d7676888" title="sets the color of a pixel in the double buffer and in the mouse buffer " alt="" coords="611,360,704,387"/>
+<area shape="rect" id="node13" href="$group___program_logic.html#ga0862e9966f69666bb39dbf1c58863c3b" title="Verifies if given initial position(xi,yi) can do a capture move or not. " alt="" coords="409,208,536,235"/>
+<area shape="rect" id="node14" href="$group___program_logic.html#ga484dd8982591f724c6ff6749bba6869a" title="Moves disc in the given position(xi,yi) to final position also given(xf,yf). " alt="" coords="425,259,520,285"/>
+<area shape="rect" id="node15" href="$group___program_logic.html#ga5de7cebab5418f009cebb5dc73e50cd2" title="Moves disc in the given position(xi,yi) to final position also given(xf,yf), making a capture move..." alt="" coords="408,309,537,336"/>
+<area shape="rect" id="node17" href="$group__video__gr.html#ga0410a09b926582249fb7c0a795c9d4fe" title="draws a circle in the double buffer and in the mouse buffer " alt="" coords="419,360,526,387"/>
+<area shape="rect" id="node19" href="$group__ser__port.html#ga9ce4605b9346d093f446fa48b495406b" title="transmits a char through the serial port " alt="" coords="405,411,540,437"/>
+</map>

@@ -1,0 +1,40 @@
+\hypertarget{rtc_8c}{}\section{rtc.\+c File Reference}
+\label{rtc_8c}\index{rtc.\+c@{rtc.\+c}}
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utilities.\+h\char`\"{}}\newline
+Include dependency graph for rtc.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{rtc_8c_a3a8ea58898cb58fc96013383d39f482c}{B\+IT}(n)~(0x01$<$$<$(n))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__rtc_ga3b9f4583bad77c33ea0e82c1c1ad5305}{rtc\+\_\+subscribe\+\_\+int} (unsigned int $\ast$rtc\+\_\+hook\+\_\+id)
+\begin{DoxyCompactList}\small\item\em subscribes a R\+TC interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__rtc_ga61932ec1f55303bac55dea276d2a141f}{rtc\+\_\+unsubscribe\+\_\+int} (unsigned int $\ast$rtc\+\_\+hook\+\_\+id)
+\begin{DoxyCompactList}\small\item\em unsubscribes a R\+TC interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__rtc_ga9a66dc15a321b825a97887478a95e28f}{rtc\+\_\+read} (unsigned int reg, unsigned int $\ast$inf)
+\begin{DoxyCompactList}\small\item\em reads from the rtc \end{DoxyCompactList}\item 
+int \hyperlink{group__rtc_ga83dbab748017bcc8531622b94cca1be1}{rtc\+\_\+read\+\_\+date} (\hyperlink{structdate__t}{date\+\_\+t} $\ast$date)
+\begin{DoxyCompactList}\small\item\em gets the date from the rtc \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{rtc_8c_a3a8ea58898cb58fc96013383d39f482c}{}\label{rtc_8c_a3a8ea58898cb58fc96013383d39f482c} 
+\index{rtc.\+c@{rtc.\+c}!B\+IT@{B\+IT}}
+\index{B\+IT@{B\+IT}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{B\+IT}{BIT}}
+{\footnotesize\ttfamily \#define B\+IT(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})~(0x01$<$$<$(n))}
+

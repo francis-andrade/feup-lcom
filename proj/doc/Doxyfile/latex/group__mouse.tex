@@ -1,0 +1,142 @@
+\hypertarget{group__mouse}{}\section{mouse}
+\label{group__mouse}\index{mouse@{mouse}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmouse__packet__t}{mouse\+\_\+packet\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__mouse_gad607aaa8fd9833789fcd2b99c86dfc34}{mouse\+\_\+subscribe\+\_\+int} (unsigned int $\ast$mouse\+\_\+hook\+\_\+id)
+\begin{DoxyCompactList}\small\item\em subscribes a mouse interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__mouse_gaa40354aab63adaf9ecddd01255efd918}{mouse\+\_\+unsubscribe\+\_\+int} (unsigned int $\ast$mouse\+\_\+hook\+\_\+id)
+\begin{DoxyCompactList}\small\item\em unsubscribes a timer interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__mouse_ga42d943d35caacd5219cf4ef665b9bc42}{mouse\+\_\+cmd\+\_\+write} (unsigned long cmd)
+\begin{DoxyCompactList}\small\item\em writes a command to kbd \end{DoxyCompactList}\item 
+int \hyperlink{group__mouse_ga3a8a668ee784e6662fb1c2fd31e811b0}{mouse\+\_\+cmd\+\_\+read} (unsigned long $\ast$data)
+\begin{DoxyCompactList}\small\item\em reads a command from mouse \end{DoxyCompactList}\item 
+int \hyperlink{group__mouse_ga936c78f40a1d0b1acfd4f0368a9b8137}{mouse\+\_\+get\+\_\+packet} (unsigned long $\ast$next\+\_\+byte, unsigned char $\ast$packet)
+\begin{DoxyCompactList}\small\item\em gets a packet from mouse \end{DoxyCompactList}\item 
+void \hyperlink{group__mouse_gaf1a4587fac965330aca5079ae1313327}{mouse\+\_\+convert\+\_\+packet} (unsigned char $\ast$array\+\_\+packet, \hyperlink{structmouse__packet__t}{mouse\+\_\+packet\+\_\+t} $\ast$packet)
+\begin{DoxyCompactList}\small\item\em convert a packet array to mouse packet that is more user friendly \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to manipulate the mouse 
+
+\subsection{Function Documentation}
+\hypertarget{group__mouse_ga3a8a668ee784e6662fb1c2fd31e811b0}{}\label{group__mouse_ga3a8a668ee784e6662fb1c2fd31e811b0} 
+\index{mouse@{mouse}!mouse\+\_\+cmd\+\_\+read@{mouse\+\_\+cmd\+\_\+read}}
+\index{mouse\+\_\+cmd\+\_\+read@{mouse\+\_\+cmd\+\_\+read}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+cmd\+\_\+read()}{mouse\_cmd\_read()}}
+{\footnotesize\ttfamily int mouse\+\_\+cmd\+\_\+read (\begin{DoxyParamCaption}\item[{unsigned long $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+reads a command from mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & variable that stores the command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 0
+\hypertarget{group__mouse_ga42d943d35caacd5219cf4ef665b9bc42}{}\label{group__mouse_ga42d943d35caacd5219cf4ef665b9bc42} 
+\index{mouse@{mouse}!mouse\+\_\+cmd\+\_\+write@{mouse\+\_\+cmd\+\_\+write}}
+\index{mouse\+\_\+cmd\+\_\+write@{mouse\+\_\+cmd\+\_\+write}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+cmd\+\_\+write()}{mouse\_cmd\_write()}}
+{\footnotesize\ttfamily int mouse\+\_\+cmd\+\_\+write (\begin{DoxyParamCaption}\item[{unsigned long}]{cmd }\end{DoxyParamCaption})}
+
+
+
+writes a command to kbd 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+hook\+\_\+id} & pointer to the hook of the mouse\\
+\hline
+{\em cmd} & command to be issued\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+\hypertarget{group__mouse_gaf1a4587fac965330aca5079ae1313327}{}\label{group__mouse_gaf1a4587fac965330aca5079ae1313327} 
+\index{mouse@{mouse}!mouse\+\_\+convert\+\_\+packet@{mouse\+\_\+convert\+\_\+packet}}
+\index{mouse\+\_\+convert\+\_\+packet@{mouse\+\_\+convert\+\_\+packet}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+convert\+\_\+packet()}{mouse\_convert\_packet()}}
+{\footnotesize\ttfamily void mouse\+\_\+convert\+\_\+packet (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{array\+\_\+packet,  }\item[{\hyperlink{structmouse__packet__t}{mouse\+\_\+packet\+\_\+t} $\ast$}]{packet }\end{DoxyParamCaption})}
+
+
+
+convert a packet array to mouse packet that is more user friendly 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\+\_\+packet} & -\/$>$ array packet \\
+\hline
+{\em packet} & -\/$>$ variable that is going to store the mouse packet \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+\hypertarget{group__mouse_ga936c78f40a1d0b1acfd4f0368a9b8137}{}\label{group__mouse_ga936c78f40a1d0b1acfd4f0368a9b8137} 
+\index{mouse@{mouse}!mouse\+\_\+get\+\_\+packet@{mouse\+\_\+get\+\_\+packet}}
+\index{mouse\+\_\+get\+\_\+packet@{mouse\+\_\+get\+\_\+packet}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+get\+\_\+packet()}{mouse\_get\_packet()}}
+{\footnotesize\ttfamily int mouse\+\_\+get\+\_\+packet (\begin{DoxyParamCaption}\item[{unsigned long $\ast$}]{next\+\_\+byte,  }\item[{unsigned char $\ast$}]{packet }\end{DoxyParamCaption})}
+
+
+
+gets a packet from mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next\+\_\+byte} & next\+\_\+byte of the packet to be read \\
+\hline
+{\em packet} & variable that is going to store the packet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+\hypertarget{group__mouse_gad607aaa8fd9833789fcd2b99c86dfc34}{}\label{group__mouse_gad607aaa8fd9833789fcd2b99c86dfc34} 
+\index{mouse@{mouse}!mouse\+\_\+subscribe\+\_\+int@{mouse\+\_\+subscribe\+\_\+int}}
+\index{mouse\+\_\+subscribe\+\_\+int@{mouse\+\_\+subscribe\+\_\+int}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+subscribe\+\_\+int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily int mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{unsigned int $\ast$}]{mouse\+\_\+hook\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+subscribes a mouse interruption 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{group__mouse_gaa40354aab63adaf9ecddd01255efd918}{}\label{group__mouse_gaa40354aab63adaf9ecddd01255efd918} 
+\index{mouse@{mouse}!mouse\+\_\+unsubscribe\+\_\+int@{mouse\+\_\+unsubscribe\+\_\+int}}
+\index{mouse\+\_\+unsubscribe\+\_\+int@{mouse\+\_\+unsubscribe\+\_\+int}!mouse@{mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+unsubscribe\+\_\+int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}\item[{unsigned int $\ast$}]{mouse\+\_\+hook\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+unsubscribes a timer interruption 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+\_\+hook\+\_\+id} & pointer to the hook of the mouse\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}

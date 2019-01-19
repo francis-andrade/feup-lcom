@@ -1,0 +1,164 @@
+\hypertarget{structvbe__info__block__t}{}\section{vbe\+\_\+info\+\_\+block\+\_\+t Struct Reference}
+\label{structvbe__info__block__t}\index{vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}}
+
+
+{\ttfamily \#include $<$vbe.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{structvbe__info__block__t_ae619d4d52ca296b56a18c6ec13d4899d}{Vbe\+Signature} \mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em V\+BE Signature. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{structvbe__info__block__t_a7b9fef89774326b46f9481cbd9a397d3}{Vbe\+Version}
+\begin{DoxyCompactList}\small\item\em V\+BE Version. \end{DoxyCompactList}\item 
+phys\+\_\+bytes \hyperlink{structvbe__info__block__t_a20ab55e9dda8d437875255529c1cffe8}{Oem\+String\+Ptr}
+\begin{DoxyCompactList}\small\item\em Pointer to O\+EM String. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structvbe__info__block__t_a555521aede0ff448231fc7a404862bdb}{Capabilities} \mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em Capabilities of graphics controller. \end{DoxyCompactList}\item 
+phys\+\_\+bytes \hyperlink{structvbe__info__block__t_a9d989fdbcdad6a40c10fc28c0f9af760}{Video\+Mode\+Ptr}
+\begin{DoxyCompactList}\small\item\em Pointer to Video\+Mode\+List. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{structvbe__info__block__t_a3e7b41e709394a10b3667e7f27f1aa7a}{Total\+Memory}
+\begin{DoxyCompactList}\small\item\em Number of 64kb memory blocks. \end{DoxyCompactList}\item 
+uint16\+\_\+t \hyperlink{structvbe__info__block__t_a050873b740536c3f9c9a9b0ecb76b497}{Oem\+Software\+Rex}
+\begin{DoxyCompactList}\small\item\em V\+BE implementation Software revision. \end{DoxyCompactList}\item 
+phys\+\_\+bytes \hyperlink{structvbe__info__block__t_affd3a330afde841405f89bbcd05af4f0}{Oem\+Vendor\+Name\+Ptr}
+\begin{DoxyCompactList}\small\item\em Pointer to Vendor Name String. \end{DoxyCompactList}\item 
+phys\+\_\+bytes \hyperlink{structvbe__info__block__t_afd3d28c2078a683b1ed64ea21905fcfe}{Oem\+Product\+Name\+Ptr}
+\begin{DoxyCompactList}\small\item\em Pointer to Product Name String. \end{DoxyCompactList}\item 
+phys\+\_\+bytes \hyperlink{structvbe__info__block__t_a239cba41d0489da5b79556b45797c6b0}{Oem\+Product\+Rev\+Ptr}
+\begin{DoxyCompactList}\small\item\em Pointer to Product Revision String. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structvbe__info__block__t_a2c3b1cbb6bad5c51d4be4e57255a61d2}{Reserved} \mbox{[}222\mbox{]}
+\begin{DoxyCompactList}\small\item\em Reserved for V\+BE implementation scratch. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structvbe__info__block__t_a966ae75c33c2d65b4f0c916f093acac0}{Oem\+Data} \mbox{[}256\mbox{]}
+\begin{DoxyCompactList}\small\item\em Data Area for O\+EM Strings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Vbe\+Info\+Block struct 
+
+\subsection{Field Documentation}
+\hypertarget{structvbe__info__block__t_a555521aede0ff448231fc7a404862bdb}{}\label{structvbe__info__block__t_a555521aede0ff448231fc7a404862bdb} 
+\index{vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}!Capabilities@{Capabilities}}
+\index{Capabilities@{Capabilities}!vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}}
+\subsubsection{\texorpdfstring{Capabilities}{Capabilities}}
+{\footnotesize\ttfamily uint8\+\_\+t Capabilities\mbox{[}4\mbox{]}}
+
+
+
+Capabilities of graphics controller. 
+
+\hypertarget{structvbe__info__block__t_a966ae75c33c2d65b4f0c916f093acac0}{}\label{structvbe__info__block__t_a966ae75c33c2d65b4f0c916f093acac0} 
+\index{vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}!Oem\+Data@{Oem\+Data}}
+\index{Oem\+Data@{Oem\+Data}!vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}}
+\subsubsection{\texorpdfstring{Oem\+Data}{OemData}}
+{\footnotesize\ttfamily uint8\+\_\+t Oem\+Data\mbox{[}256\mbox{]}}
+
+
+
+Data Area for O\+EM Strings. 
+
+\hypertarget{structvbe__info__block__t_afd3d28c2078a683b1ed64ea21905fcfe}{}\label{structvbe__info__block__t_afd3d28c2078a683b1ed64ea21905fcfe} 
+\index{vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}!Oem\+Product\+Name\+Ptr@{Oem\+Product\+Name\+Ptr}}
+\index{Oem\+Product\+Name\+Ptr@{Oem\+Product\+Name\+Ptr}!vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}}
+\subsubsection{\texorpdfstring{Oem\+Product\+Name\+Ptr}{OemProductNamePtr}}
+{\footnotesize\ttfamily phys\+\_\+bytes Oem\+Product\+Name\+Ptr}
+
+
+
+Pointer to Product Name String. 
+
+\hypertarget{structvbe__info__block__t_a239cba41d0489da5b79556b45797c6b0}{}\label{structvbe__info__block__t_a239cba41d0489da5b79556b45797c6b0} 
+\index{vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}!Oem\+Product\+Rev\+Ptr@{Oem\+Product\+Rev\+Ptr}}
+\index{Oem\+Product\+Rev\+Ptr@{Oem\+Product\+Rev\+Ptr}!vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}}
+\subsubsection{\texorpdfstring{Oem\+Product\+Rev\+Ptr}{OemProductRevPtr}}
+{\footnotesize\ttfamily phys\+\_\+bytes Oem\+Product\+Rev\+Ptr}
+
+
+
+Pointer to Product Revision String. 
+
+\hypertarget{structvbe__info__block__t_a050873b740536c3f9c9a9b0ecb76b497}{}\label{structvbe__info__block__t_a050873b740536c3f9c9a9b0ecb76b497} 
+\index{vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}!Oem\+Software\+Rex@{Oem\+Software\+Rex}}
+\index{Oem\+Software\+Rex@{Oem\+Software\+Rex}!vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}}
+\subsubsection{\texorpdfstring{Oem\+Software\+Rex}{OemSoftwareRex}}
+{\footnotesize\ttfamily uint16\+\_\+t Oem\+Software\+Rex}
+
+
+
+V\+BE implementation Software revision. 
+
+\hypertarget{structvbe__info__block__t_a20ab55e9dda8d437875255529c1cffe8}{}\label{structvbe__info__block__t_a20ab55e9dda8d437875255529c1cffe8} 
+\index{vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}!Oem\+String\+Ptr@{Oem\+String\+Ptr}}
+\index{Oem\+String\+Ptr@{Oem\+String\+Ptr}!vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}}
+\subsubsection{\texorpdfstring{Oem\+String\+Ptr}{OemStringPtr}}
+{\footnotesize\ttfamily phys\+\_\+bytes Oem\+String\+Ptr}
+
+
+
+Pointer to O\+EM String. 
+
+\hypertarget{structvbe__info__block__t_affd3a330afde841405f89bbcd05af4f0}{}\label{structvbe__info__block__t_affd3a330afde841405f89bbcd05af4f0} 
+\index{vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}!Oem\+Vendor\+Name\+Ptr@{Oem\+Vendor\+Name\+Ptr}}
+\index{Oem\+Vendor\+Name\+Ptr@{Oem\+Vendor\+Name\+Ptr}!vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}}
+\subsubsection{\texorpdfstring{Oem\+Vendor\+Name\+Ptr}{OemVendorNamePtr}}
+{\footnotesize\ttfamily phys\+\_\+bytes Oem\+Vendor\+Name\+Ptr}
+
+
+
+Pointer to Vendor Name String. 
+
+\hypertarget{structvbe__info__block__t_a2c3b1cbb6bad5c51d4be4e57255a61d2}{}\label{structvbe__info__block__t_a2c3b1cbb6bad5c51d4be4e57255a61d2} 
+\index{vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}!Reserved@{Reserved}}
+\index{Reserved@{Reserved}!vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}}
+\subsubsection{\texorpdfstring{Reserved}{Reserved}}
+{\footnotesize\ttfamily uint8\+\_\+t Reserved\mbox{[}222\mbox{]}}
+
+
+
+Reserved for V\+BE implementation scratch. 
+
+\hypertarget{structvbe__info__block__t_a3e7b41e709394a10b3667e7f27f1aa7a}{}\label{structvbe__info__block__t_a3e7b41e709394a10b3667e7f27f1aa7a} 
+\index{vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}!Total\+Memory@{Total\+Memory}}
+\index{Total\+Memory@{Total\+Memory}!vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}}
+\subsubsection{\texorpdfstring{Total\+Memory}{TotalMemory}}
+{\footnotesize\ttfamily uint16\+\_\+t Total\+Memory}
+
+
+
+Number of 64kb memory blocks. 
+
+\hypertarget{structvbe__info__block__t_ae619d4d52ca296b56a18c6ec13d4899d}{}\label{structvbe__info__block__t_ae619d4d52ca296b56a18c6ec13d4899d} 
+\index{vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}!Vbe\+Signature@{Vbe\+Signature}}
+\index{Vbe\+Signature@{Vbe\+Signature}!vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}}
+\subsubsection{\texorpdfstring{Vbe\+Signature}{VbeSignature}}
+{\footnotesize\ttfamily uint8\+\_\+t Vbe\+Signature\mbox{[}4\mbox{]}}
+
+
+
+V\+BE Signature. 
+
+\hypertarget{structvbe__info__block__t_a7b9fef89774326b46f9481cbd9a397d3}{}\label{structvbe__info__block__t_a7b9fef89774326b46f9481cbd9a397d3} 
+\index{vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}!Vbe\+Version@{Vbe\+Version}}
+\index{Vbe\+Version@{Vbe\+Version}!vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}}
+\subsubsection{\texorpdfstring{Vbe\+Version}{VbeVersion}}
+{\footnotesize\ttfamily uint16\+\_\+t Vbe\+Version}
+
+
+
+V\+BE Version. 
+
+\hypertarget{structvbe__info__block__t_a9d989fdbcdad6a40c10fc28c0f9af760}{}\label{structvbe__info__block__t_a9d989fdbcdad6a40c10fc28c0f9af760} 
+\index{vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}!Video\+Mode\+Ptr@{Video\+Mode\+Ptr}}
+\index{Video\+Mode\+Ptr@{Video\+Mode\+Ptr}!vbe\+\_\+info\+\_\+block\+\_\+t@{vbe\+\_\+info\+\_\+block\+\_\+t}}
+\subsubsection{\texorpdfstring{Video\+Mode\+Ptr}{VideoModePtr}}
+{\footnotesize\ttfamily phys\+\_\+bytes Video\+Mode\+Ptr}
+
+
+
+Pointer to Video\+Mode\+List. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vbe_8h}{vbe.\+h}\end{DoxyCompactItemize}

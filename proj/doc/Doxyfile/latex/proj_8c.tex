@@ -1,0 +1,60 @@
+\hypertarget{proj_8c}{}\section{proj.\+c File Reference}
+\label{proj_8c}\index{proj.\+c@{proj.\+c}}
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}checkers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utilities.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}proj.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ser\+\_\+port.\+h\char`\"{}}\newline
+Include dependency graph for proj.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proj_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{proj_8c_a7721a8566abc323f59672fdde30d3e20}{print\+\_\+usage} (char $\ast$$\ast$argv)
+\item 
+static int \hyperlink{proj_8c_a97b25d50dc55b5c8c2315fd010bc2957}{proc\+\_\+args} (int argc, char $\ast$$\ast$argv)
+\item 
+static void \hyperlink{proj_8c_a3310cf47c29dd0f685c58e04fac7be4a}{ret\+\_\+path\+\_\+images} (char $\ast$arg, char $\ast$path\+\_\+images)
+\item 
+int \hyperlink{group__proj_ga3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Main Function. \end{DoxyCompactList}\item 
+int \hyperlink{group__proj_gac4a55a52afabd10db600de603282ff99}{connect\+\_\+serial} (char player, char $\ast$arg0)
+\begin{DoxyCompactList}\small\item\em establishes a connection in the serial port \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{proj_8c_a7721a8566abc323f59672fdde30d3e20}{}\label{proj_8c_a7721a8566abc323f59672fdde30d3e20} 
+\index{proj.\+c@{proj.\+c}!print\+\_\+usage@{print\+\_\+usage}}
+\index{print\+\_\+usage@{print\+\_\+usage}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{print\+\_\+usage()}{print\_usage()}}
+{\footnotesize\ttfamily static void print\+\_\+usage (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{proj_8c_a97b25d50dc55b5c8c2315fd010bc2957}{}\label{proj_8c_a97b25d50dc55b5c8c2315fd010bc2957} 
+\index{proj.\+c@{proj.\+c}!proc\+\_\+args@{proc\+\_\+args}}
+\index{proc\+\_\+args@{proc\+\_\+args}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{proc\+\_\+args()}{proc\_args()}}
+{\footnotesize\ttfamily static int proc\+\_\+args (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proj_8c_a97b25d50dc55b5c8c2315fd010bc2957_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{proj_8c_a3310cf47c29dd0f685c58e04fac7be4a}{}\label{proj_8c_a3310cf47c29dd0f685c58e04fac7be4a} 
+\index{proj.\+c@{proj.\+c}!ret\+\_\+path\+\_\+images@{ret\+\_\+path\+\_\+images}}
+\index{ret\+\_\+path\+\_\+images@{ret\+\_\+path\+\_\+images}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{ret\+\_\+path\+\_\+images()}{ret\_path\_images()}}
+{\footnotesize\ttfamily static void ret\+\_\+path\+\_\+images (\begin{DoxyParamCaption}\item[{char $\ast$}]{arg,  }\item[{char $\ast$}]{path\+\_\+images }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+

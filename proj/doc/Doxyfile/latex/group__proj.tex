@@ -1,0 +1,131 @@
+\hypertarget{group__proj}{}\section{proj}
+\label{group__proj}\index{proj@{proj}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__proj_ga698fc99ce97e8051ede3e8e9c9baaaf1}{P\+O\+R\+T\+\_\+\+A\+D\+DR}~\hyperlink{group__ser__port_ga98199cd85fbe47b9a741b07762260422}{S\+E\+R\+\_\+\+C\+O\+M1\+\_\+\+A\+D\+DR}
+\item 
+\#define \hyperlink{group__proj_ga108355009766d90bac37c294fad39ca5}{P\+O\+R\+T\+\_\+\+B\+I\+TS}~8
+\item 
+\#define \hyperlink{group__proj_ga31b06d45be51d1c232d4cb34be4d385b}{P\+O\+R\+T\+\_\+\+S\+T\+OP}~2
+\item 
+\#define \hyperlink{group__proj_gaf868e5bf4fd27a5f53de530ce879dee4}{P\+O\+R\+T\+\_\+\+P\+A\+R\+I\+TY}~0
+\item 
+\#define \hyperlink{group__proj_gaa892a49ac9cab99bd99907f48a535b72}{P\+O\+R\+T\+\_\+\+R\+A\+TE}~9600
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__proj_ga3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Main Function. \end{DoxyCompactList}\item 
+static void \hyperlink{group__proj_ga7721a8566abc323f59672fdde30d3e20}{print\+\_\+usage} (char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em print\+\_\+usage \end{DoxyCompactList}\item 
+static int \hyperlink{group__proj_ga97b25d50dc55b5c8c2315fd010bc2957}{proc\+\_\+args} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em print\+\_\+args \end{DoxyCompactList}\item 
+static void \hyperlink{group__proj_ga3310cf47c29dd0f685c58e04fac7be4a}{ret\+\_\+path\+\_\+images} (char $\ast$arg, char $\ast$path\+\_\+images)
+\begin{DoxyCompactList}\small\item\em ret\+\_\+path\+\_\+images \end{DoxyCompactList}\item 
+int \hyperlink{group__proj_gac4a55a52afabd10db600de603282ff99}{connect\+\_\+serial} (char player, char $\ast$arg0)
+\begin{DoxyCompactList}\small\item\em establishes a connection in the serial port \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main function and serial port connection function 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group__proj_ga698fc99ce97e8051ede3e8e9c9baaaf1}{}\label{group__proj_ga698fc99ce97e8051ede3e8e9c9baaaf1} 
+\index{proj@{proj}!P\+O\+R\+T\+\_\+\+A\+D\+DR@{P\+O\+R\+T\+\_\+\+A\+D\+DR}}
+\index{P\+O\+R\+T\+\_\+\+A\+D\+DR@{P\+O\+R\+T\+\_\+\+A\+D\+DR}!proj@{proj}}
+\subsubsection{\texorpdfstring{P\+O\+R\+T\+\_\+\+A\+D\+DR}{PORT\_ADDR}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+A\+D\+DR~\hyperlink{group__ser__port_ga98199cd85fbe47b9a741b07762260422}{S\+E\+R\+\_\+\+C\+O\+M1\+\_\+\+A\+D\+DR}}
+
+\hypertarget{group__proj_ga108355009766d90bac37c294fad39ca5}{}\label{group__proj_ga108355009766d90bac37c294fad39ca5} 
+\index{proj@{proj}!P\+O\+R\+T\+\_\+\+B\+I\+TS@{P\+O\+R\+T\+\_\+\+B\+I\+TS}}
+\index{P\+O\+R\+T\+\_\+\+B\+I\+TS@{P\+O\+R\+T\+\_\+\+B\+I\+TS}!proj@{proj}}
+\subsubsection{\texorpdfstring{P\+O\+R\+T\+\_\+\+B\+I\+TS}{PORT\_BITS}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+B\+I\+TS~8}
+
+\hypertarget{group__proj_gaf868e5bf4fd27a5f53de530ce879dee4}{}\label{group__proj_gaf868e5bf4fd27a5f53de530ce879dee4} 
+\index{proj@{proj}!P\+O\+R\+T\+\_\+\+P\+A\+R\+I\+TY@{P\+O\+R\+T\+\_\+\+P\+A\+R\+I\+TY}}
+\index{P\+O\+R\+T\+\_\+\+P\+A\+R\+I\+TY@{P\+O\+R\+T\+\_\+\+P\+A\+R\+I\+TY}!proj@{proj}}
+\subsubsection{\texorpdfstring{P\+O\+R\+T\+\_\+\+P\+A\+R\+I\+TY}{PORT\_PARITY}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+P\+A\+R\+I\+TY~0}
+
+\hypertarget{group__proj_gaa892a49ac9cab99bd99907f48a535b72}{}\label{group__proj_gaa892a49ac9cab99bd99907f48a535b72} 
+\index{proj@{proj}!P\+O\+R\+T\+\_\+\+R\+A\+TE@{P\+O\+R\+T\+\_\+\+R\+A\+TE}}
+\index{P\+O\+R\+T\+\_\+\+R\+A\+TE@{P\+O\+R\+T\+\_\+\+R\+A\+TE}!proj@{proj}}
+\subsubsection{\texorpdfstring{P\+O\+R\+T\+\_\+\+R\+A\+TE}{PORT\_RATE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+R\+A\+TE~9600}
+
+\hypertarget{group__proj_ga31b06d45be51d1c232d4cb34be4d385b}{}\label{group__proj_ga31b06d45be51d1c232d4cb34be4d385b} 
+\index{proj@{proj}!P\+O\+R\+T\+\_\+\+S\+T\+OP@{P\+O\+R\+T\+\_\+\+S\+T\+OP}}
+\index{P\+O\+R\+T\+\_\+\+S\+T\+OP@{P\+O\+R\+T\+\_\+\+S\+T\+OP}!proj@{proj}}
+\subsubsection{\texorpdfstring{P\+O\+R\+T\+\_\+\+S\+T\+OP}{PORT\_STOP}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+S\+T\+OP~2}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{group__proj_gac4a55a52afabd10db600de603282ff99}{}\label{group__proj_gac4a55a52afabd10db600de603282ff99} 
+\index{proj@{proj}!connect\+\_\+serial@{connect\+\_\+serial}}
+\index{connect\+\_\+serial@{connect\+\_\+serial}!proj@{proj}}
+\subsubsection{\texorpdfstring{connect\+\_\+serial()}{connect\_serial()}}
+{\footnotesize\ttfamily int connect\+\_\+serial (\begin{DoxyParamCaption}\item[{char}]{player,  }\item[{char $\ast$}]{arg0 }\end{DoxyParamCaption})}
+
+
+
+establishes a connection in the serial port 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & player that is establishing the connection \\
+\hline
+{\em arg0} & parameter that will later be used to find the images path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 in case of success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 0
+\hypertarget{group__proj_ga3c04138a5bfe5d72780bb7e82a18e627}{}\label{group__proj_ga3c04138a5bfe5d72780bb7e82a18e627} 
+\index{proj@{proj}!main@{main}}
+\index{main@{main}!proj@{proj}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Main Function. 
+
+Here is the call graph for this function\+:
+% FIG 1
+\hypertarget{group__proj_ga7721a8566abc323f59672fdde30d3e20}{}\label{group__proj_ga7721a8566abc323f59672fdde30d3e20} 
+\index{proj@{proj}!print\+\_\+usage@{print\+\_\+usage}}
+\index{print\+\_\+usage@{print\+\_\+usage}!proj@{proj}}
+\subsubsection{\texorpdfstring{print\+\_\+usage()}{print\_usage()}}
+{\footnotesize\ttfamily static void print\+\_\+usage (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+print\+\_\+usage 
+
+\hypertarget{group__proj_ga97b25d50dc55b5c8c2315fd010bc2957}{}\label{group__proj_ga97b25d50dc55b5c8c2315fd010bc2957} 
+\index{proj@{proj}!proc\+\_\+args@{proc\+\_\+args}}
+\index{proc\+\_\+args@{proc\+\_\+args}!proj@{proj}}
+\subsubsection{\texorpdfstring{proc\+\_\+args()}{proc\_args()}}
+{\footnotesize\ttfamily static int proc\+\_\+args (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+print\+\_\+args 
+
+\hypertarget{group__proj_ga3310cf47c29dd0f685c58e04fac7be4a}{}\label{group__proj_ga3310cf47c29dd0f685c58e04fac7be4a} 
+\index{proj@{proj}!ret\+\_\+path\+\_\+images@{ret\+\_\+path\+\_\+images}}
+\index{ret\+\_\+path\+\_\+images@{ret\+\_\+path\+\_\+images}!proj@{proj}}
+\subsubsection{\texorpdfstring{ret\+\_\+path\+\_\+images()}{ret\_path\_images()}}
+{\footnotesize\ttfamily static void ret\+\_\+path\+\_\+images (\begin{DoxyParamCaption}\item[{char $\ast$}]{arg,  }\item[{char $\ast$}]{path\+\_\+images }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+ret\+\_\+path\+\_\+images 
+

@@ -1,0 +1,46 @@
+<map id="checkers_serial_handler" name="checkers_serial_handler">
+<area shape="rect" id="node2" href="$group___checkers.html#gad7f7feb83c536c88d67834e7e20780ee" title="converts a state to the corresponding player " alt="" coords="453,5,564,32"/>
+<area shape="rect" id="node3" href="$group___checkers.html#ga61f35c6c9bba94dcd5028e185f3ae3f6" title="handles the interrupts " alt="" coords="225,385,371,412"/>
+<area shape="rect" id="node36" href="$group___checkers.html#ga01bdfba712e2ceab4902f5cd63f6b482" title="draws the turn message that says who should play now " alt="" coords="644,816,783,843"/>
+<area shape="rect" id="node42" href="$group___checkers.html#ga17180b891d06475062d87e08d01af278" title="Waits for a message from the serial port. " alt="" coords="216,968,380,995"/>
+<area shape="rect" id="node45" href="$group___checkers.html#gaa0642fe5ef48cc14ab51722047092f1f" title="moves a piece and handles everything pertinent related to the move " alt="" coords="463,905,554,932"/>
+<area shape="rect" id="node4" href="$group__timer.html#ga915070da84f7a3baa2e0fe634cb4bcd8" title="subscribes a timer interruption " alt="" coords="441,259,576,285"/>
+<area shape="rect" id="node5" href="$group__kbc.html#ga8efa408da2468eaa11a0c515dfa8d79f" title="subscribes a keyboard interruption " alt="" coords="445,309,572,336"/>
+<area shape="rect" id="node6" href="$group__mouse.html#gad607aaa8fd9833789fcd2b99c86dfc34" title="subscribes a mouse interruption " alt="" coords="436,360,581,387"/>
+<area shape="rect" id="node7" href="$group__mouse.html#ga42d943d35caacd5219cf4ef665b9bc42" title="writes a command to kbd " alt="" coords="445,411,572,437"/>
+<area shape="rect" id="node11" href="$group__timer.html#ga05c1893c9a1e24ff5d76b2958adb8851" title="ignore_interrupts" alt="" coords="449,461,568,488"/>
+<area shape="rect" id="node12" href="$group___program_logic.html#gacfd2089a907444dab0ccd2d95f321b8b" title="Verifies if it is the end of the game. " alt="" coords="463,512,554,539"/>
+<area shape="rect" id="node13" href="$group__mouse.html#ga936c78f40a1d0b1acfd4f0368a9b8137" title="gets a packet from mouse " alt="" coords="443,563,575,589"/>
+<area shape="rect" id="node14" href="$group__mouse.html#gaf1a4587fac965330aca5079ae1313327" title="convert a packet array to mouse packet that is more user friendly " alt="" coords="431,613,586,640"/>
+<area shape="rect" id="node17" href="$group___checkers.html#gac38396bd73b19b176b4016524f63f8aa" title="handles the moves " alt="" coords="428,715,589,741"/>
+<area shape="rect" id="node37" href="$group__kbc.html#gac76f743c998918d5ff65403aa35c8b05" title="converts a variable passed buy reference to a pointer that can be interpreted in assembly ..." alt="" coords="457,765,560,792"/>
+<area shape="rect" id="node38" href="$group__mouse.html#gaa40354aab63adaf9ecddd01255efd918" title="unsubscribes a timer interruption " alt="" coords="429,56,588,83"/>
+<area shape="rect" id="node39" href="$group__kbc.html#ga32ab97f6b806fa3a0524e62af55aeb0e" title="unsubscribes a keyboard interruption " alt="" coords="438,107,579,133"/>
+<area shape="rect" id="node40" href="$group__timer.html#gab9eea51549744bca5c5c923b388bb4ee" title="unsubscribes a timer interruption " alt="" coords="434,157,583,184"/>
+<area shape="rect" id="node41" href="$group___checkers.html#gaa082b9cac17a99c54ac6fa5ac40c660d" title="sends a serial message saying that a player finished making a move with the corresponding return valu..." alt="" coords="658,233,769,260"/>
+<area shape="rect" id="node8" href="$group__kbc.html#ga54b191a4ae0a5ed8d23e31cd50eb4868" title="issues a command to kbc " alt="" coords="657,360,770,387"/>
+<area shape="rect" id="node9" href="$group__kbc.html#gaa8b3453e895793f84cfc40e9cf04dd03" title="issues a command to kbd " alt="" coords="657,309,770,336"/>
+<area shape="rect" id="node10" href="$group__kbc.html#gad9d71d9448d7e3796e22f696863b7453" title="reads a command from kbc " alt="" coords="660,411,767,437"/>
+<area shape="rect" id="node15" href="$group__utilities.html#ga79537e8684629d74571e64c633bb5303" title="converts a char to decimal " alt="" coords="654,512,773,539"/>
+<area shape="rect" id="node16" href="$group__utilities.html#gac0df2a1416cd59f12dbc6adfd5f69ba3" title="returns the opposite number in two complement to c " alt="" coords="637,461,789,488"/>
+<area shape="rect" id="node18" href="$group___checkers.html#ga597f43aacf586aacf3c32664944f8ba9" title="moves mouse (x_delta, y_delta) " alt="" coords="664,765,763,792"/>
+<area shape="rect" id="node23" href="$group__video__gr.html#ga8761e145d6f2249e0a4177ed7ff24299" title="copies the mouse_buffer into the video_buffer " alt="" coords="646,613,781,640"/>
+<area shape="rect" id="node24" href="$group___checkers.html#gae4a0f98e772d41a53d13748a7d9d1252" title="converts screen coordinates to board coordinates " alt="" coords="644,664,783,691"/>
+<area shape="rect" id="node25" href="$group___checkers.html#gaf3fd6677c55727d50220875a0031230b" title="places an empty square " alt="" coords="670,968,757,995"/>
+<area shape="rect" id="node27" href="$group__video__gr.html#gacbc2b21e05ad693bb6ed614f87329f05" title="copies the double_buffer into the mouse_buffer " alt="" coords="642,715,785,741"/>
+<area shape="rect" id="node28" href="$group___program_logic.html#ga02801d684d1f985fcaff098e12a0bf59" title="Moves disc in the given position(xi,yi) to final position also given(xf,yf). " alt="" coords="674,867,753,893"/>
+<area shape="rect" id="node32" href="$group___checkers.html#ga1d2d36062ce4e9fcdba43dfdc59215d0" title="places a circle " alt="" coords="674,917,753,944"/>
+<area shape="rect" id="node34" href="$group___checkers.html#gac0cf60fd44a44bbb1a7c9ff7ec0d998b" title="Sends a message saying that a player did a move. " alt="" coords="651,563,776,589"/>
+<area shape="rect" id="node19" href="$group__video__gr.html#gaeae89e446fefdba5e72413ff38727f44" title="sets a pixel in the mouse buffer to the color of the corresponding pixel in the double buffer ..." alt="" coords="843,664,967,691"/>
+<area shape="rect" id="node20" href="$group___checkers.html#ga0580c6365cfa09e2d8a30d3d47f3adb1" title="draws the the mouse circle " alt="" coords="838,715,971,741"/>
+<area shape="rect" id="node22" href="$group___checkers.html#ga0f9d87b0bea416d794ed80855026d550" title="draws a mouse " alt="" coords="857,765,952,792"/>
+<area shape="rect" id="node21" href="$group__video__gr.html#ga78765c3e4634b79d0c27b464be410803" title="sets the color of a pixel in the mouse buffer " alt="" coords="1020,740,1159,767"/>
+<area shape="rect" id="node26" href="$group__video__gr.html#ga729c07175ab64956c7fd9944d7676888" title="sets the color of a pixel in the double buffer and in the mouse buffer " alt="" coords="1043,1019,1136,1045"/>
+<area shape="rect" id="node29" href="$group___program_logic.html#ga0862e9966f69666bb39dbf1c58863c3b" title="Verifies if given initial position(xi,yi) can do a capture move or not. " alt="" coords="841,867,968,893"/>
+<area shape="rect" id="node30" href="$group___program_logic.html#ga484dd8982591f724c6ff6749bba6869a" title="Moves disc in the given position(xi,yi) to final position also given(xf,yf). " alt="" coords="857,917,952,944"/>
+<area shape="rect" id="node31" href="$group___program_logic.html#ga5de7cebab5418f009cebb5dc73e50cd2" title="Moves disc in the given position(xi,yi) to final position also given(xf,yf), making a capture move..." alt="" coords="840,968,969,995"/>
+<area shape="rect" id="node33" href="$group__video__gr.html#ga0410a09b926582249fb7c0a795c9d4fe" title="draws a circle in the double buffer and in the mouse buffer " alt="" coords="851,1019,958,1045"/>
+<area shape="rect" id="node35" href="$group__ser__port.html#ga9ce4605b9346d093f446fa48b495406b" title="transmits a char through the serial port " alt="" coords="837,399,972,425"/>
+<area shape="rect" id="node43" href="$group__ser__port.html#gae9c2959fb0c4f39b96c4621d985f5ed2" title="receive a char through the serial port " alt="" coords="435,981,582,1008"/>
+<area shape="rect" id="node44" href="$group__ser__port.html#gaf51d56fa6069ce68bb9f34a1396b2ea1" title="Checks if the lsr register has an error. " alt="" coords="645,1019,781,1045"/>
+</map>

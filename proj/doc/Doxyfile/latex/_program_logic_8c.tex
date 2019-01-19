@@ -1,0 +1,31 @@
+\hypertarget{_program_logic_8c}{}\section{Program\+Logic.\+c File Reference}
+\label{_program_logic_8c}\index{Program\+Logic.\+c@{Program\+Logic.\+c}}
+{\ttfamily \#include \char`\"{}Program\+Logic.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for Program\+Logic.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{_program_logic_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___program_logic_ga2838b9e6247aa4515f76cfeccf8e1cd8}{create\+Board} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]})
+\begin{DoxyCompactList}\small\item\em Creates the board with initial positions. \end{DoxyCompactList}\item 
+int \hyperlink{group___program_logic_gaed1b217c7e40a6fb27a0e6a719594aba}{is\+Position\+Initial\+Valid} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, char player, int xi, int yi)
+\begin{DoxyCompactList}\small\item\em Verifies if given initial position(xi,yi) is valid or not. \end{DoxyCompactList}\item 
+int \hyperlink{group___program_logic_ga02801d684d1f985fcaff098e12a0bf59}{move\+Disc} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, char player, int xi, int yi, int xf, int yf)
+\begin{DoxyCompactList}\small\item\em Moves disc in the given position(xi,yi) to final position also given(xf,yf). \end{DoxyCompactList}\item 
+int \hyperlink{group___program_logic_gacfd2089a907444dab0ccd2d95f321b8b}{is\+End\+Game} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]})
+\begin{DoxyCompactList}\small\item\em Verifies if it is the end of the game. \end{DoxyCompactList}\item 
+void \hyperlink{group___program_logic_ga484dd8982591f724c6ff6749bba6869a}{move\+To\+Final} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, int xi, int yi, int xf, int yf)
+\begin{DoxyCompactList}\small\item\em Moves disc in the given position(xi,yi) to final position also given(xf,yf). \end{DoxyCompactList}\item 
+void \hyperlink{group___program_logic_ga5de7cebab5418f009cebb5dc73e50cd2}{make\+Capture\+Move} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, int xi, int yi, int xf, int yf)
+\begin{DoxyCompactList}\small\item\em Moves disc in the given position(xi,yi) to final position also given(xf,yf), making a capture move. \end{DoxyCompactList}\item 
+int \hyperlink{group___program_logic_ga0862e9966f69666bb39dbf1c58863c3b}{verify\+Capture\+Move} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, char player, int xi, int yi)
+\begin{DoxyCompactList}\small\item\em Verifies if given initial position(xi,yi) can do a capture move or not. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{group___program_logic_ga8d87858478876b33304e38cea751951b}{moves\+I\+Can\+Do} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, char player, int xi, int yi)
+\begin{DoxyCompactList}\small\item\em Gives the moves that a disc can make. \end{DoxyCompactList}\end{DoxyCompactItemize}

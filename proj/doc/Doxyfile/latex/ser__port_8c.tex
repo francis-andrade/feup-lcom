@@ -1,0 +1,37 @@
+\hypertarget{ser__port_8c}{}\section{ser\+\_\+port.\+c File Reference}
+\label{ser__port_8c}\index{ser\+\_\+port.\+c@{ser\+\_\+port.\+c}}
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}ser\+\_\+port.\+h\char`\"{}}\newline
+Include dependency graph for ser\+\_\+port.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ser__port_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structser__conf__t}{ser\+\_\+conf\+\_\+t} \hyperlink{group__ser__port_gad7f306574426f807f460ddcde260c11b}{get\+\_\+conf} (unsigned short base\+\_\+addr)
+\begin{DoxyCompactList}\small\item\em This function gets the configuration of an U\+A\+RT register. \end{DoxyCompactList}\item 
+int \hyperlink{group__ser__port_ga03bc33099d89326fb9a26cc0fef1cc7a}{ser\+\_\+set\+\_\+bits\+\_\+per\+\_\+char} (unsigned short base\+\_\+addr, int bits)
+\begin{DoxyCompactList}\small\item\em Sets the value of bits per character in the respective serial port. \end{DoxyCompactList}\item 
+int \hyperlink{group__ser__port_ga7d67a8d80697182bb1afe90a65875c90}{ser\+\_\+set\+\_\+stop\+\_\+bits} (unsigned short base\+\_\+addr, int bits)
+\begin{DoxyCompactList}\small\item\em Sets the value of bits per character in the respective serial port. \end{DoxyCompactList}\item 
+int \hyperlink{group__ser__port_ga4a963c8e3cfb978a4e4a026add12483f}{ser\+\_\+set\+\_\+parity} (unsigned short base\+\_\+addr, int parity)
+\begin{DoxyCompactList}\small\item\em Sets the value of bits per character in the respective serial port. \end{DoxyCompactList}\item 
+int \hyperlink{group__ser__port_ga2b6153e7105a706ea7a331770150ac55}{ser\+\_\+set\+\_\+rate} (unsigned short base\+\_\+addr, int rate)
+\begin{DoxyCompactList}\small\item\em Sets the value of bits per character in the respective serial port. \end{DoxyCompactList}\item 
+int \hyperlink{group__ser__port_ga1e0894432789b7311021c4f862335065}{ser\+\_\+set\+\_\+conf} (unsigned short base\+\_\+addr, int bits, int stop, int parity, int rate)
+\begin{DoxyCompactList}\small\item\em Sets the configuration of the serial port. \end{DoxyCompactList}\item 
+int \hyperlink{group__ser__port_gaf51d56fa6069ce68bb9f34a1396b2ea1}{ser\+\_\+check\+\_\+lsr\+\_\+error} (unsigned short base\+\_\+addr)
+\begin{DoxyCompactList}\small\item\em Checks if the lsr register has an error. \end{DoxyCompactList}\item 
+int \hyperlink{group__ser__port_ga46bbb861095c5b7a44a33af5e19be100}{ser\+\_\+disable\+\_\+int} (unsigned short base\+\_\+addr)
+\begin{DoxyCompactList}\small\item\em Disables I\+ER interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__ser__port_gae9c2959fb0c4f39b96c4621d985f5ed2}{ser\+\_\+receive\+\_\+char\+\_\+poll} (unsigned short base\+\_\+addr, unsigned long $\ast$c, int num\+\_\+cicles)
+\begin{DoxyCompactList}\small\item\em receive a char through the serial port \end{DoxyCompactList}\item 
+int \hyperlink{group__ser__port_ga9ce4605b9346d093f446fa48b495406b}{ser\+\_\+send\+\_\+char\+\_\+poll} (unsigned short base\+\_\+addr, char c, int num\+\_\+cicles)
+\begin{DoxyCompactList}\small\item\em transmits a char through the serial port \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+<map id="ser_set_conf" name="ser_set_conf">
+<area shape="rect" id="node2" href="$group__ser__port.html#ga03bc33099d89326fb9a26cc0fef1cc7a" title="Sets the value of bits per character in the respective serial port. " alt="" coords="149,5,300,32"/>
+<area shape="rect" id="node3" href="$group__ser__port.html#ga7d67a8d80697182bb1afe90a65875c90" title="Sets the value of bits per character in the respective serial port. " alt="" coords="162,56,287,83"/>
+<area shape="rect" id="node4" href="$group__ser__port.html#ga4a963c8e3cfb978a4e4a026add12483f" title="Sets the value of bits per character in the respective serial port. " alt="" coords="173,107,277,133"/>
+<area shape="rect" id="node5" href="$group__ser__port.html#ga2b6153e7105a706ea7a331770150ac55" title="Sets the value of bits per character in the respective serial port. " alt="" coords="177,157,272,184"/>
+</map>

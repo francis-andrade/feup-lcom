@@ -1,0 +1,321 @@
+\hypertarget{group___bitmap}{}\section{Bitmap}
+\label{group___bitmap}\index{Bitmap@{Bitmap}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_bitmap_file_header}{Bitmap\+File\+Header}
+\item 
+struct \hyperlink{struct_bitmap_info_header}{Bitmap\+Info\+Header}
+\item 
+struct \hyperlink{struct_bitmap}{Bitmap}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment} \{ \hyperlink{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a6ec599857e15466988726932dd592305}{A\+L\+I\+G\+N\+\_\+\+L\+E\+FT}, 
+\hyperlink{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a5624165187e56db612253e608a45b1c6}{A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER}, 
+\hyperlink{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a9c81840e8cad46418b39a8b74a246354}{A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+HT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2}{load\+Bitmap} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads a bmp image. \end{DoxyCompactList}\item 
+void \hyperlink{group___bitmap_ga18d05a1c671f4638bc63d37874efb9d4}{draw\+Bitmap} (\hyperlink{struct_bitmap}{Bitmap} $\ast$bitmap, int x, int y, \hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment} alignment)
+\begin{DoxyCompactList}\small\item\em Draws an unscaled, unrotated bitmap at the given position. \end{DoxyCompactList}\item 
+void \hyperlink{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61}{delete\+Bitmap} (\hyperlink{struct_bitmap}{Bitmap} $\ast$bmp)
+\begin{DoxyCompactList}\small\item\em Destroys the given bitmap, freeing all resources used by it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned short \hyperlink{group___bitmap_gaa929142c5ddf34cf0915c97a617a1a63}{type}
+\begin{DoxyCompactList}\small\item\em specifies the file type \end{DoxyCompactList}\item 
+unsigned int \hyperlink{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}{size}
+\begin{DoxyCompactList}\small\item\em specifies the size in bytes of the bitmap file \end{DoxyCompactList}\item 
+unsigned int \hyperlink{group___bitmap_ga05d5cbcb44f437341bd9fa37d589aced}{reserved}
+\begin{DoxyCompactList}\small\item\em reserved; must be 0 \end{DoxyCompactList}\item 
+unsigned int \hyperlink{group___bitmap_ga29b5297d3393519050e3126c4cb07c1c}{offset}
+\begin{DoxyCompactList}\small\item\em specifies the offset in bytes from the bitmapfileheader to the bitmap bits \end{DoxyCompactList}\item 
+unsigned int \hyperlink{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}{size}
+\begin{DoxyCompactList}\small\item\em specifies the number of bytes required by the struct \end{DoxyCompactList}\item 
+int \hyperlink{group___bitmap_ga2474a5474cbff19523a51eb1de01cda4}{width}
+\begin{DoxyCompactList}\small\item\em specifies width in pixels \end{DoxyCompactList}\item 
+int \hyperlink{group___bitmap_gad12fc34ce789bce6c8a05d8a17138534}{height}
+\begin{DoxyCompactList}\small\item\em specifies height in pixels \end{DoxyCompactList}\item 
+unsigned short \hyperlink{group___bitmap_ga8c89d091e05544a82dc2398eed99634f}{planes}
+\begin{DoxyCompactList}\small\item\em specifies the number of color planes, must be 1 \end{DoxyCompactList}\item 
+unsigned short \hyperlink{group___bitmap_ga47d1d4d776f8fd3bb0f7dbc3c5aeb534}{bits}
+\begin{DoxyCompactList}\small\item\em specifies the number of bit per pixel \end{DoxyCompactList}\item 
+unsigned int \hyperlink{group___bitmap_gad180079f62b44e49ec672c9ef6e078b3}{compression}
+\begin{DoxyCompactList}\small\item\em specifies the type of compression \end{DoxyCompactList}\item 
+unsigned int \hyperlink{group___bitmap_gadcd57a0168319e747bc8099218d3822c}{image\+Size}
+\begin{DoxyCompactList}\small\item\em size of image in bytes \end{DoxyCompactList}\item 
+int \hyperlink{group___bitmap_gac6eaeb4c0876cf6cd899f41fe3c25ff5}{x\+Resolution}
+\begin{DoxyCompactList}\small\item\em number of pixels per meter in x axis \end{DoxyCompactList}\item 
+int \hyperlink{group___bitmap_gaa2f350dd0bda750656d5db5f5e37b2b3}{y\+Resolution}
+\begin{DoxyCompactList}\small\item\em number of pixels per meter in y axis \end{DoxyCompactList}\item 
+unsigned int \hyperlink{group___bitmap_gaed4506bad904845183194f199f1bdb98}{n\+Colors}
+\begin{DoxyCompactList}\small\item\em number of colors used by the bitmap \end{DoxyCompactList}\item 
+unsigned int \hyperlink{group___bitmap_ga8f7abfbc446b12f385d2b42c3b4fd9b0}{important\+Colors}
+\begin{DoxyCompactList}\small\item\em number of colors that are important \end{DoxyCompactList}\item 
+\hyperlink{struct_bitmap_info_header}{Bitmap\+Info\+Header} \hyperlink{group___bitmap_ga7157ca7f3ce4be47481c472fafd89313}{bitmap\+Info\+Header}
+\item 
+unsigned char $\ast$ \hyperlink{group___bitmap_ga586c4bcc42cf22a033e8f60f24f627f0}{bitmap\+Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for manipulating bitmaps 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{}\label{group___bitmap_gacdfaca60ec19c0265bac2692d7982726} 
+\index{Bitmap@{Bitmap}!Alignment@{Alignment}}
+\index{Alignment@{Alignment}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{Alignment}{Alignment}}
+{\footnotesize\ttfamily enum \hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+L\+I\+G\+N\+\_\+\+L\+E\+FT@{A\+L\+I\+G\+N\+\_\+\+L\+E\+FT}!Bitmap@{Bitmap}}\index{Bitmap@{Bitmap}!A\+L\+I\+G\+N\+\_\+\+L\+E\+FT@{A\+L\+I\+G\+N\+\_\+\+L\+E\+FT}}}\hypertarget{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a6ec599857e15466988726932dd592305}{}\label{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a6ec599857e15466988726932dd592305} 
+A\+L\+I\+G\+N\+\_\+\+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER@{A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER}!Bitmap@{Bitmap}}\index{Bitmap@{Bitmap}!A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER@{A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER}}}\hypertarget{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a5624165187e56db612253e608a45b1c6}{}\label{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a5624165187e56db612253e608a45b1c6} 
+A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+HT@{A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+HT}!Bitmap@{Bitmap}}\index{Bitmap@{Bitmap}!A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+HT@{A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+HT}}}\hypertarget{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a9c81840e8cad46418b39a8b74a246354}{}\label{group___bitmap_ggacdfaca60ec19c0265bac2692d7982726a9c81840e8cad46418b39a8b74a246354} 
+A\+L\+I\+G\+N\+\_\+\+R\+I\+G\+HT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\hypertarget{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61}{}\label{group___bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61} 
+\index{Bitmap@{Bitmap}!delete\+Bitmap@{delete\+Bitmap}}
+\index{delete\+Bitmap@{delete\+Bitmap}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{delete\+Bitmap()}{deleteBitmap()}}
+{\footnotesize\ttfamily void delete\+Bitmap (\begin{DoxyParamCaption}\item[{\hyperlink{struct_bitmap}{Bitmap} $\ast$}]{bmp }\end{DoxyParamCaption})}
+
+
+
+Destroys the given bitmap, freeing all resources used by it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bitmap} & bitmap to be destroyed \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___bitmap_ga18d05a1c671f4638bc63d37874efb9d4}{}\label{group___bitmap_ga18d05a1c671f4638bc63d37874efb9d4} 
+\index{Bitmap@{Bitmap}!draw\+Bitmap@{draw\+Bitmap}}
+\index{draw\+Bitmap@{draw\+Bitmap}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{draw\+Bitmap()}{drawBitmap()}}
+{\footnotesize\ttfamily void draw\+Bitmap (\begin{DoxyParamCaption}\item[{\hyperlink{struct_bitmap}{Bitmap} $\ast$}]{bitmap,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{\hyperlink{group___bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}}]{alignment }\end{DoxyParamCaption})}
+
+
+
+Draws an unscaled, unrotated bitmap at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bitmap} & bitmap to be drawn \\
+\hline
+{\em x} & destiny x coord \\
+\hline
+{\em y} & destiny y coord \\
+\hline
+{\em alignment} & image alignment \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{group___bitmap_ga18d05a1c671f4638bc63d37874efb9d4_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2}{}\label{group___bitmap_ga3506880ffd407c36eb8aaddd2c1606d2} 
+\index{Bitmap@{Bitmap}!load\+Bitmap@{load\+Bitmap}}
+\index{load\+Bitmap@{load\+Bitmap}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{load\+Bitmap()}{loadBitmap()}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ load\+Bitmap (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads a bmp image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Path of the image to load \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Non N\+U\+LL pointer to the image buffer
+\end{DoxyReturn}
+Code from Henrique Ferrolho \href{http://difusal.blogspot.pt/2014/09/minixtutorial-8-loading-bmp-images.html}{\tt http\+://difusal.\+blogspot.\+pt/2014/09/minixtutorial-\/8-\/loading-\/bmp-\/images.\+html} I made some changes in the function draw\+Bitmap The original one drew the \hyperlink{struct_bitmap}{Bitmap} directly in the video\+\_\+mem, whereas the new function draws the \hyperlink{struct_bitmap}{Bitmap} in the double\+\_\+buffer and in the mouse\+\_\+buffer but not on the video\+\_\+mem 
+
+\subsection{Variable Documentation}
+\hypertarget{group___bitmap_ga586c4bcc42cf22a033e8f60f24f627f0}{}\label{group___bitmap_ga586c4bcc42cf22a033e8f60f24f627f0} 
+\index{Bitmap@{Bitmap}!bitmap\+Data@{bitmap\+Data}}
+\index{bitmap\+Data@{bitmap\+Data}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{bitmap\+Data}{bitmapData}}
+{\footnotesize\ttfamily unsigned char$\ast$ bitmap\+Data}
+
+\hypertarget{group___bitmap_ga7157ca7f3ce4be47481c472fafd89313}{}\label{group___bitmap_ga7157ca7f3ce4be47481c472fafd89313} 
+\index{Bitmap@{Bitmap}!bitmap\+Info\+Header@{bitmap\+Info\+Header}}
+\index{bitmap\+Info\+Header@{bitmap\+Info\+Header}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{bitmap\+Info\+Header}{bitmapInfoHeader}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap_info_header}{Bitmap\+Info\+Header} bitmap\+Info\+Header}
+
+\hypertarget{group___bitmap_ga47d1d4d776f8fd3bb0f7dbc3c5aeb534}{}\label{group___bitmap_ga47d1d4d776f8fd3bb0f7dbc3c5aeb534} 
+\index{Bitmap@{Bitmap}!bits@{bits}}
+\index{bits@{bits}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{bits}{bits}}
+{\footnotesize\ttfamily unsigned short bits}
+
+
+
+specifies the number of bit per pixel 
+
+\hypertarget{group___bitmap_gad180079f62b44e49ec672c9ef6e078b3}{}\label{group___bitmap_gad180079f62b44e49ec672c9ef6e078b3} 
+\index{Bitmap@{Bitmap}!compression@{compression}}
+\index{compression@{compression}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{compression}{compression}}
+{\footnotesize\ttfamily unsigned int compression}
+
+
+
+specifies the type of compression 
+
+\hypertarget{group___bitmap_gad12fc34ce789bce6c8a05d8a17138534}{}\label{group___bitmap_gad12fc34ce789bce6c8a05d8a17138534} 
+\index{Bitmap@{Bitmap}!height@{height}}
+\index{height@{height}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int height}
+
+
+
+specifies height in pixels 
+
+\hypertarget{group___bitmap_gadcd57a0168319e747bc8099218d3822c}{}\label{group___bitmap_gadcd57a0168319e747bc8099218d3822c} 
+\index{Bitmap@{Bitmap}!image\+Size@{image\+Size}}
+\index{image\+Size@{image\+Size}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{image\+Size}{imageSize}}
+{\footnotesize\ttfamily unsigned int image\+Size}
+
+
+
+size of image in bytes 
+
+\hypertarget{group___bitmap_ga8f7abfbc446b12f385d2b42c3b4fd9b0}{}\label{group___bitmap_ga8f7abfbc446b12f385d2b42c3b4fd9b0} 
+\index{Bitmap@{Bitmap}!important\+Colors@{important\+Colors}}
+\index{important\+Colors@{important\+Colors}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{important\+Colors}{importantColors}}
+{\footnotesize\ttfamily unsigned int important\+Colors}
+
+
+
+number of colors that are important 
+
+\hypertarget{group___bitmap_gaed4506bad904845183194f199f1bdb98}{}\label{group___bitmap_gaed4506bad904845183194f199f1bdb98} 
+\index{Bitmap@{Bitmap}!n\+Colors@{n\+Colors}}
+\index{n\+Colors@{n\+Colors}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{n\+Colors}{nColors}}
+{\footnotesize\ttfamily unsigned int n\+Colors}
+
+
+
+number of colors used by the bitmap 
+
+\hypertarget{group___bitmap_ga29b5297d3393519050e3126c4cb07c1c}{}\label{group___bitmap_ga29b5297d3393519050e3126c4cb07c1c} 
+\index{Bitmap@{Bitmap}!offset@{offset}}
+\index{offset@{offset}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily unsigned int offset}
+
+
+
+specifies the offset in bytes from the bitmapfileheader to the bitmap bits 
+
+\hypertarget{group___bitmap_ga8c89d091e05544a82dc2398eed99634f}{}\label{group___bitmap_ga8c89d091e05544a82dc2398eed99634f} 
+\index{Bitmap@{Bitmap}!planes@{planes}}
+\index{planes@{planes}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{planes}{planes}}
+{\footnotesize\ttfamily unsigned short planes}
+
+
+
+specifies the number of color planes, must be 1 
+
+\hypertarget{group___bitmap_ga05d5cbcb44f437341bd9fa37d589aced}{}\label{group___bitmap_ga05d5cbcb44f437341bd9fa37d589aced} 
+\index{Bitmap@{Bitmap}!reserved@{reserved}}
+\index{reserved@{reserved}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{reserved}{reserved}}
+{\footnotesize\ttfamily unsigned int reserved}
+
+
+
+reserved; must be 0 
+
+\hypertarget{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}{}\label{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e} 
+\index{Bitmap@{Bitmap}!size@{size}}
+\index{size@{size}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{size}{size}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily unsigned int size}
+
+
+
+specifies the size in bytes of the bitmap file 
+
+\hypertarget{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e}{}\label{group___bitmap_gaac913b3a1f6ef005d66bf7a84428773e} 
+\index{Bitmap@{Bitmap}!size@{size}}
+\index{size@{size}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{size}{size}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily unsigned int size}
+
+
+
+specifies the number of bytes required by the struct 
+
+\hypertarget{group___bitmap_gaa929142c5ddf34cf0915c97a617a1a63}{}\label{group___bitmap_gaa929142c5ddf34cf0915c97a617a1a63} 
+\index{Bitmap@{Bitmap}!type@{type}}
+\index{type@{type}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily unsigned short type}
+
+
+
+specifies the file type 
+
+\hypertarget{group___bitmap_ga2474a5474cbff19523a51eb1de01cda4}{}\label{group___bitmap_ga2474a5474cbff19523a51eb1de01cda4} 
+\index{Bitmap@{Bitmap}!width@{width}}
+\index{width@{width}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int width}
+
+
+
+specifies width in pixels 
+
+\hypertarget{group___bitmap_gac6eaeb4c0876cf6cd899f41fe3c25ff5}{}\label{group___bitmap_gac6eaeb4c0876cf6cd899f41fe3c25ff5} 
+\index{Bitmap@{Bitmap}!x\+Resolution@{x\+Resolution}}
+\index{x\+Resolution@{x\+Resolution}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{x\+Resolution}{xResolution}}
+{\footnotesize\ttfamily int x\+Resolution}
+
+
+
+number of pixels per meter in x axis 
+
+\hypertarget{group___bitmap_gaa2f350dd0bda750656d5db5f5e37b2b3}{}\label{group___bitmap_gaa2f350dd0bda750656d5db5f5e37b2b3} 
+\index{Bitmap@{Bitmap}!y\+Resolution@{y\+Resolution}}
+\index{y\+Resolution@{y\+Resolution}!Bitmap@{Bitmap}}
+\subsubsection{\texorpdfstring{y\+Resolution}{yResolution}}
+{\footnotesize\ttfamily int y\+Resolution}
+
+
+
+number of pixels per meter in y axis 
+

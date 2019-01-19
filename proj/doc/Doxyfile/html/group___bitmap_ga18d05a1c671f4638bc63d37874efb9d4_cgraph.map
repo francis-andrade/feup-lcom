@@ -1,0 +1,6 @@
+<map id="drawBitmap" name="drawBitmap">
+<area shape="rect" id="node2" href="$group__video__gr.html#gaf597a67a797839097222fa9b4ae20b3f" title="gets horizontal resolution of the screen " alt="" coords="166,5,241,32"/>
+<area shape="rect" id="node3" href="$group__video__gr.html#ga36f1c43e43d903e085207548cf8d48a2" title="gets vertical resolution of the screen " alt="" coords="166,56,241,83"/>
+<area shape="rect" id="node4" href="$group__video__gr.html#gafa0e51016d7aa337778300ba2ec70a74" title="gets pointer to variable double_buffer " alt="" coords="144,107,263,133"/>
+<area shape="rect" id="node5" href="$group__video__gr.html#ga80f6be1470280496d613f43fbf4f576c" title="gets pointer to variable mouse_buffer " alt="" coords="145,157,262,184"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="moveDisc" name="moveDisc">
+<area shape="rect" id="node2" href="$group___program_logic.html#ga0862e9966f69666bb39dbf1c58863c3b" title="Verifies if given initial position(xi,yi) can do a capture move or not. " alt="" coords="133,5,260,32"/>
+<area shape="rect" id="node3" href="$group___program_logic.html#ga484dd8982591f724c6ff6749bba6869a" title="Moves disc in the given position(xi,yi) to final position also given(xf,yf). " alt="" coords="149,56,244,83"/>
+<area shape="rect" id="node4" href="$group___program_logic.html#ga5de7cebab5418f009cebb5dc73e50cd2" title="Moves disc in the given position(xi,yi) to final position also given(xf,yf), making a capture move..." alt="" coords="132,107,261,133"/>
+</map>

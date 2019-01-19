@@ -1,0 +1,54 @@
+\hypertarget{publicity_8c}{}\section{publicity.\+c File Reference}
+\label{publicity_8c}\index{publicity.\+c@{publicity.\+c}}
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Bitmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utilities.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+gr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vbe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+Include dependency graph for publicity.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{publicity_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__publicity_ga7a04ef3aec214c81663352a9f4f35a65}{show\+\_\+ad} (char $\ast$path\+\_\+images)
+\begin{DoxyCompactList}\small\item\em shows an ad. If today is a day of the week shows a certain ad, if it\textquotesingle{}s weekend shows another one \end{DoxyCompactList}\item 
+int \hyperlink{group__publicity_ga7bad5577543cdab533e3bc88669cd691}{Isweekend} (\hyperlink{structdate__t}{date\+\_\+t} date)
+\begin{DoxyCompactList}\small\item\em Determines if date is a weekend or not. \end{DoxyCompactList}\item 
+int \hyperlink{group__publicity_ga2ff0d1265d48a43111f38f357dd1f874}{Isleap} (int year)
+\begin{DoxyCompactList}\small\item\em Determines is year is leap or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{publicity_8c_a4bdaa00739a5ab865fc068c7fecd84b0}{ad\+\_\+week}
+\item 
+static \hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{publicity_8c_add3382a8eebd682a2b6add2d78f07010}{ad\+\_\+weekend}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{publicity_8c_a4bdaa00739a5ab865fc068c7fecd84b0}{}\label{publicity_8c_a4bdaa00739a5ab865fc068c7fecd84b0} 
+\index{publicity.\+c@{publicity.\+c}!ad\+\_\+week@{ad\+\_\+week}}
+\index{ad\+\_\+week@{ad\+\_\+week}!publicity.\+c@{publicity.\+c}}
+\subsubsection{\texorpdfstring{ad\+\_\+week}{ad\_week}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ ad\+\_\+week\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{publicity_8c_add3382a8eebd682a2b6add2d78f07010}{}\label{publicity_8c_add3382a8eebd682a2b6add2d78f07010} 
+\index{publicity.\+c@{publicity.\+c}!ad\+\_\+weekend@{ad\+\_\+weekend}}
+\index{ad\+\_\+weekend@{ad\+\_\+weekend}!publicity.\+c@{publicity.\+c}}
+\subsubsection{\texorpdfstring{ad\+\_\+weekend}{ad\_weekend}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ ad\+\_\+weekend\hspace{0.3cm}{\ttfamily [static]}}
+

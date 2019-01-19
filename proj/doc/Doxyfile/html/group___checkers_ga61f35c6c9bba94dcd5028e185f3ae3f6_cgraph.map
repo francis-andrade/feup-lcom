@@ -1,0 +1,41 @@
+<map id="checkers_int_handler" name="checkers_int_handler">
+<area shape="rect" id="node2" href="$group__timer.html#ga915070da84f7a3baa2e0fe634cb4bcd8" title="subscribes a timer interruption " alt="" coords="212,5,347,32"/>
+<area shape="rect" id="node3" href="$group__kbc.html#ga8efa408da2468eaa11a0c515dfa8d79f" title="subscribes a keyboard interruption " alt="" coords="216,56,343,83"/>
+<area shape="rect" id="node4" href="$group__mouse.html#gad607aaa8fd9833789fcd2b99c86dfc34" title="subscribes a mouse interruption " alt="" coords="207,107,352,133"/>
+<area shape="rect" id="node5" href="$group__mouse.html#ga42d943d35caacd5219cf4ef665b9bc42" title="writes a command to kbd " alt="" coords="216,157,343,184"/>
+<area shape="rect" id="node9" href="$group__timer.html#ga05c1893c9a1e24ff5d76b2958adb8851" title="ignore_interrupts" alt="" coords="220,208,339,235"/>
+<area shape="rect" id="node10" href="$group___program_logic.html#gacfd2089a907444dab0ccd2d95f321b8b" title="Verifies if it is the end of the game. " alt="" coords="234,259,325,285"/>
+<area shape="rect" id="node11" href="$group__mouse.html#ga936c78f40a1d0b1acfd4f0368a9b8137" title="gets a packet from mouse " alt="" coords="213,309,345,336"/>
+<area shape="rect" id="node12" href="$group__mouse.html#gaf1a4587fac965330aca5079ae1313327" title="convert a packet array to mouse packet that is more user friendly " alt="" coords="202,360,357,387"/>
+<area shape="rect" id="node15" href="$group___checkers.html#gac38396bd73b19b176b4016524f63f8aa" title="handles the moves " alt="" coords="199,411,360,437"/>
+<area shape="rect" id="node35" href="$group___checkers.html#gad7f7feb83c536c88d67834e7e20780ee" title="converts a state to the corresponding player " alt="" coords="224,461,335,488"/>
+<area shape="rect" id="node36" href="$group__kbc.html#gac76f743c998918d5ff65403aa35c8b05" title="converts a variable passed buy reference to a pointer that can be interpreted in assembly ..." alt="" coords="228,512,331,539"/>
+<area shape="rect" id="node37" href="$group__mouse.html#gaa40354aab63adaf9ecddd01255efd918" title="unsubscribes a timer interruption " alt="" coords="200,563,359,589"/>
+<area shape="rect" id="node38" href="$group__kbc.html#ga32ab97f6b806fa3a0524e62af55aeb0e" title="unsubscribes a keyboard interruption " alt="" coords="209,613,350,640"/>
+<area shape="rect" id="node39" href="$group__timer.html#gab9eea51549744bca5c5c923b388bb4ee" title="unsubscribes a timer interruption " alt="" coords="205,664,354,691"/>
+<area shape="rect" id="node40" href="$group___checkers.html#gaa082b9cac17a99c54ac6fa5ac40c660d" title="sends a serial message saying that a player finished making a move with the corresponding return valu..." alt="" coords="429,765,539,792"/>
+<area shape="rect" id="node6" href="$group__kbc.html#ga54b191a4ae0a5ed8d23e31cd50eb4868" title="issues a command to kbc " alt="" coords="427,107,541,133"/>
+<area shape="rect" id="node7" href="$group__kbc.html#gaa8b3453e895793f84cfc40e9cf04dd03" title="issues a command to kbd " alt="" coords="427,56,541,83"/>
+<area shape="rect" id="node8" href="$group__kbc.html#gad9d71d9448d7e3796e22f696863b7453" title="reads a command from kbc " alt="" coords="431,157,537,184"/>
+<area shape="rect" id="node13" href="$group__utilities.html#ga79537e8684629d74571e64c633bb5303" title="converts a char to decimal " alt="" coords="425,259,543,285"/>
+<area shape="rect" id="node14" href="$group__utilities.html#gac0df2a1416cd59f12dbc6adfd5f69ba3" title="returns the opposite number in two complement to c " alt="" coords="408,208,560,235"/>
+<area shape="rect" id="node16" href="$group___checkers.html#ga597f43aacf586aacf3c32664944f8ba9" title="moves mouse (x_delta, y_delta) " alt="" coords="435,563,533,589"/>
+<area shape="rect" id="node21" href="$group__video__gr.html#ga8761e145d6f2249e0a4177ed7ff24299" title="copies the mouse_buffer into the video_buffer " alt="" coords="417,664,551,691"/>
+<area shape="rect" id="node22" href="$group___checkers.html#gae4a0f98e772d41a53d13748a7d9d1252" title="converts screen coordinates to board coordinates " alt="" coords="415,715,553,741"/>
+<area shape="rect" id="node23" href="$group___checkers.html#gaf3fd6677c55727d50220875a0031230b" title="places an empty square " alt="" coords="634,259,721,285"/>
+<area shape="rect" id="node25" href="$group__video__gr.html#gacbc2b21e05ad693bb6ed614f87329f05" title="copies the double_buffer into the mouse_buffer " alt="" coords="413,360,555,387"/>
+<area shape="rect" id="node26" href="$group___program_logic.html#ga02801d684d1f985fcaff098e12a0bf59" title="Moves disc in the given position(xi,yi) to final position also given(xf,yf). " alt="" coords="445,411,523,437"/>
+<area shape="rect" id="node30" href="$group___checkers.html#ga1d2d36062ce4e9fcdba43dfdc59215d0" title="places a circle " alt="" coords="445,461,523,488"/>
+<area shape="rect" id="node32" href="$group___checkers.html#gac0cf60fd44a44bbb1a7c9ff7ec0d998b" title="Sends a message saying that a player did a move. " alt="" coords="421,613,547,640"/>
+<area shape="rect" id="node34" href="$group___checkers.html#ga01bdfba712e2ceab4902f5cd63f6b482" title="draws the turn message that says who should play now " alt="" coords="608,512,747,539"/>
+<area shape="rect" id="node17" href="$group__video__gr.html#gaeae89e446fefdba5e72413ff38727f44" title="sets a pixel in the mouse buffer to the color of the corresponding pixel in the double buffer ..." alt="" coords="615,613,739,640"/>
+<area shape="rect" id="node18" href="$group___checkers.html#ga0580c6365cfa09e2d8a30d3d47f3adb1" title="draws the the mouse circle " alt="" coords="611,664,744,691"/>
+<area shape="rect" id="node20" href="$group___checkers.html#ga0f9d87b0bea416d794ed80855026d550" title="draws a mouse " alt="" coords="630,563,725,589"/>
+<area shape="rect" id="node19" href="$group__video__gr.html#ga78765c3e4634b79d0c27b464be410803" title="sets the color of a pixel in the mouse buffer " alt="" coords="795,613,933,640"/>
+<area shape="rect" id="node24" href="$group__video__gr.html#ga729c07175ab64956c7fd9944d7676888" title="sets the color of a pixel in the double buffer and in the mouse buffer " alt="" coords="817,461,911,488"/>
+<area shape="rect" id="node27" href="$group___program_logic.html#ga0862e9966f69666bb39dbf1c58863c3b" title="Verifies if given initial position(xi,yi) can do a capture move or not. " alt="" coords="614,360,741,387"/>
+<area shape="rect" id="node28" href="$group___program_logic.html#ga484dd8982591f724c6ff6749bba6869a" title="Moves disc in the given position(xi,yi) to final position also given(xf,yf). " alt="" coords="630,411,725,437"/>
+<area shape="rect" id="node29" href="$group___program_logic.html#ga5de7cebab5418f009cebb5dc73e50cd2" title="Moves disc in the given position(xi,yi) to final position also given(xf,yf), making a capture move..." alt="" coords="613,309,742,336"/>
+<area shape="rect" id="node31" href="$group__video__gr.html#ga0410a09b926582249fb7c0a795c9d4fe" title="draws a circle in the double buffer and in the mouse buffer " alt="" coords="624,461,731,488"/>
+<area shape="rect" id="node33" href="$group__ser__port.html#ga9ce4605b9346d093f446fa48b495406b" title="transmits a char through the serial port " alt="" coords="610,740,745,767"/>
+</map>

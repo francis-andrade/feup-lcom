@@ -1,0 +1,4 @@
+<map id="movesICanDo" name="movesICanDo">
+<area shape="rect" id="node2" href="$group___program_logic.html#gaed1b217c7e40a6fb27a0e6a719594aba" title="Verifies if given initial position(xi,yi) is valid or not. " alt="" coords="155,5,293,32"/>
+<area shape="rect" id="node3" href="$group___program_logic.html#ga0862e9966f69666bb39dbf1c58863c3b" title="Verifies if given initial position(xi,yi) can do a capture move or not. " alt="" coords="341,31,468,57"/>
+</map>

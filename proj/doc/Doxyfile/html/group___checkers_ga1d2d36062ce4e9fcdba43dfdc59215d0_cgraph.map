@@ -1,0 +1,4 @@
+<map id="put_circle" name="put_circle">
+<area shape="rect" id="node2" href="$group__video__gr.html#ga0410a09b926582249fb7c0a795c9d4fe" title="draws a circle in the double buffer and in the mouse buffer " alt="" coords="132,5,239,32"/>
+<area shape="rect" id="node3" href="$group__video__gr.html#ga729c07175ab64956c7fd9944d7676888" title="sets the color of a pixel in the double buffer and in the mouse buffer " alt="" coords="287,5,380,32"/>
+</map>

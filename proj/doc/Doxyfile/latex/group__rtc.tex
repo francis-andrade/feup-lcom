@@ -1,0 +1,135 @@
+\hypertarget{group__rtc}{}\section{rtc}
+\label{group__rtc}\index{rtc@{rtc}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structdate__t}{date\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__rtc_ga3b9f4583bad77c33ea0e82c1c1ad5305}{rtc\+\_\+subscribe\+\_\+int} (unsigned int $\ast$rtc\+\_\+hook\+\_\+id)
+\begin{DoxyCompactList}\small\item\em subscribes a R\+TC interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__rtc_ga61932ec1f55303bac55dea276d2a141f}{rtc\+\_\+unsubscribe\+\_\+int} (unsigned int $\ast$rtc\+\_\+hook\+\_\+id)
+\begin{DoxyCompactList}\small\item\em unsubscribes a R\+TC interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__rtc_ga9a66dc15a321b825a97887478a95e28f}{rtc\+\_\+read} (unsigned int reg, unsigned int $\ast$inf)
+\begin{DoxyCompactList}\small\item\em reads from the rtc \end{DoxyCompactList}\item 
+int \hyperlink{group__rtc_ga83dbab748017bcc8531622b94cca1be1}{rtc\+\_\+read\+\_\+date} (\hyperlink{structdate__t}{date\+\_\+t} $\ast$date)
+\begin{DoxyCompactList}\small\item\em gets the date from the rtc \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{R\+TC M\+A\+C\+R\+OS}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__rtc_ga710b98232df2c563009e6f8a6cd18220}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+R\+EG}~0x70
+\item 
+\#define \hyperlink{group__rtc_ga2f258a00c59c3f347c8d2d4a75471ce0}{R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG}~0x71
+\item 
+\#define \hyperlink{group__rtc_ga4e22feb6ffbc1cda32fadff5c740dc51}{R\+T\+C\+\_\+\+I\+RQ}~8
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to manipulate rtc 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group__rtc_ga710b98232df2c563009e6f8a6cd18220}{}\label{group__rtc_ga710b98232df2c563009e6f8a6cd18220} 
+\index{rtc@{rtc}!R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+R\+EG@{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+R\+EG}}
+\index{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+R\+EG@{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+R\+EG}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+R\+EG}{RTC\_ADDR\_REG}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+R\+EG~0x70}
+
+\hypertarget{group__rtc_ga2f258a00c59c3f347c8d2d4a75471ce0}{}\label{group__rtc_ga2f258a00c59c3f347c8d2d4a75471ce0} 
+\index{rtc@{rtc}!R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG@{R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG}}
+\index{R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG@{R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG}{RTC\_DATA\_REG}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG~0x71}
+
+\hypertarget{group__rtc_ga4e22feb6ffbc1cda32fadff5c740dc51}{}\label{group__rtc_ga4e22feb6ffbc1cda32fadff5c740dc51} 
+\index{rtc@{rtc}!R\+T\+C\+\_\+\+I\+RQ@{R\+T\+C\+\_\+\+I\+RQ}}
+\index{R\+T\+C\+\_\+\+I\+RQ@{R\+T\+C\+\_\+\+I\+RQ}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{R\+T\+C\+\_\+\+I\+RQ}{RTC\_IRQ}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+I\+RQ~8}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{group__rtc_ga9a66dc15a321b825a97887478a95e28f}{}\label{group__rtc_ga9a66dc15a321b825a97887478a95e28f} 
+\index{rtc@{rtc}!rtc\+\_\+read@{rtc\+\_\+read}}
+\index{rtc\+\_\+read@{rtc\+\_\+read}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+read()}{rtc\_read()}}
+{\footnotesize\ttfamily int rtc\+\_\+read (\begin{DoxyParamCaption}\item[{unsigned int}]{reg,  }\item[{unsigned int $\ast$}]{inf }\end{DoxyParamCaption})}
+
+
+
+reads from the rtc 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & register that is going to be read\\
+\hline
+{\em inf} & variable where the information read is going to be stored\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+\hypertarget{group__rtc_ga83dbab748017bcc8531622b94cca1be1}{}\label{group__rtc_ga83dbab748017bcc8531622b94cca1be1} 
+\index{rtc@{rtc}!rtc\+\_\+read\+\_\+date@{rtc\+\_\+read\+\_\+date}}
+\index{rtc\+\_\+read\+\_\+date@{rtc\+\_\+read\+\_\+date}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+read\+\_\+date()}{rtc\_read\_date()}}
+{\footnotesize\ttfamily int rtc\+\_\+read\+\_\+date (\begin{DoxyParamCaption}\item[{\hyperlink{structdate__t}{date\+\_\+t} $\ast$}]{date }\end{DoxyParamCaption})}
+
+
+
+gets the date from the rtc 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & variable where the date is going to be stored\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{group__rtc_ga83dbab748017bcc8531622b94cca1be1_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{group__rtc_ga3b9f4583bad77c33ea0e82c1c1ad5305}{}\label{group__rtc_ga3b9f4583bad77c33ea0e82c1c1ad5305} 
+\index{rtc@{rtc}!rtc\+\_\+subscribe\+\_\+int@{rtc\+\_\+subscribe\+\_\+int}}
+\index{rtc\+\_\+subscribe\+\_\+int@{rtc\+\_\+subscribe\+\_\+int}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+subscribe\+\_\+int()}{rtc\_subscribe\_int()}}
+{\footnotesize\ttfamily int rtc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{unsigned int $\ast$}]{rtc\+\_\+hook\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+subscribes a R\+TC interruption 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+\_\+hook\+\_\+id} & rtc hook\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{group__rtc_ga61932ec1f55303bac55dea276d2a141f}{}\label{group__rtc_ga61932ec1f55303bac55dea276d2a141f} 
+\index{rtc@{rtc}!rtc\+\_\+unsubscribe\+\_\+int@{rtc\+\_\+unsubscribe\+\_\+int}}
+\index{rtc\+\_\+unsubscribe\+\_\+int@{rtc\+\_\+unsubscribe\+\_\+int}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+unsubscribe\+\_\+int()}{rtc\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int rtc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}\item[{unsigned int $\ast$}]{rtc\+\_\+hook\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+unsubscribes a R\+TC interruption 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtc\+\_\+hook\+\_\+id} & rtc hook\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}

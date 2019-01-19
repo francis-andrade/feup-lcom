@@ -1,0 +1,5 @@
+<map id="mouse_cmd_write" name="mouse_cmd_write">
+<area shape="rect" id="node2" href="$group__kbc.html#ga54b191a4ae0a5ed8d23e31cd50eb4868" title="issues a command to kbc " alt="" coords="180,5,293,32"/>
+<area shape="rect" id="node3" href="$group__kbc.html#gaa8b3453e895793f84cfc40e9cf04dd03" title="issues a command to kbd " alt="" coords="180,56,293,83"/>
+<area shape="rect" id="node4" href="$group__kbc.html#gad9d71d9448d7e3796e22f696863b7453" title="reads a command from kbc " alt="" coords="183,107,290,133"/>
+</map>

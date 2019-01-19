@@ -1,0 +1,4 @@
+<map id="wait_for_serial_message" name="wait_for_serial_message">
+<area shape="rect" id="node2" href="$group__ser__port.html#gae9c2959fb0c4f39b96c4621d985f5ed2" title="receive a char through the serial port " alt="" coords="217,5,364,32"/>
+<area shape="rect" id="node3" href="$group__ser__port.html#gaf51d56fa6069ce68bb9f34a1396b2ea1" title="Checks if the lsr register has an error. " alt="" coords="412,5,548,32"/>
+</map>

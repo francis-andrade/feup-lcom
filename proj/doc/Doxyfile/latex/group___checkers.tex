@@ -1,0 +1,599 @@
+\hypertarget{group___checkers}{}\section{Checkers}
+\label{group___checkers}\index{Checkers@{Checkers}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmouse__t}{mouse\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___checkers_ga2f705e070c4925daee2fda4016de437f}{C\+H\+E\+C\+K\+E\+R\+S\+\_\+\+T\+I\+M\+E\+O\+UT}~30
+\item 
+\#define \hyperlink{group___checkers_ga455c619153ef283f338157e6b2156179}{W\+H\+I\+T\+E\+\_\+\+C\+LR}~0x\+F\+F\+FF
+\item 
+\#define \hyperlink{group___checkers_ga84d1df2a2deef34e0e9f8d4375b5b8f6}{B\+L\+A\+C\+K\+\_\+\+C\+LR}~0
+\item 
+\#define \hyperlink{group___checkers_gaaf27b1edff1c7d7a5bf0a59ecb27cb5d}{B\+O\+A\+R\+D\+\_\+\+XI}~320
+\item 
+\#define \hyperlink{group___checkers_gaea13da4098bc5828bb6b3f6febcfd904}{B\+O\+A\+R\+D\+\_\+\+YI}~192
+\item 
+\#define \hyperlink{group___checkers_gae49255d26a5f626f705a0ab09f3f2fb8}{B\+O\+A\+R\+D\+\_\+\+S\+Q\+\_\+\+S\+I\+ZE}~80
+\item 
+\#define \hyperlink{group___checkers_ga0db4eef7cbfb2b192b09094169ce388f}{B\+O\+A\+R\+D\+\_\+\+C\+L\+\_\+\+R\+A\+D\+I\+US}~32
+\item 
+\#define \hyperlink{group___checkers_ga63f26b52fc35e2f57f2212dd1478d076}{B\+O\+A\+R\+D\+\_\+\+E\+V\+E\+N\+\_\+\+S\+Q\+\_\+\+C\+LR}~0x\+C618
+\item 
+\#define \hyperlink{group___checkers_ga07198a5ebf1a6ac88de94970f135a8ba}{B\+O\+A\+R\+D\+\_\+\+O\+D\+D\+\_\+\+S\+Q\+\_\+\+C\+LR}~0x18\+C9
+\item 
+\#define \hyperlink{group___checkers_ga0d38fb3c6c1987840ddb97f7696d997d}{B\+O\+A\+R\+D\+\_\+\+P\+L1\+\_\+\+C\+L\+\_\+\+C\+LR}~0x\+E\+E\+C4
+\begin{DoxyCompactList}\small\item\em E8\+D820. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___checkers_gaf7041b1453aa70a12d1dac1602d93ca8}{B\+O\+A\+R\+D\+\_\+\+P\+L2\+\_\+\+C\+L\+\_\+\+C\+LR}~0x\+C945
+\begin{DoxyCompactList}\small\item\em C82828. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___checkers_gaab1a3cc5eb6c2a45aca8a4d8a5e08707}{M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+LR}~0x\+F81F
+\item 
+\#define \hyperlink{group___checkers_gaa2ef662fb61ca6849a43030a495c4afa}{M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+L\+R\+\_\+2}~0x0001
+\item 
+\#define \hyperlink{group___checkers_gac55bb8c3d7fd471107553465b14fae49}{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+C\+LR}~0x1383
+\item 
+\#define \hyperlink{group___checkers_ga6d237f394788ef28deeaf21d0a6637f2}{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+Y\+E\+L\+L\+O\+W\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR}~0x\+E6\+A5
+\item 
+\#define \hyperlink{group___checkers_ga98c171a878c38e1c25fb081562041c44}{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR}~0x\+C146
+\item 
+\#define \hyperlink{group___checkers_gaf92e8ff13dda8277eaf67d6a59863510}{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+R\+ED}~540
+\item 
+\#define \hyperlink{group___checkers_gae8d1a563a8d7003deca2e08f762ae9f7}{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+Y\+E\+L\+L\+OW}~480
+\item 
+\#define \hyperlink{group___checkers_gad96cfcfb473995338b12290370836079}{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+YI}~100
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55bacad03968ad3abc8b7121ad472826aca9}{S\+T\+A\+T\+E\+\_\+1\+\_\+\+H\+O\+L\+D\+\_\+\+P\+I\+E\+CE}, 
+\hyperlink{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55bad88d91bd9763e878df21645bae0ba9b5}{S\+T\+A\+T\+E\+\_\+1\+\_\+\+D\+E\+F\+A\+U\+LT}, 
+\hyperlink{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55ba946a863b3f5d8ac63feb55f4e0866597}{S\+T\+A\+T\+E\+\_\+2\+\_\+\+H\+O\+L\+D\+\_\+\+P\+I\+E\+CE}, 
+\hyperlink{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55ba156b7cbfed5b8a1ad54b568ebc257ae9}{S\+T\+A\+T\+E\+\_\+2\+\_\+\+D\+E\+F\+A\+U\+LT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___checkers_gad95d8a331ab0758ace223ea301a57f7f}{checkers\+\_\+start\+\_\+game} (char $\ast$path\+\_\+images, int player\+\_\+1, int player\+\_\+2)
+\begin{DoxyCompactList}\small\item\em loads the images and starts the game \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gaf1aa642150939b8b1d104fe437a9d135}{checkers\+\_\+serial\+\_\+handler} (int player\+\_\+1, int player\+\_\+2)
+\begin{DoxyCompactList}\small\item\em handles the game in serial mode being responsible for handling which player should play \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga61f35c6c9bba94dcd5028e185f3ae3f6}{checkers\+\_\+int\+\_\+handler} (int player1, int player2)
+\begin{DoxyCompactList}\small\item\em handles the interrupts \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gac38396bd73b19b176b4016524f63f8aa}{checkers\+\_\+move\+\_\+handler} (\hyperlink{structmouse__packet__t}{mouse\+\_\+packet\+\_\+t} packet, int player1, int player2)
+\begin{DoxyCompactList}\small\item\em handles the moves \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gac0cf60fd44a44bbb1a7c9ff7ec0d998b}{send\+\_\+serial\+\_\+move} (int player, int xi, int yi, int xf, int yf)
+\begin{DoxyCompactList}\small\item\em Sends a message saying that a player did a move. \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gaa082b9cac17a99c54ac6fa5ac40c660d}{send\+\_\+serial\+\_\+ret} (int r)
+\begin{DoxyCompactList}\small\item\em sends a serial message saying that a player finished making a move with the corresponding return value \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga17180b891d06475062d87e08d01af278}{wait\+\_\+for\+\_\+serial\+\_\+message} (int player, int $\ast$r, int $\ast$xi, int $\ast$yi, int $\ast$xf, int $\ast$yf)
+\begin{DoxyCompactList}\small\item\em Waits for a message from the serial port. \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gaa6a495a94944bda567df909f84c62396}{draw\+\_\+board} ()
+\begin{DoxyCompactList}\small\item\em draws a board on the screen \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gaf3fd6677c55727d50220875a0031230b}{put\+\_\+square} (int board\+\_\+x, int board\+\_\+y, int color)
+\begin{DoxyCompactList}\small\item\em places an empty square \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga1d2d36062ce4e9fcdba43dfdc59215d0}{put\+\_\+circle} (int board\+\_\+x, int board\+\_\+y, int color)
+\begin{DoxyCompactList}\small\item\em places a circle \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gaa0642fe5ef48cc14ab51722047092f1f}{move\+\_\+piece} (int player, int xi, int yi, int xf, int yf)
+\begin{DoxyCompactList}\small\item\em moves a piece and handles everything pertinent related to the move \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga01bdfba712e2ceab4902f5cd63f6b482}{draw\+\_\+turn\+\_\+message} (int x, int y, unsigned int background\+\_\+clr, \hyperlink{struct_bitmap}{Bitmap} $\ast$turn)
+\begin{DoxyCompactList}\small\item\em draws the turn message that says who should play now \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gae4a0f98e772d41a53d13748a7d9d1252}{coord\+\_\+to\+\_\+real\+\_\+board} (int coord\+\_\+x, int coord\+\_\+y, int $\ast$board\+\_\+x, int $\ast$board\+\_\+y)
+\begin{DoxyCompactList}\small\item\em converts screen coordinates to board coordinates \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gad7f7feb83c536c88d67834e7e20780ee}{state\+\_\+to\+\_\+player} (int \hyperlink{checkers_8c_a89f234133d3efe315836311cbf21c64b}{state})
+\begin{DoxyCompactList}\small\item\em converts a state to the corresponding player \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga258c52e2e4a6ef24d9fb5ec06bedaa53}{create\+\_\+mouse} (int x, int y)
+\item 
+int \hyperlink{group___checkers_ga597f43aacf586aacf3c32664944f8ba9}{move\+\_\+mouse} (int x\+\_\+delta, int y\+\_\+delta)
+\begin{DoxyCompactList}\small\item\em moves mouse (x\+\_\+delta, y\+\_\+delta) \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga0f9d87b0bea416d794ed80855026d550}{draw\+\_\+mouse} ()
+\begin{DoxyCompactList}\small\item\em draws a mouse \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga0580c6365cfa09e2d8a30d3d47f3adb1}{draw\+\_\+mouse\+\_\+circle} (int xi, int yi, int radius, int color)
+\begin{DoxyCompactList}\small\item\em draws the the mouse circle \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for construction and manipulation of the board 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group___checkers_ga84d1df2a2deef34e0e9f8d4375b5b8f6}{}\label{group___checkers_ga84d1df2a2deef34e0e9f8d4375b5b8f6} 
+\index{Checkers@{Checkers}!B\+L\+A\+C\+K\+\_\+\+C\+LR@{B\+L\+A\+C\+K\+\_\+\+C\+LR}}
+\index{B\+L\+A\+C\+K\+\_\+\+C\+LR@{B\+L\+A\+C\+K\+\_\+\+C\+LR}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{B\+L\+A\+C\+K\+\_\+\+C\+LR}{BLACK\_CLR}}
+{\footnotesize\ttfamily \#define B\+L\+A\+C\+K\+\_\+\+C\+LR~0}
+
+\hypertarget{group___checkers_ga0db4eef7cbfb2b192b09094169ce388f}{}\label{group___checkers_ga0db4eef7cbfb2b192b09094169ce388f} 
+\index{Checkers@{Checkers}!B\+O\+A\+R\+D\+\_\+\+C\+L\+\_\+\+R\+A\+D\+I\+US@{B\+O\+A\+R\+D\+\_\+\+C\+L\+\_\+\+R\+A\+D\+I\+US}}
+\index{B\+O\+A\+R\+D\+\_\+\+C\+L\+\_\+\+R\+A\+D\+I\+US@{B\+O\+A\+R\+D\+\_\+\+C\+L\+\_\+\+R\+A\+D\+I\+US}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{B\+O\+A\+R\+D\+\_\+\+C\+L\+\_\+\+R\+A\+D\+I\+US}{BOARD\_CL\_RADIUS}}
+{\footnotesize\ttfamily \#define B\+O\+A\+R\+D\+\_\+\+C\+L\+\_\+\+R\+A\+D\+I\+US~32}
+
+\hypertarget{group___checkers_ga63f26b52fc35e2f57f2212dd1478d076}{}\label{group___checkers_ga63f26b52fc35e2f57f2212dd1478d076} 
+\index{Checkers@{Checkers}!B\+O\+A\+R\+D\+\_\+\+E\+V\+E\+N\+\_\+\+S\+Q\+\_\+\+C\+LR@{B\+O\+A\+R\+D\+\_\+\+E\+V\+E\+N\+\_\+\+S\+Q\+\_\+\+C\+LR}}
+\index{B\+O\+A\+R\+D\+\_\+\+E\+V\+E\+N\+\_\+\+S\+Q\+\_\+\+C\+LR@{B\+O\+A\+R\+D\+\_\+\+E\+V\+E\+N\+\_\+\+S\+Q\+\_\+\+C\+LR}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{B\+O\+A\+R\+D\+\_\+\+E\+V\+E\+N\+\_\+\+S\+Q\+\_\+\+C\+LR}{BOARD\_EVEN\_SQ\_CLR}}
+{\footnotesize\ttfamily \#define B\+O\+A\+R\+D\+\_\+\+E\+V\+E\+N\+\_\+\+S\+Q\+\_\+\+C\+LR~0x\+C618}
+
+\hypertarget{group___checkers_ga07198a5ebf1a6ac88de94970f135a8ba}{}\label{group___checkers_ga07198a5ebf1a6ac88de94970f135a8ba} 
+\index{Checkers@{Checkers}!B\+O\+A\+R\+D\+\_\+\+O\+D\+D\+\_\+\+S\+Q\+\_\+\+C\+LR@{B\+O\+A\+R\+D\+\_\+\+O\+D\+D\+\_\+\+S\+Q\+\_\+\+C\+LR}}
+\index{B\+O\+A\+R\+D\+\_\+\+O\+D\+D\+\_\+\+S\+Q\+\_\+\+C\+LR@{B\+O\+A\+R\+D\+\_\+\+O\+D\+D\+\_\+\+S\+Q\+\_\+\+C\+LR}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{B\+O\+A\+R\+D\+\_\+\+O\+D\+D\+\_\+\+S\+Q\+\_\+\+C\+LR}{BOARD\_ODD\_SQ\_CLR}}
+{\footnotesize\ttfamily \#define B\+O\+A\+R\+D\+\_\+\+O\+D\+D\+\_\+\+S\+Q\+\_\+\+C\+LR~0x18\+C9}
+
+\hypertarget{group___checkers_ga0d38fb3c6c1987840ddb97f7696d997d}{}\label{group___checkers_ga0d38fb3c6c1987840ddb97f7696d997d} 
+\index{Checkers@{Checkers}!B\+O\+A\+R\+D\+\_\+\+P\+L1\+\_\+\+C\+L\+\_\+\+C\+LR@{B\+O\+A\+R\+D\+\_\+\+P\+L1\+\_\+\+C\+L\+\_\+\+C\+LR}}
+\index{B\+O\+A\+R\+D\+\_\+\+P\+L1\+\_\+\+C\+L\+\_\+\+C\+LR@{B\+O\+A\+R\+D\+\_\+\+P\+L1\+\_\+\+C\+L\+\_\+\+C\+LR}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{B\+O\+A\+R\+D\+\_\+\+P\+L1\+\_\+\+C\+L\+\_\+\+C\+LR}{BOARD\_PL1\_CL\_CLR}}
+{\footnotesize\ttfamily \#define B\+O\+A\+R\+D\+\_\+\+P\+L1\+\_\+\+C\+L\+\_\+\+C\+LR~0x\+E\+E\+C4}
+
+
+
+E8\+D820. 
+
+\hypertarget{group___checkers_gaf7041b1453aa70a12d1dac1602d93ca8}{}\label{group___checkers_gaf7041b1453aa70a12d1dac1602d93ca8} 
+\index{Checkers@{Checkers}!B\+O\+A\+R\+D\+\_\+\+P\+L2\+\_\+\+C\+L\+\_\+\+C\+LR@{B\+O\+A\+R\+D\+\_\+\+P\+L2\+\_\+\+C\+L\+\_\+\+C\+LR}}
+\index{B\+O\+A\+R\+D\+\_\+\+P\+L2\+\_\+\+C\+L\+\_\+\+C\+LR@{B\+O\+A\+R\+D\+\_\+\+P\+L2\+\_\+\+C\+L\+\_\+\+C\+LR}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{B\+O\+A\+R\+D\+\_\+\+P\+L2\+\_\+\+C\+L\+\_\+\+C\+LR}{BOARD\_PL2\_CL\_CLR}}
+{\footnotesize\ttfamily \#define B\+O\+A\+R\+D\+\_\+\+P\+L2\+\_\+\+C\+L\+\_\+\+C\+LR~0x\+C945}
+
+
+
+C82828. 
+
+\hypertarget{group___checkers_gae49255d26a5f626f705a0ab09f3f2fb8}{}\label{group___checkers_gae49255d26a5f626f705a0ab09f3f2fb8} 
+\index{Checkers@{Checkers}!B\+O\+A\+R\+D\+\_\+\+S\+Q\+\_\+\+S\+I\+ZE@{B\+O\+A\+R\+D\+\_\+\+S\+Q\+\_\+\+S\+I\+ZE}}
+\index{B\+O\+A\+R\+D\+\_\+\+S\+Q\+\_\+\+S\+I\+ZE@{B\+O\+A\+R\+D\+\_\+\+S\+Q\+\_\+\+S\+I\+ZE}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{B\+O\+A\+R\+D\+\_\+\+S\+Q\+\_\+\+S\+I\+ZE}{BOARD\_SQ\_SIZE}}
+{\footnotesize\ttfamily \#define B\+O\+A\+R\+D\+\_\+\+S\+Q\+\_\+\+S\+I\+ZE~80}
+
+\hypertarget{group___checkers_gaaf27b1edff1c7d7a5bf0a59ecb27cb5d}{}\label{group___checkers_gaaf27b1edff1c7d7a5bf0a59ecb27cb5d} 
+\index{Checkers@{Checkers}!B\+O\+A\+R\+D\+\_\+\+XI@{B\+O\+A\+R\+D\+\_\+\+XI}}
+\index{B\+O\+A\+R\+D\+\_\+\+XI@{B\+O\+A\+R\+D\+\_\+\+XI}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{B\+O\+A\+R\+D\+\_\+\+XI}{BOARD\_XI}}
+{\footnotesize\ttfamily \#define B\+O\+A\+R\+D\+\_\+\+XI~320}
+
+\hypertarget{group___checkers_gaea13da4098bc5828bb6b3f6febcfd904}{}\label{group___checkers_gaea13da4098bc5828bb6b3f6febcfd904} 
+\index{Checkers@{Checkers}!B\+O\+A\+R\+D\+\_\+\+YI@{B\+O\+A\+R\+D\+\_\+\+YI}}
+\index{B\+O\+A\+R\+D\+\_\+\+YI@{B\+O\+A\+R\+D\+\_\+\+YI}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{B\+O\+A\+R\+D\+\_\+\+YI}{BOARD\_YI}}
+{\footnotesize\ttfamily \#define B\+O\+A\+R\+D\+\_\+\+YI~192}
+
+\hypertarget{group___checkers_ga2f705e070c4925daee2fda4016de437f}{}\label{group___checkers_ga2f705e070c4925daee2fda4016de437f} 
+\index{Checkers@{Checkers}!C\+H\+E\+C\+K\+E\+R\+S\+\_\+\+T\+I\+M\+E\+O\+UT@{C\+H\+E\+C\+K\+E\+R\+S\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{C\+H\+E\+C\+K\+E\+R\+S\+\_\+\+T\+I\+M\+E\+O\+UT@{C\+H\+E\+C\+K\+E\+R\+S\+\_\+\+T\+I\+M\+E\+O\+UT}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{C\+H\+E\+C\+K\+E\+R\+S\+\_\+\+T\+I\+M\+E\+O\+UT}{CHECKERS\_TIMEOUT}}
+{\footnotesize\ttfamily \#define C\+H\+E\+C\+K\+E\+R\+S\+\_\+\+T\+I\+M\+E\+O\+UT~30}
+
+\hypertarget{group___checkers_gaab1a3cc5eb6c2a45aca8a4d8a5e08707}{}\label{group___checkers_gaab1a3cc5eb6c2a45aca8a4d8a5e08707} 
+\index{Checkers@{Checkers}!M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+LR@{M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+LR}}
+\index{M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+LR@{M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+LR}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+LR}{MOUSE\_TRANSPARENT\_CLR}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+LR~0x\+F81F}
+
+\hypertarget{group___checkers_gaa2ef662fb61ca6849a43030a495c4afa}{}\label{group___checkers_gaa2ef662fb61ca6849a43030a495c4afa} 
+\index{Checkers@{Checkers}!M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+L\+R\+\_\+2@{M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+L\+R\+\_\+2}}
+\index{M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+L\+R\+\_\+2@{M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+L\+R\+\_\+2}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+L\+R\+\_\+2}{MOUSE\_TRANSPARENT\_CLR\_2}}
+{\footnotesize\ttfamily \#define M\+O\+U\+S\+E\+\_\+\+T\+R\+A\+N\+S\+P\+A\+R\+E\+N\+T\+\_\+\+C\+L\+R\+\_\+2~0x0001}
+
+\hypertarget{group___checkers_gac55bb8c3d7fd471107553465b14fae49}{}\label{group___checkers_gac55bb8c3d7fd471107553465b14fae49} 
+\index{Checkers@{Checkers}!T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+C\+LR@{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+C\+LR}}
+\index{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+C\+LR@{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+C\+LR}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+C\+LR}{TURN\_MSG\_CLR}}
+{\footnotesize\ttfamily \#define T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+C\+LR~0x1383}
+
+\hypertarget{group___checkers_ga98c171a878c38e1c25fb081562041c44}{}\label{group___checkers_ga98c171a878c38e1c25fb081562041c44} 
+\index{Checkers@{Checkers}!T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR@{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR}}
+\index{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR@{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR}{TURN\_MSG\_RED\_BACKGROUND\_CLR}}
+{\footnotesize\ttfamily \#define T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+R\+E\+D\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR~0x\+C146}
+
+\hypertarget{group___checkers_gaf92e8ff13dda8277eaf67d6a59863510}{}\label{group___checkers_gaf92e8ff13dda8277eaf67d6a59863510} 
+\index{Checkers@{Checkers}!T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+R\+ED@{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+R\+ED}}
+\index{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+R\+ED@{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+R\+ED}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+R\+ED}{TURN\_MSG\_XI\_RED}}
+{\footnotesize\ttfamily \#define T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+R\+ED~540}
+
+\hypertarget{group___checkers_gae8d1a563a8d7003deca2e08f762ae9f7}{}\label{group___checkers_gae8d1a563a8d7003deca2e08f762ae9f7} 
+\index{Checkers@{Checkers}!T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+Y\+E\+L\+L\+OW@{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+Y\+E\+L\+L\+OW}}
+\index{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+Y\+E\+L\+L\+OW@{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+Y\+E\+L\+L\+OW}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+Y\+E\+L\+L\+OW}{TURN\_MSG\_XI\_YELLOW}}
+{\footnotesize\ttfamily \#define T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+X\+I\+\_\+\+Y\+E\+L\+L\+OW~480}
+
+\hypertarget{group___checkers_ga6d237f394788ef28deeaf21d0a6637f2}{}\label{group___checkers_ga6d237f394788ef28deeaf21d0a6637f2} 
+\index{Checkers@{Checkers}!T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+Y\+E\+L\+L\+O\+W\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR@{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+Y\+E\+L\+L\+O\+W\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR}}
+\index{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+Y\+E\+L\+L\+O\+W\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR@{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+Y\+E\+L\+L\+O\+W\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+Y\+E\+L\+L\+O\+W\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR}{TURN\_MSG\_YELLOW\_BACKGROUND\_CLR}}
+{\footnotesize\ttfamily \#define T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+Y\+E\+L\+L\+O\+W\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+LR~0x\+E6\+A5}
+
+\hypertarget{group___checkers_gad96cfcfb473995338b12290370836079}{}\label{group___checkers_gad96cfcfb473995338b12290370836079} 
+\index{Checkers@{Checkers}!T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+YI@{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+YI}}
+\index{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+YI@{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+YI}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+YI}{TURN\_MSG\_YI}}
+{\footnotesize\ttfamily \#define T\+U\+R\+N\+\_\+\+M\+S\+G\+\_\+\+YI~100}
+
+\hypertarget{group___checkers_ga455c619153ef283f338157e6b2156179}{}\label{group___checkers_ga455c619153ef283f338157e6b2156179} 
+\index{Checkers@{Checkers}!W\+H\+I\+T\+E\+\_\+\+C\+LR@{W\+H\+I\+T\+E\+\_\+\+C\+LR}}
+\index{W\+H\+I\+T\+E\+\_\+\+C\+LR@{W\+H\+I\+T\+E\+\_\+\+C\+LR}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{W\+H\+I\+T\+E\+\_\+\+C\+LR}{WHITE\_CLR}}
+{\footnotesize\ttfamily \#define W\+H\+I\+T\+E\+\_\+\+C\+LR~0x\+F\+F\+FF}
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{group___checkers_ga06fc87d81c62e9abb8790b6e5713c55b}{}\label{group___checkers_ga06fc87d81c62e9abb8790b6e5713c55b} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+States of the game \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+1\+\_\+\+H\+O\+L\+D\+\_\+\+P\+I\+E\+CE@{S\+T\+A\+T\+E\+\_\+1\+\_\+\+H\+O\+L\+D\+\_\+\+P\+I\+E\+CE}!Checkers@{Checkers}}\index{Checkers@{Checkers}!S\+T\+A\+T\+E\+\_\+1\+\_\+\+H\+O\+L\+D\+\_\+\+P\+I\+E\+CE@{S\+T\+A\+T\+E\+\_\+1\+\_\+\+H\+O\+L\+D\+\_\+\+P\+I\+E\+CE}}}\hypertarget{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55bacad03968ad3abc8b7121ad472826aca9}{}\label{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55bacad03968ad3abc8b7121ad472826aca9} 
+S\+T\+A\+T\+E\+\_\+1\+\_\+\+H\+O\+L\+D\+\_\+\+P\+I\+E\+CE&when player 1 is holding a piece and it\textquotesingle{}s his turn \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+1\+\_\+\+D\+E\+F\+A\+U\+LT@{S\+T\+A\+T\+E\+\_\+1\+\_\+\+D\+E\+F\+A\+U\+LT}!Checkers@{Checkers}}\index{Checkers@{Checkers}!S\+T\+A\+T\+E\+\_\+1\+\_\+\+D\+E\+F\+A\+U\+LT@{S\+T\+A\+T\+E\+\_\+1\+\_\+\+D\+E\+F\+A\+U\+LT}}}\hypertarget{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55bad88d91bd9763e878df21645bae0ba9b5}{}\label{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55bad88d91bd9763e878df21645bae0ba9b5} 
+S\+T\+A\+T\+E\+\_\+1\+\_\+\+D\+E\+F\+A\+U\+LT&when it\textquotesingle{}s player 1 turn and he is not doing anything \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+2\+\_\+\+H\+O\+L\+D\+\_\+\+P\+I\+E\+CE@{S\+T\+A\+T\+E\+\_\+2\+\_\+\+H\+O\+L\+D\+\_\+\+P\+I\+E\+CE}!Checkers@{Checkers}}\index{Checkers@{Checkers}!S\+T\+A\+T\+E\+\_\+2\+\_\+\+H\+O\+L\+D\+\_\+\+P\+I\+E\+CE@{S\+T\+A\+T\+E\+\_\+2\+\_\+\+H\+O\+L\+D\+\_\+\+P\+I\+E\+CE}}}\hypertarget{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55ba946a863b3f5d8ac63feb55f4e0866597}{}\label{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55ba946a863b3f5d8ac63feb55f4e0866597} 
+S\+T\+A\+T\+E\+\_\+2\+\_\+\+H\+O\+L\+D\+\_\+\+P\+I\+E\+CE&when player 2 is holding a piece and it\textquotesingle{}s his turn \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+T\+E\+\_\+2\+\_\+\+D\+E\+F\+A\+U\+LT@{S\+T\+A\+T\+E\+\_\+2\+\_\+\+D\+E\+F\+A\+U\+LT}!Checkers@{Checkers}}\index{Checkers@{Checkers}!S\+T\+A\+T\+E\+\_\+2\+\_\+\+D\+E\+F\+A\+U\+LT@{S\+T\+A\+T\+E\+\_\+2\+\_\+\+D\+E\+F\+A\+U\+LT}}}\hypertarget{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55ba156b7cbfed5b8a1ad54b568ebc257ae9}{}\label{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55ba156b7cbfed5b8a1ad54b568ebc257ae9} 
+S\+T\+A\+T\+E\+\_\+2\+\_\+\+D\+E\+F\+A\+U\+LT&when it\textquotesingle{}s player 2 turn and he is not doing anything \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\hypertarget{group___checkers_ga61f35c6c9bba94dcd5028e185f3ae3f6}{}\label{group___checkers_ga61f35c6c9bba94dcd5028e185f3ae3f6} 
+\index{Checkers@{Checkers}!checkers\+\_\+int\+\_\+handler@{checkers\+\_\+int\+\_\+handler}}
+\index{checkers\+\_\+int\+\_\+handler@{checkers\+\_\+int\+\_\+handler}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{checkers\+\_\+int\+\_\+handler()}{checkers\_int\_handler()}}
+{\footnotesize\ttfamily int checkers\+\_\+int\+\_\+handler (\begin{DoxyParamCaption}\item[{int}]{player1,  }\item[{int}]{player2 }\end{DoxyParamCaption})}
+
+
+
+handles the interrupts 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+1} & set to 1 if player\+\_\+1 is currently playing, o otherwise \\
+\hline
+{\em player\+\_\+2} & set to 1 if player\+\_\+2 is currently playing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, 0 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 0
+\hypertarget{group___checkers_gac38396bd73b19b176b4016524f63f8aa}{}\label{group___checkers_gac38396bd73b19b176b4016524f63f8aa} 
+\index{Checkers@{Checkers}!checkers\+\_\+move\+\_\+handler@{checkers\+\_\+move\+\_\+handler}}
+\index{checkers\+\_\+move\+\_\+handler@{checkers\+\_\+move\+\_\+handler}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{checkers\+\_\+move\+\_\+handler()}{checkers\_move\_handler()}}
+{\footnotesize\ttfamily int checkers\+\_\+move\+\_\+handler (\begin{DoxyParamCaption}\item[{\hyperlink{structmouse__packet__t}{mouse\+\_\+packet\+\_\+t}}]{packet,  }\item[{int}]{player1,  }\item[{int}]{player2 }\end{DoxyParamCaption})}
+
+
+
+handles the moves 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+1} & set to 1 if player\+\_\+1 is currently playing, o otherwise \\
+\hline
+{\em player\+\_\+2} & set to 1 if player\+\_\+2 is currently playing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, 0 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+\hypertarget{group___checkers_gaf1aa642150939b8b1d104fe437a9d135}{}\label{group___checkers_gaf1aa642150939b8b1d104fe437a9d135} 
+\index{Checkers@{Checkers}!checkers\+\_\+serial\+\_\+handler@{checkers\+\_\+serial\+\_\+handler}}
+\index{checkers\+\_\+serial\+\_\+handler@{checkers\+\_\+serial\+\_\+handler}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{checkers\+\_\+serial\+\_\+handler()}{checkers\_serial\_handler()}}
+{\footnotesize\ttfamily int checkers\+\_\+serial\+\_\+handler (\begin{DoxyParamCaption}\item[{int}]{player\+\_\+1,  }\item[{int}]{player\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+handles the game in serial mode being responsible for handling which player should play 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+1} & set to 1 if player\+\_\+1 is currently playing, o otherwise \\
+\hline
+{\em player\+\_\+2} & set to 1 if player\+\_\+2 is currently playing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, 0 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2
+\hypertarget{group___checkers_gad95d8a331ab0758ace223ea301a57f7f}{}\label{group___checkers_gad95d8a331ab0758ace223ea301a57f7f} 
+\index{Checkers@{Checkers}!checkers\+\_\+start\+\_\+game@{checkers\+\_\+start\+\_\+game}}
+\index{checkers\+\_\+start\+\_\+game@{checkers\+\_\+start\+\_\+game}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{checkers\+\_\+start\+\_\+game()}{checkers\_start\_game()}}
+{\footnotesize\ttfamily int checkers\+\_\+start\+\_\+game (\begin{DoxyParamCaption}\item[{char $\ast$}]{path\+\_\+images,  }\item[{int}]{player\+\_\+1,  }\item[{int}]{player\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+loads the images and starts the game 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\+\_\+images} & path of y«the directory that the contains the images \\
+\hline
+{\em player\+\_\+1} & set to 1 if player\+\_\+1 is currently playing, o otherwise \\
+\hline
+{\em player\+\_\+2} & set to 1 if player\+\_\+2 is currently playing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, 0 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+\hypertarget{group___checkers_gae4a0f98e772d41a53d13748a7d9d1252}{}\label{group___checkers_gae4a0f98e772d41a53d13748a7d9d1252} 
+\index{Checkers@{Checkers}!coord\+\_\+to\+\_\+real\+\_\+board@{coord\+\_\+to\+\_\+real\+\_\+board}}
+\index{coord\+\_\+to\+\_\+real\+\_\+board@{coord\+\_\+to\+\_\+real\+\_\+board}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{coord\+\_\+to\+\_\+real\+\_\+board()}{coord\_to\_real\_board()}}
+{\footnotesize\ttfamily int coord\+\_\+to\+\_\+real\+\_\+board (\begin{DoxyParamCaption}\item[{int}]{coord\+\_\+x,  }\item[{int}]{coord\+\_\+y,  }\item[{int $\ast$}]{board\+\_\+x,  }\item[{int $\ast$}]{board\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+converts screen coordinates to board coordinates 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord\+\_\+x} & screen coordinate x \\
+\hline
+{\em coord\+\_\+y} & screen coordinate y \\
+\hline
+{\em board\+\_\+x} & board coordinate x \\
+\hline
+{\em board\+\_\+y} & board coordinate y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 in case of success, 1 otherwise 
+\end{DoxyReturn}
+\hypertarget{group___checkers_ga258c52e2e4a6ef24d9fb5ec06bedaa53}{}\label{group___checkers_ga258c52e2e4a6ef24d9fb5ec06bedaa53} 
+\index{Checkers@{Checkers}!create\+\_\+mouse@{create\+\_\+mouse}}
+\index{create\+\_\+mouse@{create\+\_\+mouse}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{create\+\_\+mouse()}{create\_mouse()}}
+{\footnotesize\ttfamily int create\+\_\+mouse (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\hypertarget{group___checkers_gaa6a495a94944bda567df909f84c62396}{}\label{group___checkers_gaa6a495a94944bda567df909f84c62396} 
+\index{Checkers@{Checkers}!draw\+\_\+board@{draw\+\_\+board}}
+\index{draw\+\_\+board@{draw\+\_\+board}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{draw\+\_\+board()}{draw\_board()}}
+{\footnotesize\ttfamily int draw\+\_\+board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws a board on the screen 
+
+\begin{DoxyReturn}{Returns}
+1 in case of success, 0 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 4
+\hypertarget{group___checkers_ga0f9d87b0bea416d794ed80855026d550}{}\label{group___checkers_ga0f9d87b0bea416d794ed80855026d550} 
+\index{Checkers@{Checkers}!draw\+\_\+mouse@{draw\+\_\+mouse}}
+\index{draw\+\_\+mouse@{draw\+\_\+mouse}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{draw\+\_\+mouse()}{draw\_mouse()}}
+{\footnotesize\ttfamily int draw\+\_\+mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draws a mouse 
+
+Here is the call graph for this function\+:
+% FIG 5
+\hypertarget{group___checkers_ga0580c6365cfa09e2d8a30d3d47f3adb1}{}\label{group___checkers_ga0580c6365cfa09e2d8a30d3d47f3adb1} 
+\index{Checkers@{Checkers}!draw\+\_\+mouse\+\_\+circle@{draw\+\_\+mouse\+\_\+circle}}
+\index{draw\+\_\+mouse\+\_\+circle@{draw\+\_\+mouse\+\_\+circle}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{draw\+\_\+mouse\+\_\+circle()}{draw\_mouse\_circle()}}
+{\footnotesize\ttfamily int draw\+\_\+mouse\+\_\+circle (\begin{DoxyParamCaption}\item[{int}]{xi,  }\item[{int}]{yi,  }\item[{int}]{radius,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+
+
+draws the the mouse circle 
+
+Here is the call graph for this function\+:
+% FIG 6
+\hypertarget{group___checkers_ga01bdfba712e2ceab4902f5cd63f6b482}{}\label{group___checkers_ga01bdfba712e2ceab4902f5cd63f6b482} 
+\index{Checkers@{Checkers}!draw\+\_\+turn\+\_\+message@{draw\+\_\+turn\+\_\+message}}
+\index{draw\+\_\+turn\+\_\+message@{draw\+\_\+turn\+\_\+message}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{draw\+\_\+turn\+\_\+message()}{draw\_turn\_message()}}
+{\footnotesize\ttfamily int draw\+\_\+turn\+\_\+message (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{unsigned int}]{background\+\_\+clr,  }\item[{\hyperlink{struct_bitmap}{Bitmap} $\ast$}]{turn }\end{DoxyParamCaption})}
+
+
+
+draws the turn message that says who should play now 
+
+Here is the call graph for this function\+:
+% FIG 7
+\hypertarget{group___checkers_ga597f43aacf586aacf3c32664944f8ba9}{}\label{group___checkers_ga597f43aacf586aacf3c32664944f8ba9} 
+\index{Checkers@{Checkers}!move\+\_\+mouse@{move\+\_\+mouse}}
+\index{move\+\_\+mouse@{move\+\_\+mouse}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{move\+\_\+mouse()}{move\_mouse()}}
+{\footnotesize\ttfamily int move\+\_\+mouse (\begin{DoxyParamCaption}\item[{int}]{x\+\_\+delta,  }\item[{int}]{y\+\_\+delta }\end{DoxyParamCaption})}
+
+
+
+moves mouse (x\+\_\+delta, y\+\_\+delta) 
+
+Here is the call graph for this function\+:
+% FIG 8
+\hypertarget{group___checkers_gaa0642fe5ef48cc14ab51722047092f1f}{}\label{group___checkers_gaa0642fe5ef48cc14ab51722047092f1f} 
+\index{Checkers@{Checkers}!move\+\_\+piece@{move\+\_\+piece}}
+\index{move\+\_\+piece@{move\+\_\+piece}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{move\+\_\+piece()}{move\_piece()}}
+{\footnotesize\ttfamily int move\+\_\+piece (\begin{DoxyParamCaption}\item[{int}]{player,  }\item[{int}]{xi,  }\item[{int}]{yi,  }\item[{int}]{xf,  }\item[{int}]{yf }\end{DoxyParamCaption})}
+
+
+
+moves a piece and handles everything pertinent related to the move 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & player that made the move \\
+\hline
+{\em xi} & initial x position \\
+\hline
+{\em yi} & initial y position \\
+\hline
+{\em xf} & final x position \\
+\hline
+{\em yf} & final y position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, 0 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 9
+\hypertarget{group___checkers_ga1d2d36062ce4e9fcdba43dfdc59215d0}{}\label{group___checkers_ga1d2d36062ce4e9fcdba43dfdc59215d0} 
+\index{Checkers@{Checkers}!put\+\_\+circle@{put\+\_\+circle}}
+\index{put\+\_\+circle@{put\+\_\+circle}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{put\+\_\+circle()}{put\_circle()}}
+{\footnotesize\ttfamily int put\+\_\+circle (\begin{DoxyParamCaption}\item[{int}]{board\+\_\+x,  }\item[{int}]{board\+\_\+y,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+
+
+places a circle 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+\_\+x} & x coordinate \\
+\hline
+{\em board\+\_\+y} & y coordinate \\
+\hline
+{\em color} & color of the square \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 in case of success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 10
+\hypertarget{group___checkers_gaf3fd6677c55727d50220875a0031230b}{}\label{group___checkers_gaf3fd6677c55727d50220875a0031230b} 
+\index{Checkers@{Checkers}!put\+\_\+square@{put\+\_\+square}}
+\index{put\+\_\+square@{put\+\_\+square}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{put\+\_\+square()}{put\_square()}}
+{\footnotesize\ttfamily int put\+\_\+square (\begin{DoxyParamCaption}\item[{int}]{board\+\_\+x,  }\item[{int}]{board\+\_\+y,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+
+
+places an empty square 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\+\_\+x} & x coordinate \\
+\hline
+{\em board\+\_\+y} & y coordinate \\
+\hline
+{\em color} & color of the square \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 in case of success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 11
+\hypertarget{group___checkers_gac0cf60fd44a44bbb1a7c9ff7ec0d998b}{}\label{group___checkers_gac0cf60fd44a44bbb1a7c9ff7ec0d998b} 
+\index{Checkers@{Checkers}!send\+\_\+serial\+\_\+move@{send\+\_\+serial\+\_\+move}}
+\index{send\+\_\+serial\+\_\+move@{send\+\_\+serial\+\_\+move}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{send\+\_\+serial\+\_\+move()}{send\_serial\_move()}}
+{\footnotesize\ttfamily int send\+\_\+serial\+\_\+move (\begin{DoxyParamCaption}\item[{int}]{player,  }\item[{int}]{xi,  }\item[{int}]{yi,  }\item[{int}]{xf,  }\item[{int}]{yf }\end{DoxyParamCaption})}
+
+
+
+Sends a message saying that a player did a move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & player that made the move \\
+\hline
+{\em xi} & initial x position \\
+\hline
+{\em yi} & initial y position \\
+\hline
+{\em xf} & final x position \\
+\hline
+{\em yf} & final y position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, 0 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 12
+\hypertarget{group___checkers_gaa082b9cac17a99c54ac6fa5ac40c660d}{}\label{group___checkers_gaa082b9cac17a99c54ac6fa5ac40c660d} 
+\index{Checkers@{Checkers}!send\+\_\+serial\+\_\+ret@{send\+\_\+serial\+\_\+ret}}
+\index{send\+\_\+serial\+\_\+ret@{send\+\_\+serial\+\_\+ret}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{send\+\_\+serial\+\_\+ret()}{send\_serial\_ret()}}
+{\footnotesize\ttfamily int send\+\_\+serial\+\_\+ret (\begin{DoxyParamCaption}\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+sends a serial message saying that a player finished making a move with the corresponding return value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & return value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, 0 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 13
+\hypertarget{group___checkers_gad7f7feb83c536c88d67834e7e20780ee}{}\label{group___checkers_gad7f7feb83c536c88d67834e7e20780ee} 
+\index{Checkers@{Checkers}!state\+\_\+to\+\_\+player@{state\+\_\+to\+\_\+player}}
+\index{state\+\_\+to\+\_\+player@{state\+\_\+to\+\_\+player}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{state\+\_\+to\+\_\+player()}{state\_to\_player()}}
+{\footnotesize\ttfamily int state\+\_\+to\+\_\+player (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})}
+
+
+
+converts a state to the corresponding player 
+
+\hypertarget{group___checkers_ga17180b891d06475062d87e08d01af278}{}\label{group___checkers_ga17180b891d06475062d87e08d01af278} 
+\index{Checkers@{Checkers}!wait\+\_\+for\+\_\+serial\+\_\+message@{wait\+\_\+for\+\_\+serial\+\_\+message}}
+\index{wait\+\_\+for\+\_\+serial\+\_\+message@{wait\+\_\+for\+\_\+serial\+\_\+message}!Checkers@{Checkers}}
+\subsubsection{\texorpdfstring{wait\+\_\+for\+\_\+serial\+\_\+message()}{wait\_for\_serial\_message()}}
+{\footnotesize\ttfamily int wait\+\_\+for\+\_\+serial\+\_\+message (\begin{DoxyParamCaption}\item[{int}]{player,  }\item[{int $\ast$}]{r,  }\item[{int $\ast$}]{xi,  }\item[{int $\ast$}]{yi,  }\item[{int $\ast$}]{xf,  }\item[{int $\ast$}]{yf }\end{DoxyParamCaption})}
+
+
+
+Waits for a message from the serial port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & player that is waiting for the message \\
+\hline
+{\em r} & return value \\
+\hline
+{\em xi} & initial x position \\
+\hline
+{\em yi} & initial y position \\
+\hline
+{\em xf} & final x position \\
+\hline
+{\em yf} & final y position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, 0 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 14

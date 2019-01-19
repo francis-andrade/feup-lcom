@@ -1,0 +1,36 @@
+\hypertarget{utilities_8c}{}\section{utilities.\+c File Reference}
+\label{utilities_8c}\index{utilities.\+c@{utilities.\+c}}
+{\ttfamily \#include \char`\"{}utilities.\+h\char`\"{}}\newline
+Include dependency graph for utilities.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{utilities_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__utilities_gaf3cb5100a651058103311c52a27b4105}{stringcpy} (char $\ast$dest, char $\ast$src)
+\item 
+void \hyperlink{group__utilities_ga971bb40926a0f370263e085d1e2ac690}{stringcat} (char $\ast$dest, char $\ast$src)
+\item 
+int \hyperlink{group__utilities_gaa662bd9797d0cdd2707c9ad14849be44}{hex\+\_\+to\+\_\+dec} (int x)
+\begin{DoxyCompactList}\small\item\em converts a number from hexadecimal to decimal \end{DoxyCompactList}\item 
+int \hyperlink{group__utilities_ga529fd7b4e2b2f87cec4a30c191673207}{floor2} (double x)
+\begin{DoxyCompactList}\small\item\em returns the floor of a double \end{DoxyCompactList}\item 
+int \hyperlink{group__utilities_ga35abf8e6bc22bc3736fbd65416d8c3a2}{round} (double x)
+\begin{DoxyCompactList}\small\item\em rounds x to the closest integer for example (9.\+5-\/$>$10; 9.\+45-\/$>$9) \end{DoxyCompactList}\item 
+int \hyperlink{group__utilities_gafd4f329c8efb45c0dfff44525047a0fa}{abs} (int n)
+\begin{DoxyCompactList}\small\item\em returns the absolute value of a number \end{DoxyCompactList}\item 
+int \hyperlink{group__utilities_ga67452a3b663c47b61edb379f159ae478}{sgn} (int n)
+\begin{DoxyCompactList}\small\item\em returns sign of a number \end{DoxyCompactList}\item 
+int \hyperlink{group__utilities_ga92a937ad6b303c03cc98f5fe9354d235}{samesign} (int x, int y)
+\begin{DoxyCompactList}\small\item\em checks if two number have the same sign \end{DoxyCompactList}\item 
+int \hyperlink{group__utilities_ga75e5e4e3c99b54b12f0bb43becded2d1}{samesignarray} (int size, int $\ast$arr)
+\begin{DoxyCompactList}\small\item\em checks if all the elements of an array have the same sign \end{DoxyCompactList}\item 
+char \hyperlink{group__utilities_gac0df2a1416cd59f12dbc6adfd5f69ba3}{two\+\_\+complement\+\_\+sym} (char c)
+\begin{DoxyCompactList}\small\item\em returns the opposite number in two complement to c \end{DoxyCompactList}\item 
+int \hyperlink{group__utilities_ga79537e8684629d74571e64c633bb5303}{conv\+\_\+to\+\_\+decimal} (char c)
+\begin{DoxyCompactList}\small\item\em converts a char to decimal \end{DoxyCompactList}\end{DoxyCompactItemize}

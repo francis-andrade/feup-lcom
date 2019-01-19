@@ -1,0 +1,22 @@
+<map id="show_ad" name="show_ad">
+<area shape="rect" id="node2" href="$group___bitmap.html#ga3506880ffd407c36eb8aaddd2c1606d2" title="Loads a bmp image. " alt="" coords="154,5,241,32"/>
+<area shape="rect" id="node3" href="$group__rtc.html#ga83dbab748017bcc8531622b94cca1be1" title="gets the date from the rtc " alt="" coords="147,56,248,83"/>
+<area shape="rect" id="node6" href="$group__video__gr.html#gacef21667c79365d57a084bed994c2189" title="Initializes the video module in graphics mode. " alt="" coords="168,107,227,133"/>
+<area shape="rect" id="node10" href="$group__video__gr.html#ga42f593e6656f1a978315aff02b1bcebf" title="Returns to default Minix 3 text mode (0x03: 25 x 80, 16 colors) " alt="" coords="166,157,229,184"/>
+<area shape="rect" id="node11" href="$group__publicity.html#ga7bad5577543cdab533e3bc88669cd691" title="Determines if date is a weekend or not. " alt="" coords="156,208,239,235"/>
+<area shape="rect" id="node13" href="$group___bitmap.html#ga18d05a1c671f4638bc63d37874efb9d4" title="Draws an unscaled, unrotated bitmap at the given position. " alt="" coords="152,259,243,285"/>
+<area shape="rect" id="node18" href="$group__video__gr.html#gae50eb47e283e71498d323e815411acc3" title="copies the double_buffer into the video_buffer " alt="" coords="131,309,264,336"/>
+<area shape="rect" id="node19" href="$group__kbc.html#ga8efa408da2468eaa11a0c515dfa8d79f" title="subscribes a keyboard interruption " alt="" coords="134,360,261,387"/>
+<area shape="rect" id="node20" href="$group__kbc.html#gac76f743c998918d5ff65403aa35c8b05" title="converts a variable passed buy reference to a pointer that can be interpreted in assembly ..." alt="" coords="146,411,249,437"/>
+<area shape="rect" id="node21" href="$group__kbc.html#ga32ab97f6b806fa3a0524e62af55aeb0e" title="unsubscribes a keyboard interruption " alt="" coords="127,461,268,488"/>
+<area shape="rect" id="node4" href="$group__rtc.html#ga9a66dc15a321b825a97887478a95e28f" title="reads from the rtc " alt="" coords="347,5,417,32"/>
+<area shape="rect" id="node5" href="$group__utilities.html#gaa662bd9797d0cdd2707c9ad14849be44" title="converts a number from hexadecimal to decimal " alt="" coords="337,56,427,83"/>
+<area shape="rect" id="node7" href="$group__vbe.html#ga4ef3234e41f2050bc094a22049b69e45" title="Returns information on the input VBE mode, including screen dimensions, color depth and VRAM physical..." alt="" coords="316,107,448,133"/>
+<area shape="rect" id="node8" href="$group__lmlib.html#gae45d971ce2ffcf4dc2677eba033a92cd" title="Allocates a memory block in low memory area with the specified size. " alt="" coords="496,81,567,108"/>
+<area shape="rect" id="node9" href="$group__lmlib.html#ga73e89d9c297b7390021fb545513579c6" title="Frees a memory block in the low memory area, previously allocated using lm_alloc() ..." alt="" coords="499,132,563,159"/>
+<area shape="rect" id="node12" href="$group__publicity.html#ga2ff0d1265d48a43111f38f357dd1f874" title="Determines is year is leap or not. " alt="" coords="354,157,410,184"/>
+<area shape="rect" id="node14" href="$group__video__gr.html#gaf597a67a797839097222fa9b4ae20b3f" title="gets horizontal resolution of the screen " alt="" coords="345,208,419,235"/>
+<area shape="rect" id="node15" href="$group__video__gr.html#ga36f1c43e43d903e085207548cf8d48a2" title="gets vertical resolution of the screen " alt="" coords="345,259,419,285"/>
+<area shape="rect" id="node16" href="$group__video__gr.html#gafa0e51016d7aa337778300ba2ec70a74" title="gets pointer to variable double_buffer " alt="" coords="323,309,441,336"/>
+<area shape="rect" id="node17" href="$group__video__gr.html#ga80f6be1470280496d613f43fbf4f576c" title="gets pointer to variable mouse_buffer " alt="" coords="323,360,441,387"/>
+</map>

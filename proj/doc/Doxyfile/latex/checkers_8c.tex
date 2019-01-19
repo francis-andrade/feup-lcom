@@ -1,0 +1,141 @@
+\hypertarget{checkers_8c}{}\section{checkers.\+c File Reference}
+\label{checkers_8c}\index{checkers.\+c@{checkers.\+c}}
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}checkers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Program\+Logic.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+gr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vbe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utilities.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bitmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}proj.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}publicity.\+h\char`\"{}}\newline
+Include dependency graph for checkers.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{checkers_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___checkers_gad95d8a331ab0758ace223ea301a57f7f}{checkers\+\_\+start\+\_\+game} (char $\ast$path\+\_\+images, int player\+\_\+1, int player\+\_\+2)
+\begin{DoxyCompactList}\small\item\em loads the images and starts the game \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gaf1aa642150939b8b1d104fe437a9d135}{checkers\+\_\+serial\+\_\+handler} (int player1, int player2)
+\begin{DoxyCompactList}\small\item\em handles the game in serial mode being responsible for handling which player should play \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga61f35c6c9bba94dcd5028e185f3ae3f6}{checkers\+\_\+int\+\_\+handler} (int player1, int player2)
+\begin{DoxyCompactList}\small\item\em handles the interrupts \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gac38396bd73b19b176b4016524f63f8aa}{checkers\+\_\+move\+\_\+handler} (\hyperlink{structmouse__packet__t}{mouse\+\_\+packet\+\_\+t} packet, int player1, int player2)
+\begin{DoxyCompactList}\small\item\em handles the moves \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gac0cf60fd44a44bbb1a7c9ff7ec0d998b}{send\+\_\+serial\+\_\+move} (int player, int xi, int yi, int xf, int yf)
+\begin{DoxyCompactList}\small\item\em Sends a message saying that a player did a move. \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gaa082b9cac17a99c54ac6fa5ac40c660d}{send\+\_\+serial\+\_\+ret} (int r)
+\begin{DoxyCompactList}\small\item\em sends a serial message saying that a player finished making a move with the corresponding return value \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga17180b891d06475062d87e08d01af278}{wait\+\_\+for\+\_\+serial\+\_\+message} (int player, int $\ast$r, int $\ast$xi, int $\ast$yi, int $\ast$xf, int $\ast$yf)
+\begin{DoxyCompactList}\small\item\em Waits for a message from the serial port. \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gaa6a495a94944bda567df909f84c62396}{draw\+\_\+board} ()
+\begin{DoxyCompactList}\small\item\em draws a board on the screen \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gaf3fd6677c55727d50220875a0031230b}{put\+\_\+square} (int board\+\_\+x, int board\+\_\+y, int color)
+\begin{DoxyCompactList}\small\item\em places an empty square \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga1d2d36062ce4e9fcdba43dfdc59215d0}{put\+\_\+circle} (int board\+\_\+x, int board\+\_\+y, int color)
+\begin{DoxyCompactList}\small\item\em places a circle \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gaa0642fe5ef48cc14ab51722047092f1f}{move\+\_\+piece} (int player, int xi, int yi, int xf, int yf)
+\begin{DoxyCompactList}\small\item\em moves a piece and handles everything pertinent related to the move \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga01bdfba712e2ceab4902f5cd63f6b482}{draw\+\_\+turn\+\_\+message} (int x, int y, unsigned int background\+\_\+clr, \hyperlink{struct_bitmap}{Bitmap} $\ast$turn)
+\begin{DoxyCompactList}\small\item\em draws the turn message that says who should play now \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gae4a0f98e772d41a53d13748a7d9d1252}{coord\+\_\+to\+\_\+real\+\_\+board} (int coord\+\_\+x, int coord\+\_\+y, int $\ast$board\+\_\+x, int $\ast$board\+\_\+y)
+\begin{DoxyCompactList}\small\item\em converts screen coordinates to board coordinates \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_gad7f7feb83c536c88d67834e7e20780ee}{state\+\_\+to\+\_\+player} (int \hyperlink{checkers_8c_a89f234133d3efe315836311cbf21c64b}{state})
+\begin{DoxyCompactList}\small\item\em converts a state to the corresponding player \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga258c52e2e4a6ef24d9fb5ec06bedaa53}{create\+\_\+mouse} (int x, int y)
+\item 
+int \hyperlink{group___checkers_ga597f43aacf586aacf3c32664944f8ba9}{move\+\_\+mouse} (int x\+\_\+delta, int y\+\_\+delta)
+\begin{DoxyCompactList}\small\item\em moves mouse (x\+\_\+delta, y\+\_\+delta) \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga0f9d87b0bea416d794ed80855026d550}{draw\+\_\+mouse} ()
+\begin{DoxyCompactList}\small\item\em draws a mouse \end{DoxyCompactList}\item 
+int \hyperlink{group___checkers_ga0580c6365cfa09e2d8a30d3d47f3adb1}{draw\+\_\+mouse\+\_\+circle} (int xi, int yi, int radius, int color)
+\begin{DoxyCompactList}\small\item\em draws the the mouse circle \end{DoxyCompactList}\item 
+int \hyperlink{checkers_8c_aacaf4b2a6f8825bb15f2b4a372974cce}{delete\+\_\+mouse} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{checkers_8c_a89f234133d3efe315836311cbf21c64b}{state} =\hyperlink{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55bad88d91bd9763e878df21645bae0ba9b5}{S\+T\+A\+T\+E\+\_\+1\+\_\+\+D\+E\+F\+A\+U\+LT}
+\item 
+static char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board} \mbox{[}8\mbox{]}\mbox{[}8\mbox{]}
+\item 
+static \hyperlink{structmouse__t}{mouse\+\_\+t} $\ast$ \hyperlink{checkers_8c_ab4e895b3d4aa209fc0ffc3adeffebb33}{mouse}
+\item 
+static \hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{checkers_8c_acd442af53aa26eaeef242c9483ee06b9}{cursor}
+\item 
+static \hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{checkers_8c_a6be9c164fb2985f9dcdcdcbae6673ac1}{redturn}
+\item 
+static \hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{checkers_8c_ae52b102643b34da7b84294f2812902cb}{yellowturn}
+\item 
+static \hyperlink{struct_bitmap}{Bitmap} $\ast$ \hyperlink{checkers_8c_a15de70574bc710486bf129a5c8f1634e}{background}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{checkers_8c_aacaf4b2a6f8825bb15f2b4a372974cce}{}\label{checkers_8c_aacaf4b2a6f8825bb15f2b4a372974cce} 
+\index{checkers.\+c@{checkers.\+c}!delete\+\_\+mouse@{delete\+\_\+mouse}}
+\index{delete\+\_\+mouse@{delete\+\_\+mouse}!checkers.\+c@{checkers.\+c}}
+\subsubsection{\texorpdfstring{delete\+\_\+mouse()}{delete\_mouse()}}
+{\footnotesize\ttfamily int delete\+\_\+mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{checkers_8c_a15de70574bc710486bf129a5c8f1634e}{}\label{checkers_8c_a15de70574bc710486bf129a5c8f1634e} 
+\index{checkers.\+c@{checkers.\+c}!background@{background}}
+\index{background@{background}!checkers.\+c@{checkers.\+c}}
+\subsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ background\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{}\label{checkers_8c_a12f50bd537a3a737da9d47710c308ae3} 
+\index{checkers.\+c@{checkers.\+c}!board@{board}}
+\index{board@{board}!checkers.\+c@{checkers.\+c}}
+\subsubsection{\texorpdfstring{board}{board}}
+{\footnotesize\ttfamily char board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{checkers_8c_acd442af53aa26eaeef242c9483ee06b9}{}\label{checkers_8c_acd442af53aa26eaeef242c9483ee06b9} 
+\index{checkers.\+c@{checkers.\+c}!cursor@{cursor}}
+\index{cursor@{cursor}!checkers.\+c@{checkers.\+c}}
+\subsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ cursor\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{checkers_8c_ab4e895b3d4aa209fc0ffc3adeffebb33}{}\label{checkers_8c_ab4e895b3d4aa209fc0ffc3adeffebb33} 
+\index{checkers.\+c@{checkers.\+c}!mouse@{mouse}}
+\index{mouse@{mouse}!checkers.\+c@{checkers.\+c}}
+\subsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \hyperlink{structmouse__t}{mouse\+\_\+t}$\ast$ mouse\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{checkers_8c_a6be9c164fb2985f9dcdcdcbae6673ac1}{}\label{checkers_8c_a6be9c164fb2985f9dcdcdcbae6673ac1} 
+\index{checkers.\+c@{checkers.\+c}!redturn@{redturn}}
+\index{redturn@{redturn}!checkers.\+c@{checkers.\+c}}
+\subsubsection{\texorpdfstring{redturn}{redturn}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ redturn\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{checkers_8c_a89f234133d3efe315836311cbf21c64b}{}\label{checkers_8c_a89f234133d3efe315836311cbf21c64b} 
+\index{checkers.\+c@{checkers.\+c}!state@{state}}
+\index{state@{state}!checkers.\+c@{checkers.\+c}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily int state =\hyperlink{group___checkers_gga06fc87d81c62e9abb8790b6e5713c55bad88d91bd9763e878df21645bae0ba9b5}{S\+T\+A\+T\+E\+\_\+1\+\_\+\+D\+E\+F\+A\+U\+LT}\hspace{0.3cm}{\ttfamily [static]}}
+
+\hypertarget{checkers_8c_ae52b102643b34da7b84294f2812902cb}{}\label{checkers_8c_ae52b102643b34da7b84294f2812902cb} 
+\index{checkers.\+c@{checkers.\+c}!yellowturn@{yellowturn}}
+\index{yellowturn@{yellowturn}!checkers.\+c@{checkers.\+c}}
+\subsubsection{\texorpdfstring{yellowturn}{yellowturn}}
+{\footnotesize\ttfamily \hyperlink{struct_bitmap}{Bitmap}$\ast$ yellowturn\hspace{0.3cm}{\ttfamily [static]}}
+

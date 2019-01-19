@@ -1,0 +1,85 @@
+\hypertarget{vbe_8h}{}\section{vbe.\+h File Reference}
+\label{vbe_8h}\index{vbe.\+h@{vbe.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}lmlib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+Include dependency graph for vbe.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vbe_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vbe_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvbe__mode__info__t}{vbe\+\_\+mode\+\_\+info\+\_\+t}
+\item 
+struct \hyperlink{structvbe__info__block__t}{vbe\+\_\+info\+\_\+block\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{Indent}{\bf G\+E\+N\+E\+R\+IC M\+A\+C\+R\+OS}\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__vbe_ga68b87c2339cb305d66b69b5551b96c73}{P\+B2\+B\+A\+SE}(x)~(((x) $>$$>$ 4) \& 0x0\+F000)
+\item 
+\#define \hyperlink{group__vbe_ga70c65ed4c6d71865daa96d31befb33fd}{P\+B2\+O\+FF}(x)~((x) \& 0x0\+F\+F\+F\+F)
+\item 
+\#define \hyperlink{group__vbe_ga9cb0519a88e2860f94e49d7444ee5725}{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+O\+KE}~0x4F
+\item 
+\#define \hyperlink{group__vbe_ga13e1037464e7407d1df6aa4041b180cd}{V\+B\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}~0x10
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf F\+U\+N\+C\+T\+I\+O\+NS}\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__vbe_ga7850c02defc99773b2704700c6cab3fd}{V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+ER}~0x00
+\item 
+\#define \hyperlink{group__vbe_gab9d80b9e6d7846ea3fa090c817771866}{V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+M\+O\+DE}~0x01
+\item 
+\#define \hyperlink{group__vbe_ga02477c4996ff058aee590b54f2146eb5}{V\+B\+E\+\_\+\+S\+E\+T\+\_\+\+M\+O\+DE}~0x02
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf V\+BE R\+E\+T\+U\+RN S\+T\+A\+T\+US}\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__vbe_gaf48e8544d690af8d91d99653bad50a28}{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS}~0x00
+\item 
+\#define \hyperlink{group__vbe_ga0a4df98507b443e279641268d5583a3e}{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED}~0x01
+\item 
+\#define \hyperlink{group__vbe_ga265850c04b2ec9164871c40cb8aa3b4f}{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~0x02
+\item 
+\#define \hyperlink{group__vbe_ga48de88d26f563ed30a13e8158b90a54f}{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+A\+L\+ID}~0x03
+\item 
+\#define \hyperlink{group__vbe_ga4aba3d39cac7f9bc65f8b97a8daa88c6}{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~0x4F
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf V\+BE M\+O\+D\+ES}\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__vbe_ga6d93a7fdde65a4c44c41cd0fae46a471}{V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+B\+IT}~14
+\item 
+\#define \hyperlink{group__vbe_gaa0cd0b74a86aa2dc9eb78017743d6f1a}{V\+B\+E\+\_\+\+G\+R\+A\+P\+H\+I\+C\+\_\+\+M\+O\+DE}~0x105
+\item 
+\#define \hyperlink{group__vbe_gac01942dc601c03d128c481824b1ae1d3}{V\+B\+E\+\_\+117\+\_\+\+M\+O\+DE}~0x117
+\item 
+\#define \hyperlink{group__vbe_gaf744f251b7e7d0acd6224997e46def7b}{V\+B\+E\+\_\+565\+\_\+\+M\+O\+DE}~0x11A
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__vbe_ga4ef3234e41f2050bc094a22049b69e45}{vbe\+\_\+get\+\_\+mode\+\_\+info} (unsigned short mode, \hyperlink{structvbe__mode__info__t}{vbe\+\_\+mode\+\_\+info\+\_\+t} $\ast$vmi\+\_\+p)
+\begin{DoxyCompactList}\small\item\em Returns information on the input V\+BE mode, including screen dimensions, color depth and V\+R\+AM physical address. \end{DoxyCompactList}\item 
+int \hyperlink{group__vbe_ga4e9da75c9063842b969ad400e5700c0c}{vbe\+\_\+get\+\_\+info\+\_\+block} (\hyperlink{structvbe__info__block__t}{vbe\+\_\+info\+\_\+block\+\_\+t} $\ast$vmi\+\_\+p)
+\begin{DoxyCompactList}\small\item\em Returns information on the controller. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,113 @@
+\hypertarget{group__timer}{}\section{timer}
+\label{group__timer}\index{timer@{timer}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__timer_ga05c1893c9a1e24ff5d76b2958adb8851}{ignore\+\_\+interrupts} (unsigned char hook\+\_\+id)
+\item 
+int \hyperlink{group__timer_ga915070da84f7a3baa2e0fe634cb4bcd8}{timer\+\_\+subscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em subscribes a timer interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__timer_gab9eea51549744bca5c5c923b388bb4ee}{timer\+\_\+unsubscribe\+\_\+int} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes a timer interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__timer_gada4efbb5c88275795526fc45f0814aa3}{timer\+\_\+set\+\_\+square} (unsigned long timer, unsigned long freq)
+\begin{DoxyCompactList}\small\item\em sets the timer frequency \end{DoxyCompactList}\item 
+int \hyperlink{group__timer_ga8eb3357bc05265afc4bea5bbbb480a53}{timer\+\_\+get\+\_\+conf} (unsigned long timer, unsigned char $\ast$st)
+\begin{DoxyCompactList}\small\item\em Reads the input timer configuration via read-\/back command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__timer_ga96e6321e488d93a8134897510c435eb7}{timer\+\_\+hook\+\_\+id}
+\begin{DoxyCompactList}\small\item\em hook for handling timer interruptions \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions related to the timer 
+
+\subsection{Function Documentation}
+\hypertarget{group__timer_ga05c1893c9a1e24ff5d76b2958adb8851}{}\label{group__timer_ga05c1893c9a1e24ff5d76b2958adb8851} 
+\index{timer@{timer}!ignore\+\_\+interrupts@{ignore\+\_\+interrupts}}
+\index{ignore\+\_\+interrupts@{ignore\+\_\+interrupts}!timer@{timer}}
+\subsubsection{\texorpdfstring{ignore\+\_\+interrupts()}{ignore\_interrupts()}}
+{\footnotesize\ttfamily void ignore\+\_\+interrupts (\begin{DoxyParamCaption}\item[{unsigned char}]{hook\+\_\+id }\end{DoxyParamCaption})}
+
+\hypertarget{group__timer_ga8eb3357bc05265afc4bea5bbbb480a53}{}\label{group__timer_ga8eb3357bc05265afc4bea5bbbb480a53} 
+\index{timer@{timer}!timer\+\_\+get\+\_\+conf@{timer\+\_\+get\+\_\+conf}}
+\index{timer\+\_\+get\+\_\+conf@{timer\+\_\+get\+\_\+conf}!timer@{timer}}
+\subsubsection{\texorpdfstring{timer\+\_\+get\+\_\+conf()}{timer\_get\_conf()}}
+{\footnotesize\ttfamily int timer\+\_\+get\+\_\+conf (\begin{DoxyParamCaption}\item[{unsigned long}]{timer,  }\item[{unsigned char $\ast$}]{st }\end{DoxyParamCaption})}
+
+
+
+Reads the input timer configuration via read-\/back command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & Timer whose config to read (Ranges from 0 to 2) \\
+\hline
+{\em st} & Address of memory position to be filled with the timer config \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{group__timer_gada4efbb5c88275795526fc45f0814aa3}{}\label{group__timer_gada4efbb5c88275795526fc45f0814aa3} 
+\index{timer@{timer}!timer\+\_\+set\+\_\+square@{timer\+\_\+set\+\_\+square}}
+\index{timer\+\_\+set\+\_\+square@{timer\+\_\+set\+\_\+square}!timer@{timer}}
+\subsubsection{\texorpdfstring{timer\+\_\+set\+\_\+square()}{timer\_set\_square()}}
+{\footnotesize\ttfamily int timer\+\_\+set\+\_\+square (\begin{DoxyParamCaption}\item[{unsigned long}]{timer,  }\item[{unsigned long}]{freq }\end{DoxyParamCaption})}
+
+
+
+sets the timer frequency 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & -\/$>$ timer \\
+\hline
+{\em freq} & -\/$>$ frequence \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 in case of success, o otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 0
+\hypertarget{group__timer_ga915070da84f7a3baa2e0fe634cb4bcd8}{}\label{group__timer_ga915070da84f7a3baa2e0fe634cb4bcd8} 
+\index{timer@{timer}!timer\+\_\+subscribe\+\_\+int@{timer\+\_\+subscribe\+\_\+int}}
+\index{timer\+\_\+subscribe\+\_\+int@{timer\+\_\+subscribe\+\_\+int}!timer@{timer}}
+\subsubsection{\texorpdfstring{timer\+\_\+subscribe\+\_\+int()}{timer\_subscribe\_int()}}
+{\footnotesize\ttfamily int timer\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+subscribes a timer interruption 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\hypertarget{group__timer_gab9eea51549744bca5c5c923b388bb4ee}{}\label{group__timer_gab9eea51549744bca5c5c923b388bb4ee} 
+\index{timer@{timer}!timer\+\_\+unsubscribe\+\_\+int@{timer\+\_\+unsubscribe\+\_\+int}}
+\index{timer\+\_\+unsubscribe\+\_\+int@{timer\+\_\+unsubscribe\+\_\+int}!timer@{timer}}
+\subsubsection{\texorpdfstring{timer\+\_\+unsubscribe\+\_\+int()}{timer\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int timer\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsubscribes a timer interruption 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\hypertarget{group__timer_ga96e6321e488d93a8134897510c435eb7}{}\label{group__timer_ga96e6321e488d93a8134897510c435eb7} 
+\index{timer@{timer}!timer\+\_\+hook\+\_\+id@{timer\+\_\+hook\+\_\+id}}
+\index{timer\+\_\+hook\+\_\+id@{timer\+\_\+hook\+\_\+id}!timer@{timer}}
+\subsubsection{\texorpdfstring{timer\+\_\+hook\+\_\+id}{timer\_hook\_id}}
+{\footnotesize\ttfamily int timer\+\_\+hook\+\_\+id}
+
+
+
+hook for handling timer interruptions 
+

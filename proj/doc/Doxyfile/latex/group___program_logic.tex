@@ -1,0 +1,260 @@
+\hypertarget{group___program_logic}{}\section{Program\+Logic}
+\label{group___program_logic}\index{Program\+Logic@{Program\+Logic}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___program_logic_ga2838b9e6247aa4515f76cfeccf8e1cd8}{create\+Board} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]})
+\begin{DoxyCompactList}\small\item\em Creates the board with initial positions. \end{DoxyCompactList}\item 
+int \hyperlink{group___program_logic_ga02801d684d1f985fcaff098e12a0bf59}{move\+Disc} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, char player, int xi, int yi, int xf, int yf)
+\begin{DoxyCompactList}\small\item\em Moves disc in the given position(xi,yi) to final position also given(xf,yf). \end{DoxyCompactList}\item 
+int \hyperlink{group___program_logic_gaed1b217c7e40a6fb27a0e6a719594aba}{is\+Position\+Initial\+Valid} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, char player, int xi, int yi)
+\begin{DoxyCompactList}\small\item\em Verifies if given initial position(xi,yi) is valid or not. \end{DoxyCompactList}\item 
+int \hyperlink{group___program_logic_ga0862e9966f69666bb39dbf1c58863c3b}{verify\+Capture\+Move} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, char player, int xi, int yi)
+\begin{DoxyCompactList}\small\item\em Verifies if given initial position(xi,yi) can do a capture move or not. \end{DoxyCompactList}\item 
+void \hyperlink{group___program_logic_ga484dd8982591f724c6ff6749bba6869a}{move\+To\+Final} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, int xi, int yi, int xf, int yf)
+\begin{DoxyCompactList}\small\item\em Moves disc in the given position(xi,yi) to final position also given(xf,yf). \end{DoxyCompactList}\item 
+void \hyperlink{group___program_logic_ga5de7cebab5418f009cebb5dc73e50cd2}{make\+Capture\+Move} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, int xi, int yi, int xf, int yf)
+\begin{DoxyCompactList}\small\item\em Moves disc in the given position(xi,yi) to final position also given(xf,yf), making a capture move. \end{DoxyCompactList}\item 
+int \hyperlink{group___program_logic_gacfd2089a907444dab0ccd2d95f321b8b}{is\+End\+Game} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]})
+\begin{DoxyCompactList}\small\item\em Verifies if it is the end of the game. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{group___program_logic_ga8d87858478876b33304e38cea751951b}{moves\+I\+Can\+Do} (char \hyperlink{checkers_8c_a12f50bd537a3a737da9d47710c308ae3}{board}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}, char player, int xi, int yi)
+\begin{DoxyCompactList}\small\item\em Gives the moves that a disc can make. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for the logical part of the game 
+
+\subsection{Function Documentation}
+\hypertarget{group___program_logic_ga2838b9e6247aa4515f76cfeccf8e1cd8}{}\label{group___program_logic_ga2838b9e6247aa4515f76cfeccf8e1cd8} 
+\index{Program\+Logic@{Program\+Logic}!create\+Board@{create\+Board}}
+\index{create\+Board@{create\+Board}!Program\+Logic@{Program\+Logic}}
+\subsubsection{\texorpdfstring{create\+Board()}{createBoard()}}
+{\footnotesize\ttfamily int create\+Board (\begin{DoxyParamCaption}\item[{char}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Creates the board with initial positions. 
+
+0 -\/ empty position;
+
+1 -\/ black discs (player 1);
+
+2 -\/ white discs (player 2).
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}} & array of arrays with current game status. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns 0 if successful. 
+\end{DoxyReturn}
+\hypertarget{group___program_logic_gacfd2089a907444dab0ccd2d95f321b8b}{}\label{group___program_logic_gacfd2089a907444dab0ccd2d95f321b8b} 
+\index{Program\+Logic@{Program\+Logic}!is\+End\+Game@{is\+End\+Game}}
+\index{is\+End\+Game@{is\+End\+Game}!Program\+Logic@{Program\+Logic}}
+\subsubsection{\texorpdfstring{is\+End\+Game()}{isEndGame()}}
+{\footnotesize\ttfamily int is\+End\+Game (\begin{DoxyParamCaption}\item[{char}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Verifies if it is the end of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}} & -\/$>$ array of arrays with current game status. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if it\textquotesingle{}s not the end of the game; 
+
+1 if it\textquotesingle{}s the end of the game. 
+\end{DoxyReturn}
+\hypertarget{group___program_logic_gaed1b217c7e40a6fb27a0e6a719594aba}{}\label{group___program_logic_gaed1b217c7e40a6fb27a0e6a719594aba} 
+\index{Program\+Logic@{Program\+Logic}!is\+Position\+Initial\+Valid@{is\+Position\+Initial\+Valid}}
+\index{is\+Position\+Initial\+Valid@{is\+Position\+Initial\+Valid}!Program\+Logic@{Program\+Logic}}
+\subsubsection{\texorpdfstring{is\+Position\+Initial\+Valid()}{isPositionInitialValid()}}
+{\footnotesize\ttfamily int is\+Position\+Initial\+Valid (\begin{DoxyParamCaption}\item[{char}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{char}]{player,  }\item[{int}]{xi,  }\item[{int}]{yi }\end{DoxyParamCaption})}
+
+
+
+Verifies if given initial position(xi,yi) is valid or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}} & array of arrays with current game status; \\
+\hline
+{\em player} & the player who is going to play (1-\/player with black discs; 2-\/player with white discs); \\
+\hline
+{\em xi} & initial position x component; \\
+\hline
+{\em yi} & initial position y component. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if valid position; 
+
+1 if invalid position. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{group___program_logic_gaed1b217c7e40a6fb27a0e6a719594aba_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{group___program_logic_ga5de7cebab5418f009cebb5dc73e50cd2}{}\label{group___program_logic_ga5de7cebab5418f009cebb5dc73e50cd2} 
+\index{Program\+Logic@{Program\+Logic}!make\+Capture\+Move@{make\+Capture\+Move}}
+\index{make\+Capture\+Move@{make\+Capture\+Move}!Program\+Logic@{Program\+Logic}}
+\subsubsection{\texorpdfstring{make\+Capture\+Move()}{makeCaptureMove()}}
+{\footnotesize\ttfamily void make\+Capture\+Move (\begin{DoxyParamCaption}\item[{char}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{int}]{xi,  }\item[{int}]{yi,  }\item[{int}]{xf,  }\item[{int}]{yf }\end{DoxyParamCaption})}
+
+
+
+Moves disc in the given position(xi,yi) to final position also given(xf,yf), making a capture move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}} & -\/$>$ array of arrays with current game status; \\
+\hline
+{\em xi} & initial position x component; \\
+\hline
+{\em yi} & initial position y component; \\
+\hline
+{\em xf} & final position x component; \\
+\hline
+{\em yf} & final position y component. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___program_logic_ga02801d684d1f985fcaff098e12a0bf59}{}\label{group___program_logic_ga02801d684d1f985fcaff098e12a0bf59} 
+\index{Program\+Logic@{Program\+Logic}!move\+Disc@{move\+Disc}}
+\index{move\+Disc@{move\+Disc}!Program\+Logic@{Program\+Logic}}
+\subsubsection{\texorpdfstring{move\+Disc()}{moveDisc()}}
+{\footnotesize\ttfamily int move\+Disc (\begin{DoxyParamCaption}\item[{char}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{char}]{player,  }\item[{int}]{xi,  }\item[{int}]{yi,  }\item[{int}]{xf,  }\item[{int}]{yf }\end{DoxyParamCaption})}
+
+
+
+Moves disc in the given position(xi,yi) to final position also given(xf,yf). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}} & array of arrays with current game status; \\
+\hline
+{\em player} & the player who is going to play (1-\/player with black discs; 2-\/player with white discs); \\
+\hline
+{\em xi} & initial position x component; \\
+\hline
+{\em yi} & initial position y component; \\
+\hline
+{\em xf} & final position x component; \\
+\hline
+{\em yf} & final position y component. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if invalid play; 
+
+1 if valid play -\/ move disc to right side; 
+
+2 if valid play -\/ move disc to left side; 
+
+3 if valid play -\/ capture disc to right side; 
+
+4 if valid play -\/ capture disc to left side; 
+
+5 if invalid play -\/ has to capture a disc; 
+
+6 if invalid play -\/ has to capture a disc with another initial position. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{group___program_logic_ga02801d684d1f985fcaff098e12a0bf59_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{group___program_logic_ga8d87858478876b33304e38cea751951b}{}\label{group___program_logic_ga8d87858478876b33304e38cea751951b} 
+\index{Program\+Logic@{Program\+Logic}!moves\+I\+Can\+Do@{moves\+I\+Can\+Do}}
+\index{moves\+I\+Can\+Do@{moves\+I\+Can\+Do}!Program\+Logic@{Program\+Logic}}
+\subsubsection{\texorpdfstring{moves\+I\+Can\+Do()}{movesICanDo()}}
+{\footnotesize\ttfamily int$\ast$ moves\+I\+Can\+Do (\begin{DoxyParamCaption}\item[{char}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{char}]{player,  }\item[{int}]{xi,  }\item[{int}]{yi }\end{DoxyParamCaption})}
+
+
+
+Gives the moves that a disc can make. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}} & array of arrays with current game status; \\
+\hline
+{\em player} & the player who is going to play (1-\/player with black discs; 2-\/player with white discs); \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns an array of integers(r\mbox{[}5\mbox{]}) with the positions we can move to\+: 
+
+r\mbox{[}0\mbox{]} number of positions we can use(0,1 or 2); 
+
+r\mbox{[}1\mbox{]} and r\mbox{[}2\mbox{]} x and y, respectively, of a position we can move to (used if r\mbox{[}0\mbox{]}==1 or r\mbox{[}0\mbox{]}==2); 
+
+r\mbox{[}3\mbox{]} and r\mbox{[}4\mbox{]} x and y, respectively, of a position we can move to (used if r\mbox{[}0\mbox{]}==2). 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___program_logic_ga8d87858478876b33304e38cea751951b_cgraph}
+\end{center}
+\end{figure}
+\hypertarget{group___program_logic_ga484dd8982591f724c6ff6749bba6869a}{}\label{group___program_logic_ga484dd8982591f724c6ff6749bba6869a} 
+\index{Program\+Logic@{Program\+Logic}!move\+To\+Final@{move\+To\+Final}}
+\index{move\+To\+Final@{move\+To\+Final}!Program\+Logic@{Program\+Logic}}
+\subsubsection{\texorpdfstring{move\+To\+Final()}{moveToFinal()}}
+{\footnotesize\ttfamily void move\+To\+Final (\begin{DoxyParamCaption}\item[{char}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{int}]{xi,  }\item[{int}]{yi,  }\item[{int}]{xf,  }\item[{int}]{yf }\end{DoxyParamCaption})}
+
+
+
+Moves disc in the given position(xi,yi) to final position also given(xf,yf). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}} & array of arrays with current game status; \\
+\hline
+{\em xi} & initial position x component; \\
+\hline
+{\em yi} & initial position y component; \\
+\hline
+{\em xf} & final position x component; \\
+\hline
+{\em yf} & final position y component. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___program_logic_ga0862e9966f69666bb39dbf1c58863c3b}{}\label{group___program_logic_ga0862e9966f69666bb39dbf1c58863c3b} 
+\index{Program\+Logic@{Program\+Logic}!verify\+Capture\+Move@{verify\+Capture\+Move}}
+\index{verify\+Capture\+Move@{verify\+Capture\+Move}!Program\+Logic@{Program\+Logic}}
+\subsubsection{\texorpdfstring{verify\+Capture\+Move()}{verifyCaptureMove()}}
+{\footnotesize\ttfamily int verify\+Capture\+Move (\begin{DoxyParamCaption}\item[{char}]{board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]},  }\item[{char}]{player,  }\item[{int}]{xi,  }\item[{int}]{yi }\end{DoxyParamCaption})}
+
+
+
+Verifies if given initial position(xi,yi) can do a capture move or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}} & array of arrays with current game status; \\
+\hline
+{\em player} & the player who is going to play (1-\/player with black discs; 2-\/player with white discs); \\
+\hline
+{\em xi} & initial position x component; \\
+\hline
+{\em yi} & initial position y component. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if cant make any cature moves; 
+
+1 if can do a capture move to right side; 
+
+2 if can do a capture move to left side; 
+
+3 if can do a capture move to both sides. 
+\end{DoxyReturn}

@@ -1,0 +1,209 @@
+\hypertarget{group__vbe}{}\section{vbe}
+\label{group__vbe}\index{vbe@{vbe}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvbe__mode__info__t}{vbe\+\_\+mode\+\_\+info\+\_\+t}
+\item 
+struct \hyperlink{structvbe__info__block__t}{vbe\+\_\+info\+\_\+block\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__vbe_ga4ef3234e41f2050bc094a22049b69e45}{vbe\+\_\+get\+\_\+mode\+\_\+info} (unsigned short mode, \hyperlink{structvbe__mode__info__t}{vbe\+\_\+mode\+\_\+info\+\_\+t} $\ast$vmi\+\_\+p)
+\begin{DoxyCompactList}\small\item\em Returns information on the input V\+BE mode, including screen dimensions, color depth and V\+R\+AM physical address. \end{DoxyCompactList}\item 
+int \hyperlink{group__vbe_ga4e9da75c9063842b969ad400e5700c0c}{vbe\+\_\+get\+\_\+info\+\_\+block} (\hyperlink{structvbe__info__block__t}{vbe\+\_\+info\+\_\+block\+\_\+t} $\ast$vmi\+\_\+p)
+\begin{DoxyCompactList}\small\item\em Returns information on the controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{G\+E\+N\+E\+R\+IC M\+A\+C\+R\+OS}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__vbe_ga68b87c2339cb305d66b69b5551b96c73}{P\+B2\+B\+A\+SE}(x)~(((x) $>$$>$ 4) \& 0x0\+F000)
+\item 
+\#define \hyperlink{group__vbe_ga70c65ed4c6d71865daa96d31befb33fd}{P\+B2\+O\+FF}(x)~((x) \& 0x0\+F\+F\+F\+F)
+\item 
+\#define \hyperlink{group__vbe_ga9cb0519a88e2860f94e49d7444ee5725}{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+O\+KE}~0x4F
+\item 
+\#define \hyperlink{group__vbe_ga13e1037464e7407d1df6aa4041b180cd}{V\+B\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}~0x10
+\end{DoxyCompactItemize}
+\subsection*{F\+U\+N\+C\+T\+I\+O\+NS}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__vbe_ga7850c02defc99773b2704700c6cab3fd}{V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+ER}~0x00
+\item 
+\#define \hyperlink{group__vbe_gab9d80b9e6d7846ea3fa090c817771866}{V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+M\+O\+DE}~0x01
+\item 
+\#define \hyperlink{group__vbe_ga02477c4996ff058aee590b54f2146eb5}{V\+B\+E\+\_\+\+S\+E\+T\+\_\+\+M\+O\+DE}~0x02
+\end{DoxyCompactItemize}
+\subsection*{V\+BE R\+E\+T\+U\+RN S\+T\+A\+T\+US}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__vbe_gaf48e8544d690af8d91d99653bad50a28}{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS}~0x00
+\item 
+\#define \hyperlink{group__vbe_ga0a4df98507b443e279641268d5583a3e}{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED}~0x01
+\item 
+\#define \hyperlink{group__vbe_ga265850c04b2ec9164871c40cb8aa3b4f}{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~0x02
+\item 
+\#define \hyperlink{group__vbe_ga48de88d26f563ed30a13e8158b90a54f}{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+A\+L\+ID}~0x03
+\item 
+\#define \hyperlink{group__vbe_ga4aba3d39cac7f9bc65f8b97a8daa88c6}{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}~0x4F
+\end{DoxyCompactItemize}
+\subsection*{V\+BE M\+O\+D\+ES}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__vbe_ga6d93a7fdde65a4c44c41cd0fae46a471}{V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+B\+IT}~14
+\item 
+\#define \hyperlink{group__vbe_gaa0cd0b74a86aa2dc9eb78017743d6f1a}{V\+B\+E\+\_\+\+G\+R\+A\+P\+H\+I\+C\+\_\+\+M\+O\+DE}~0x105
+\item 
+\#define \hyperlink{group__vbe_gac01942dc601c03d128c481824b1ae1d3}{V\+B\+E\+\_\+117\+\_\+\+M\+O\+DE}~0x117
+\item 
+\#define \hyperlink{group__vbe_gaf744f251b7e7d0acd6224997e46def7b}{V\+B\+E\+\_\+565\+\_\+\+M\+O\+DE}~0x11A
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions related to the V\+BE standard 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group__vbe_ga68b87c2339cb305d66b69b5551b96c73}{}\label{group__vbe_ga68b87c2339cb305d66b69b5551b96c73} 
+\index{vbe@{vbe}!P\+B2\+B\+A\+SE@{P\+B2\+B\+A\+SE}}
+\index{P\+B2\+B\+A\+SE@{P\+B2\+B\+A\+SE}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{P\+B2\+B\+A\+SE}{PB2BASE}}
+{\footnotesize\ttfamily \#define P\+B2\+B\+A\+SE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(((x) $>$$>$ 4) \& 0x0\+F000)}
+
+\hypertarget{group__vbe_ga70c65ed4c6d71865daa96d31befb33fd}{}\label{group__vbe_ga70c65ed4c6d71865daa96d31befb33fd} 
+\index{vbe@{vbe}!P\+B2\+O\+FF@{P\+B2\+O\+FF}}
+\index{P\+B2\+O\+FF@{P\+B2\+O\+FF}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{P\+B2\+O\+FF}{PB2OFF}}
+{\footnotesize\ttfamily \#define P\+B2\+O\+FF(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x) \& 0x0\+F\+F\+F\+F)}
+
+\hypertarget{group__vbe_gac01942dc601c03d128c481824b1ae1d3}{}\label{group__vbe_gac01942dc601c03d128c481824b1ae1d3} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+117\+\_\+\+M\+O\+DE@{V\+B\+E\+\_\+117\+\_\+\+M\+O\+DE}}
+\index{V\+B\+E\+\_\+117\+\_\+\+M\+O\+DE@{V\+B\+E\+\_\+117\+\_\+\+M\+O\+DE}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+117\+\_\+\+M\+O\+DE}{VBE\_117\_MODE}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+117\+\_\+\+M\+O\+DE~0x117}
+
+\hypertarget{group__vbe_gaf744f251b7e7d0acd6224997e46def7b}{}\label{group__vbe_gaf744f251b7e7d0acd6224997e46def7b} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+565\+\_\+\+M\+O\+DE@{V\+B\+E\+\_\+565\+\_\+\+M\+O\+DE}}
+\index{V\+B\+E\+\_\+565\+\_\+\+M\+O\+DE@{V\+B\+E\+\_\+565\+\_\+\+M\+O\+DE}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+565\+\_\+\+M\+O\+DE}{VBE\_565\_MODE}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+565\+\_\+\+M\+O\+DE~0x11A}
+
+\hypertarget{group__vbe_ga0a4df98507b443e279641268d5583a3e}{}\label{group__vbe_ga0a4df98507b443e279641268d5583a3e} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED@{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED}}
+\index{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED@{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED}{VBE\_FUNCTION\_FAILED}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+ED~0x01}
+
+\hypertarget{group__vbe_ga48de88d26f563ed30a13e8158b90a54f}{}\label{group__vbe_ga48de88d26f563ed30a13e8158b90a54f} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+A\+L\+ID@{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+A\+L\+ID}}
+\index{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+A\+L\+ID@{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+A\+L\+ID}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+A\+L\+ID}{VBE\_FUNCTION\_INVALID}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+A\+L\+ID~0x03}
+
+\hypertarget{group__vbe_ga9cb0519a88e2860f94e49d7444ee5725}{}\label{group__vbe_ga9cb0519a88e2860f94e49d7444ee5725} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+O\+KE@{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+O\+KE}}
+\index{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+O\+KE@{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+O\+KE}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+O\+KE}{VBE\_FUNCTION\_INVOKE}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+I\+N\+V\+O\+KE~0x4F}
+
+\hypertarget{group__vbe_ga265850c04b2ec9164871c40cb8aa3b4f}{}\label{group__vbe_ga265850c04b2ec9164871c40cb8aa3b4f} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED@{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}}
+\index{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED@{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}{VBE\_FUNCTION\_NOT\_SUPPORTED}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED~0x02}
+
+\hypertarget{group__vbe_gaf48e8544d690af8d91d99653bad50a28}{}\label{group__vbe_gaf48e8544d690af8d91d99653bad50a28} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS@{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS}}
+\index{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS@{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS}{VBE\_FUNCTION\_SUCCESS}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+C\+C\+E\+SS~0x00}
+
+\hypertarget{group__vbe_ga4aba3d39cac7f9bc65f8b97a8daa88c6}{}\label{group__vbe_ga4aba3d39cac7f9bc65f8b97a8daa88c6} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED@{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}}
+\index{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED@{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED}{VBE\_FUNCTION\_SUPPORTED}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+S\+U\+P\+P\+O\+R\+T\+ED~0x4F}
+
+\hypertarget{group__vbe_gaa0cd0b74a86aa2dc9eb78017743d6f1a}{}\label{group__vbe_gaa0cd0b74a86aa2dc9eb78017743d6f1a} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+\+G\+R\+A\+P\+H\+I\+C\+\_\+\+M\+O\+DE@{V\+B\+E\+\_\+\+G\+R\+A\+P\+H\+I\+C\+\_\+\+M\+O\+DE}}
+\index{V\+B\+E\+\_\+\+G\+R\+A\+P\+H\+I\+C\+\_\+\+M\+O\+DE@{V\+B\+E\+\_\+\+G\+R\+A\+P\+H\+I\+C\+\_\+\+M\+O\+DE}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+G\+R\+A\+P\+H\+I\+C\+\_\+\+M\+O\+DE}{VBE\_GRAPHIC\_MODE}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+G\+R\+A\+P\+H\+I\+C\+\_\+\+M\+O\+DE~0x105}
+
+\hypertarget{group__vbe_ga13e1037464e7407d1df6aa4041b180cd}{}\label{group__vbe_ga13e1037464e7407d1df6aa4041b180cd} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT@{V\+B\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}}
+\index{V\+B\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT@{V\+B\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}{VBE\_INTERRUPT}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT~0x10}
+
+\hypertarget{group__vbe_ga6d93a7fdde65a4c44c41cd0fae46a471}{}\label{group__vbe_ga6d93a7fdde65a4c44c41cd0fae46a471} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+B\+IT@{V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+B\+IT}}
+\index{V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+B\+IT@{V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+B\+IT}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+B\+IT}{VBE\_MODE\_LINEAR\_BIT}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+B\+IT~14}
+
+\hypertarget{group__vbe_ga7850c02defc99773b2704700c6cab3fd}{}\label{group__vbe_ga7850c02defc99773b2704700c6cab3fd} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+ER@{V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+ER}}
+\index{V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+ER@{V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+ER}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+ER}{VBE\_RETURN\_CONTROLLER}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+ER~0x00}
+
+\hypertarget{group__vbe_gab9d80b9e6d7846ea3fa090c817771866}{}\label{group__vbe_gab9d80b9e6d7846ea3fa090c817771866} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+M\+O\+DE@{V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+M\+O\+DE}}
+\index{V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+M\+O\+DE@{V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+M\+O\+DE}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+M\+O\+DE}{VBE\_RETURN\_MODE}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+R\+E\+T\+U\+R\+N\+\_\+\+M\+O\+DE~0x01}
+
+\hypertarget{group__vbe_ga02477c4996ff058aee590b54f2146eb5}{}\label{group__vbe_ga02477c4996ff058aee590b54f2146eb5} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+\+S\+E\+T\+\_\+\+M\+O\+DE@{V\+B\+E\+\_\+\+S\+E\+T\+\_\+\+M\+O\+DE}}
+\index{V\+B\+E\+\_\+\+S\+E\+T\+\_\+\+M\+O\+DE@{V\+B\+E\+\_\+\+S\+E\+T\+\_\+\+M\+O\+DE}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+S\+E\+T\+\_\+\+M\+O\+DE}{VBE\_SET\_MODE}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+S\+E\+T\+\_\+\+M\+O\+DE~0x02}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{group__vbe_ga4e9da75c9063842b969ad400e5700c0c}{}\label{group__vbe_ga4e9da75c9063842b969ad400e5700c0c} 
+\index{vbe@{vbe}!vbe\+\_\+get\+\_\+info\+\_\+block@{vbe\+\_\+get\+\_\+info\+\_\+block}}
+\index{vbe\+\_\+get\+\_\+info\+\_\+block@{vbe\+\_\+get\+\_\+info\+\_\+block}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{vbe\+\_\+get\+\_\+info\+\_\+block()}{vbe\_get\_info\_block()}}
+{\footnotesize\ttfamily int vbe\+\_\+get\+\_\+info\+\_\+block (\begin{DoxyParamCaption}\item[{\hyperlink{structvbe__info__block__t}{vbe\+\_\+info\+\_\+block\+\_\+t} $\ast$}]{vmi\+\_\+p }\end{DoxyParamCaption})}
+
+
+
+Returns information on the controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vmi\+\_\+p} & variable where the controller information should be stored\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 0
+\hypertarget{group__vbe_ga4ef3234e41f2050bc094a22049b69e45}{}\label{group__vbe_ga4ef3234e41f2050bc094a22049b69e45} 
+\index{vbe@{vbe}!vbe\+\_\+get\+\_\+mode\+\_\+info@{vbe\+\_\+get\+\_\+mode\+\_\+info}}
+\index{vbe\+\_\+get\+\_\+mode\+\_\+info@{vbe\+\_\+get\+\_\+mode\+\_\+info}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{vbe\+\_\+get\+\_\+mode\+\_\+info()}{vbe\_get\_mode\_info()}}
+{\footnotesize\ttfamily int vbe\+\_\+get\+\_\+mode\+\_\+info (\begin{DoxyParamCaption}\item[{unsigned short}]{mode,  }\item[{\hyperlink{structvbe__mode__info__t}{vbe\+\_\+mode\+\_\+info\+\_\+t} $\ast$}]{vmi\+\_\+p }\end{DoxyParamCaption})}
+
+
+
+Returns information on the input V\+BE mode, including screen dimensions, color depth and V\+R\+AM physical address. 
+
+Initializes unpacked vbe\+\_\+mode\+\_\+\+\_\+info\+\_\+t structure passed as an address with the information of the input mode, by calling V\+BE function 0x01 Return V\+BE Mode Information and unpacking the Mode\+Info\+Block struct returned by that function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & mode whose information should be returned \\
+\hline
+{\em vmi\+\_\+p} & address of \hyperlink{structvbe__mode__info__t}{vbe\+\_\+mode\+\_\+info\+\_\+t} structure to be initialized \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1

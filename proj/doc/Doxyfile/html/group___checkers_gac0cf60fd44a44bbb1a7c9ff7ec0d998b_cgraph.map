@@ -1,0 +1,3 @@
+<map id="send_serial_move" name="send_serial_move">
+<area shape="rect" id="node2" href="$group__ser__port.html#ga9ce4605b9346d093f446fa48b495406b" title="transmits a char through the serial port " alt="" coords="179,5,313,32"/>
+</map>

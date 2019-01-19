@@ -1,0 +1,51 @@
+<map id="connect_serial" name="connect_serial">
+<area shape="rect" id="node2" href="$group__ser__port.html#ga46bbb861095c5b7a44a33af5e19be100" title="Disables IER interrupts. " alt="" coords="179,81,288,108"/>
+<area shape="rect" id="node3" href="$group__ser__port.html#ga1e0894432789b7311021c4f862335065" title="Sets the configuration of the serial port. " alt="" coords="185,132,281,159"/>
+<area shape="rect" id="node8" href="$group__ser__port.html#gae9c2959fb0c4f39b96c4621d985f5ed2" title="receive a char through the serial port " alt="" coords="777,284,924,311"/>
+<area shape="rect" id="node10" href="$group__ser__port.html#ga9ce4605b9346d093f446fa48b495406b" title="transmits a char through the serial port " alt="" coords="166,259,301,285"/>
+<area shape="rect" id="node11" href="$proj_8c.html#a3310cf47c29dd0f685c58e04fac7be4a" title="ret_path_images" alt="" coords="174,309,293,336"/>
+<area shape="rect" id="node12" href="$group___checkers.html#gad95d8a331ab0758ace223ea301a57f7f" title="loads the images and starts the game " alt="" coords="160,563,307,589"/>
+<area shape="rect" id="node4" href="$group__ser__port.html#ga03bc33099d89326fb9a26cc0fef1cc7a" title="Sets the value of bits per character in the respective serial port. " alt="" coords="361,107,511,133"/>
+<area shape="rect" id="node5" href="$group__ser__port.html#ga7d67a8d80697182bb1afe90a65875c90" title="Sets the value of bits per character in the respective serial port. " alt="" coords="373,157,499,184"/>
+<area shape="rect" id="node6" href="$group__ser__port.html#ga4a963c8e3cfb978a4e4a026add12483f" title="Sets the value of bits per character in the respective serial port. " alt="" coords="384,5,488,32"/>
+<area shape="rect" id="node7" href="$group__ser__port.html#ga2b6153e7105a706ea7a331770150ac55" title="Sets the value of bits per character in the respective serial port. " alt="" coords="389,56,483,83"/>
+<area shape="rect" id="node9" href="$group__ser__port.html#gaf51d56fa6069ce68bb9f34a1396b2ea1" title="Checks if the lsr register has an error. " alt="" coords="972,284,1108,311"/>
+<area shape="rect" id="node13" href="$group__publicity.html#ga7a04ef3aec214c81663352a9f4f35a65" title="shows an ad. If today is a day of the week shows a certain ad, if it&#39;s weekend shows another one ..." alt="" coords="399,917,473,944"/>
+<area shape="rect" id="node14" href="$group___bitmap.html#ga3506880ffd407c36eb8aaddd2c1606d2" title="Loads a bmp image. " alt="" coords="604,765,691,792"/>
+<area shape="rect" id="node16" href="$group__video__gr.html#gacef21667c79365d57a084bed994c2189" title="Initializes the video module in graphics mode. " alt="" coords="618,1120,677,1147"/>
+<area shape="rect" id="node18" href="$group__video__gr.html#ga42f593e6656f1a978315aff02b1bcebf" title="Returns to default Minix 3 text mode (0x03: 25 x 80, 16 colors) " alt="" coords="616,664,679,691"/>
+<area shape="rect" id="node20" href="$group___bitmap.html#ga18d05a1c671f4638bc63d37874efb9d4" title="Draws an unscaled, unrotated bitmap at the given position. " alt="" coords="602,1171,693,1197"/>
+<area shape="rect" id="node29" href="$group__timer.html#gada4efbb5c88275795526fc45f0814aa3" title="sets the timer frequency " alt="" coords="375,259,497,285"/>
+<area shape="rect" id="node31" href="$group___program_logic.html#ga2838b9e6247aa4515f76cfeccf8e1cd8" title="Creates the board with initial positions. " alt="" coords="390,360,482,387"/>
+<area shape="rect" id="node32" href="$group___checkers.html#ga258c52e2e4a6ef24d9fb5ec06bedaa53" title="create_mouse" alt="" coords="384,411,488,437"/>
+<area shape="rect" id="node33" href="$group___checkers.html#gaa6a495a94944bda567df909f84c62396" title="draws a board on the screen " alt="" coords="392,461,480,488"/>
+<area shape="rect" id="node37" href="$group___checkers.html#ga01bdfba712e2ceab4902f5cd63f6b482" title="draws the turn message that says who should play now " alt="" coords="578,512,717,539"/>
+<area shape="rect" id="node38" href="$group___checkers.html#ga0f9d87b0bea416d794ed80855026d550" title="draws a mouse " alt="" coords="389,309,483,336"/>
+<area shape="rect" id="node40" href="$group__video__gr.html#ga8761e145d6f2249e0a4177ed7ff24299" title="copies the mouse_buffer into the video_buffer " alt="" coords="369,613,503,640"/>
+<area shape="rect" id="node41" href="$group___checkers.html#gaf1aa642150939b8b1d104fe437a9d135" title="handles the game in serial mode being responsible for handling which player should play ..." alt="" coords="355,664,517,691"/>
+<area shape="rect" id="node43" href="$group___checkers.html#ga61f35c6c9bba94dcd5028e185f3ae3f6" title="handles the interrupts " alt="" coords="575,715,720,741"/>
+<area shape="rect" id="node15" href="$group__rtc.html#ga83dbab748017bcc8531622b94cca1be1" title="gets the date from the rtc " alt="" coords="597,917,698,944"/>
+<area shape="rect" id="node19" href="$group__publicity.html#ga7bad5577543cdab533e3bc88669cd691" title="Determines if date is a weekend or not. " alt="" coords="606,968,689,995"/>
+<area shape="rect" id="node25" href="$group__video__gr.html#gae50eb47e283e71498d323e815411acc3" title="copies the double_buffer into the video_buffer " alt="" coords="581,1019,714,1045"/>
+<area shape="rect" id="node26" href="$group__kbc.html#ga8efa408da2468eaa11a0c515dfa8d79f" title="subscribes a keyboard interruption " alt="" coords="787,816,914,843"/>
+<area shape="rect" id="node27" href="$group__kbc.html#gac76f743c998918d5ff65403aa35c8b05" title="converts a variable passed buy reference to a pointer that can be interpreted in assembly ..." alt="" coords="799,867,902,893"/>
+<area shape="rect" id="node28" href="$group__kbc.html#ga32ab97f6b806fa3a0524e62af55aeb0e" title="unsubscribes a keyboard interruption " alt="" coords="780,968,921,995"/>
+<area shape="rect" id="node17" href="$group__vbe.html#ga4ef3234e41f2050bc094a22049b69e45" title="Returns information on the input VBE mode, including screen dimensions, color depth and VRAM physical..." alt="" coords="785,1069,917,1096"/>
+<area shape="rect" id="node21" href="$group__video__gr.html#gaf597a67a797839097222fa9b4ae20b3f" title="gets horizontal resolution of the screen " alt="" coords="813,1221,888,1248"/>
+<area shape="rect" id="node22" href="$group__video__gr.html#ga36f1c43e43d903e085207548cf8d48a2" title="gets vertical resolution of the screen " alt="" coords="813,1272,888,1299"/>
+<area shape="rect" id="node23" href="$group__video__gr.html#gafa0e51016d7aa337778300ba2ec70a74" title="gets pointer to variable double_buffer " alt="" coords="791,1120,910,1147"/>
+<area shape="rect" id="node24" href="$group__video__gr.html#ga80f6be1470280496d613f43fbf4f576c" title="gets pointer to variable mouse_buffer " alt="" coords="792,1171,909,1197"/>
+<area shape="rect" id="node30" href="$group__timer.html#ga8eb3357bc05265afc4bea5bbbb480a53" title="Reads the input timer configuration via read&#45;back command. " alt="" coords="594,259,701,285"/>
+<area shape="rect" id="node34" href="$group__video__gr.html#gafcdcee0785e2e5a0d0f1f460bf436403" title="draws a square in the double buffer and in the mouse buffer " alt="" coords="590,360,705,387"/>
+<area shape="rect" id="node36" href="$group__video__gr.html#ga0410a09b926582249fb7c0a795c9d4fe" title="draws a circle in the double buffer and in the mouse buffer " alt="" coords="594,411,701,437"/>
+<area shape="rect" id="node35" href="$group__video__gr.html#ga729c07175ab64956c7fd9944d7676888" title="sets the color of a pixel in the double buffer and in the mouse buffer " alt="" coords="804,411,897,437"/>
+<area shape="rect" id="node39" href="$group__video__gr.html#ga78765c3e4634b79d0c27b464be410803" title="sets the color of a pixel in the mouse buffer " alt="" coords="578,309,717,336"/>
+<area shape="rect" id="node42" href="$group___checkers.html#gad7f7feb83c536c88d67834e7e20780ee" title="converts a state to the corresponding player " alt="" coords="795,512,906,539"/>
+<area shape="rect" id="node49" href="$group___checkers.html#ga17180b891d06475062d87e08d01af278" title="Waits for a message from the serial port. " alt="" coords="565,461,729,488"/>
+<area shape="rect" id="node50" href="$group___checkers.html#gaa0642fe5ef48cc14ab51722047092f1f" title="moves a piece and handles everything pertinent related to the move " alt="" coords="602,563,693,589"/>
+<area shape="rect" id="node44" href="$group__timer.html#ga915070da84f7a3baa2e0fe634cb4bcd8" title="subscribes a timer interruption " alt="" coords="783,613,918,640"/>
+<area shape="rect" id="node45" href="$group__mouse.html#gad607aaa8fd9833789fcd2b99c86dfc34" title="subscribes a mouse interruption " alt="" coords="778,664,923,691"/>
+<area shape="rect" id="node46" href="$group__mouse.html#ga42d943d35caacd5219cf4ef665b9bc42" title="writes a command to kbd " alt="" coords="787,715,914,741"/>
+<area shape="rect" id="node47" href="$group__timer.html#ga05c1893c9a1e24ff5d76b2958adb8851" title="ignore_interrupts" alt="" coords="791,765,910,792"/>
+<area shape="rect" id="node48" href="$group___program_logic.html#gacfd2089a907444dab0ccd2d95f321b8b" title="Verifies if it is the end of the game. " alt="" coords="805,563,896,589"/>
+</map>

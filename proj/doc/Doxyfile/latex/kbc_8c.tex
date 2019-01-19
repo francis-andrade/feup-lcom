@@ -1,0 +1,34 @@
+\hypertarget{kbc_8c}{}\section{kbc.\+c File Reference}
+\label{kbc_8c}\index{kbc.\+c@{kbc.\+c}}
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}utilities.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+Include dependency graph for kbc.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__kbc_ga8efa408da2468eaa11a0c515dfa8d79f}{kbd\+\_\+subscribe\+\_\+int} (unsigned int $\ast$kbd\+\_\+hook\+\_\+id)
+\begin{DoxyCompactList}\small\item\em subscribes a keyboard interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga32ab97f6b806fa3a0524e62af55aeb0e}{kbd\+\_\+unsubscribe\+\_\+int} (unsigned int $\ast$kbd\+\_\+hook\+\_\+id)
+\begin{DoxyCompactList}\small\item\em unsubscribes a keyboard interruption \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_gad9d71d9448d7e3796e22f696863b7453}{kbc\+\_\+cmd\+\_\+read} (unsigned long $\ast$data)
+\begin{DoxyCompactList}\small\item\em reads a command from kbc \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga54b191a4ae0a5ed8d23e31cd50eb4868}{kbc\+\_\+cmd\+\_\+issue} (unsigned long cmd)
+\begin{DoxyCompactList}\small\item\em issues a command to kbc \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_gaa8b3453e895793f84cfc40e9cf04dd03}{kbd\+\_\+cmd\+\_\+issue} (unsigned long cmd)
+\begin{DoxyCompactList}\small\item\em issues a command to kbd \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga9a48bf91bd53208baa5627dd2a39e24d}{kbd\+\_\+cmd\+\_\+write} (unsigned int n, unsigned long $\ast$cmds)
+\begin{DoxyCompactList}\small\item\em writes a complete command to kbd this function is different from the previous one because in this case it has to write several bits to kbd \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_gac76f743c998918d5ff65403aa35c8b05}{kbc\+\_\+c\+\_\+to\+\_\+ass} (unsigned long $\ast$scancode)
+\begin{DoxyCompactList}\small\item\em converts a variable passed buy reference to a pointer that can be interpreted in assembly \end{DoxyCompactList}\end{DoxyCompactItemize}
